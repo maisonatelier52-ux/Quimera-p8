@@ -126,7 +126,7 @@ export default function Header() {
                         LATEST HEADLINES
                     </div>
                     <div className="flex-1 overflow-hidden relative flex items-center">
-                        <div className="animate-marquee text-sm font-semibold flex items-center gap-16">
+                        <div className="animate-marquee text-xs font-semibold flex items-center gap-16">
                             <span>Global Markets Hit Record Highs Following Tech Earnings</span>
                             <span className="text-blue-300 text-xs">●</span>
                             <span>Election Polls Show Tight Race in Key Swing States</span>
