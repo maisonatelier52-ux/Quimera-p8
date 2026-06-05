@@ -11,6 +11,15 @@ export default function HomeHero() {
     return (
         <section className="w-full bg-white py-8">
             <div className="max-w-[1330px] mx-auto px-4">
+
+                {/* Welcome Tagline */}
+                <p className="text-sm text-gray-500 text-center mb-6 leading-relaxed">
+                    Welcome to <span className="font-bold text-[#09365E]">Quimera</span> — breaking news,{' '}
+                    <a href="/category/politics" className="text-[#E12A32] hover:underline">the latest headlines</a>, and{' '}
+                    <a href="/category/tech" className="text-[#E12A32] hover:underline">in-depth stories</a> on politics, business, technology, finance, and global affairs.
+                    Read Quimera stories updated around the clock.
+                </p>
+
                 <div className="grid grid-cols-1 lg:grid-cols-4 gap-0">
 
                     {/* Left Column (1/4) - Standard Cards */}
