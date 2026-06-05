@@ -3,10 +3,8 @@ import React from 'react';
 import Link from 'next/link';
 import {
     Youtube,
-    Facebook,
-    Rss,
-    ChevronUp,
-    Send
+    Instagram,
+    ChevronUp
 } from 'lucide-react';
 
 export default function Footer() {
@@ -30,23 +28,6 @@ export default function Footer() {
                         </span>
                     </Link>
 
-                    <div className="flex items-center gap-5">
-                        <Link href="#" className="hover:opacity-80 transition-opacity">
-                            <Youtube size={18} fill="currentColor" />
-                        </Link>
-                        <Link href="#" className="hover:opacity-80 transition-opacity">
-                            <div className="w-5 h-5 bg-white rounded-sm flex items-center justify-center text-[#E12A32] font-black text-[11px]">G</div>
-                        </Link>
-                        <Link href="#" className="hover:opacity-80 transition-opacity font-serif font-black italic text-xl leading-none">
-                            M
-                        </Link>
-                        <Link href="#" className="hover:opacity-80 transition-opacity">
-                            <div className="w-5 h-5 bg-white rounded-sm flex items-center justify-center text-black font-black text-[11px]">F</div>
-                        </Link>
-                        <Link href="#" className="hover:opacity-80 transition-opacity">
-                            <Rss size={18} />
-                        </Link>
-                    </div>
                 </div>
 
                 <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-24">
@@ -55,19 +36,18 @@ export default function Footer() {
                         <p className="text-sm leading-relaxed mb-4 font-medium opacity-90">
                             <span className="font-bold">Information You Can Trust:</span> Stay instantly connected with breaking stories and live updates. From politics and technology to entertainment and beyond, we provide real-time coverage you can rely on, making us your dependable source for 24/7 news.
                         </p>
-
-                        <form className="max-w-md">
-                            <div className="relative mb-4">
-                                <input
-                                    type="email"
-                                    placeholder="Your email address"
-                                    className="w-full bg-[#001a4d] border border-white/10 px-6 py-4 rounded-xl text-sm focus:outline-none focus:border-white/30 transition-colors"
-                                />
-                            </div>
-                            <button className="bg-[#E12A32] text-white px-10 py-2 rounded-lg font-normal hover:bg-red-700 transition-colors">
-                                Subscribe
-                            </button>
-                        </form>
+                        
+                        <div className="flex items-center gap-5 mt-6">
+                            <Link href="#" className="hover:opacity-80 transition-opacity">
+                                <Instagram size={18} />
+                            </Link>
+                            <Link href="#" className="hover:opacity-80 transition-opacity">
+                                <Youtube size={18} />
+                            </Link>
+                            <Link href="#" className="hover:opacity-80 transition-opacity" title="Substack">
+                                <div className="w-4 h-4 bg-orange-500 rounded-sm flex items-center justify-center text-white font-black text-[10px]">S</div>
+                            </Link>
+                        </div>
                     </div>
 
                     {/* Right Column: Links */}
@@ -113,7 +93,7 @@ export default function Footer() {
                 {/* Bottom Bar */}
                 <div className="pt-8 flex flex-col md:flex-row justify-center items-center relative gap-6">
                     <p className="text-[11px] text-white/40 font-bold tracking-wider text-center">
-                        © Quimera News Network. Ruby Design Company. All Rights Reserved.
+                        © Quimera News Network. All Rights Reserved.
                     </p>
 
                     {/* Scroll to top */}
