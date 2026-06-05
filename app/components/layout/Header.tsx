@@ -17,11 +17,24 @@ import { usePathname } from 'next/navigation';
 
 export default function Header() {
     const pathname = usePathname();
-    const [currentDate, setCurrentDate] = useState('');
+    const [currentDateTime, setCurrentDateTime] = useState('');
 
     useEffect(() => {
-        const dateOptions: Intl.DateTimeFormatOptions = { weekday: 'long', day: 'numeric', month: 'short', year: 'numeric' };
-        setCurrentDate(new Date().toLocaleDateString('en-GB', dateOptions));
+        const updateDateTime = () => {
+            const now = new Date();
+            const dateOptions: Intl.DateTimeFormatOptions = { weekday: 'long', day: 'numeric', month: 'short', year: 'numeric' };
+            const timeOptions: Intl.DateTimeFormatOptions = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
+            
+            const dateStr = now.toLocaleDateString('en-GB', dateOptions);
+            const timeStr = now.toLocaleTimeString('en-US', timeOptions);
+            
+            setCurrentDateTime(`${dateStr} | ${timeStr}`);
+        };
+
+        updateDateTime();
+        const intervalId = setInterval(updateDateTime, 1000);
+
+        return () => clearInterval(intervalId);
     }, []);
 
     const isActive = (path: string) => pathname === path;
@@ -31,39 +44,36 @@ export default function Header() {
         <header className="flex flex-col w-full font-serif sticky top-[-80px] z-50">
             {/* Top Bar - Deep Blue */}
             <div className="bg-[#00008B] text-white">
-                <div className="max-w-[1330px] mx-auto px-4 h-20 flex items-center justify-between">
-                    <div className="flex items-center gap-10">
-                        {/* Left: Logo & Date */}
-                        <div className="flex flex-col justify-center">
-                            {/* Logo Simulation */}
-                            <Link href="/" className="flex items-center gap-1 group">
-                                {/* Colored Bars */}
-                                <div className="flex gap-[2px] h-6 skew-x-[-15deg]">
-                                    <div className="w-1.5 h-full bg-red-500"></div>
-                                    <div className="w-1.5 h-full bg-yellow-400"></div>
-                                    <div className="w-1.5 h-full bg-cyan-400"></div>
-                                </div>
-                                {/* Text */}
-                                <span className="text-3xl font-black italic tracking-tighter ml-1">
-                                    QUIMERA
-                                </span>
-                            </Link>
-                            {/* Date */}
-                            <div className="text-[10px] text-gray-300 mt-1 font-medium tracking-wide">
-                                {currentDate}
-                            </div>
+                <div className="max-w-[1330px] mx-auto px-4 h-20 grid grid-cols-3 items-center">
+                    
+                    {/* Left: Date */}
+                    <div className="flex justify-start">
+                        <div className="text-[10px] text-gray-300 font-medium tracking-wide">
+                            {currentDateTime}
                         </div>
+                    </div>
 
-
+                    {/* Center: Logo */}
+                    <div className="flex justify-center">
+                        <Link href="/" className="flex items-center gap-1 group">
+                            {/* Colored Bars */}
+                            <div className="flex gap-[2px] h-6 skew-x-[-15deg]">
+                                <div className="w-1.5 h-full bg-red-500"></div>
+                                <div className="w-1.5 h-full bg-yellow-400"></div>
+                                <div className="w-1.5 h-full bg-cyan-400"></div>
+                            </div>
+                            {/* Text */}
+                            <span className="text-3xl font-black italic tracking-tighter ml-1">
+                                QUIMERA
+                            </span>
+                        </Link>
                     </div>
 
                     {/* Right: Actions */}
-                    <div className="flex items-center gap-4">
-                        <div className="flex items-center gap-3">
-                            <button className="p-2 hover:bg-white/10 rounded-full transition-colors">
-                                <Search size={20} />
-                            </button>
-                        </div>
+                    <div className="flex justify-end gap-4">
+                        <button className="p-2 hover:bg-white/10 rounded-full transition-colors">
+                            <Search size={20} />
+                        </button>
                     </div>
                 </div>
             </div>
