@@ -37,7 +37,7 @@ export default function HorizontalCard({ article }: HorizontalCardProps) {
                         {article.category}
                     </Link>
                     <span className="text-gray-300">|</span>
-                    <span className="text-gray-500 font-medium normal-case">
+                    <span className="text-gray-500 text-[10px] normal-case">
                         {article.date}
                     </span>
                     <button className="text-gray-400 hover:text-[#E12A32] transition-colors ml-auto">
@@ -47,14 +47,14 @@ export default function HorizontalCard({ article }: HorizontalCardProps) {
 
                 {/* Title */}
                 <Link href={`/articles/${article.slug}`}>
-                    <h3 className="text-[16px] text-[#09365E] font-bold leading-[1.3] group-hover:text-[#E12A32] transition-colors line-clamp-3">
+                    <h3 className="text-[15px] text-[#09365E] font-bold leading-[1.3] group-hover:text-[#E12A32] transition-colors line-clamp-3">
                         {article.title}
                     </h3>
                 </Link>
 
                 {/* Excerpt */}
                 {article.shortdescription && (
-                    <p className="text-gray-600 text-[13px] leading-snug line-clamp-2 mt-1">
+                    <p className="text-gray-600 text-[12px] leading-snug line-clamp-2 mt-1">
                         {article.shortdescription}
                     </p>
                 )}

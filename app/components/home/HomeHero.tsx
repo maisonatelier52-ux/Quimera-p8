@@ -13,7 +13,7 @@ export default function HomeHero() {
             <div className="max-w-[1330px] mx-auto px-4">
 
                 {/* Welcome Tagline */}
-                <p className="text-sm text-gray-500 text-center mb-6 leading-relaxed">
+                <p className="text-xs text-gray-500 text-center mb-6 leading-relaxed">
                     Welcome to <span className="font-bold text-[#09365E]">Quimera</span> — breaking news,{' '}
                     <a href="/category/politics" className="text-[#E12A32] hover:underline">the latest headlines</a>, and{' '}
                     <a href="/category/tech" className="text-[#E12A32] hover:underline">in-depth stories</a> on politics, business, technology, finance, and global affairs.

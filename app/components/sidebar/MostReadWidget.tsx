@@ -31,7 +31,7 @@ export default function MostReadWidget({ items }: MostReadWidgetProps) {
 
                         {/* Content */}
                         <div className="flex justify-between w-full">
-                            <Link href={`/articles/${item.slug}`} className="group-hover:text-red-600 transition-colors font-bold text-[#09365E] text-sm leading-snug line-clamp-3">
+                            <Link href={`/articles/${item.slug}`} className="group-hover:text-red-600 transition-colors font-bold text-[#09365E] text-xs leading-snug line-clamp-3">
                                 {item.title}
                             </Link>
 

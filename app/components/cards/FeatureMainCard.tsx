@@ -45,18 +45,18 @@ export default function FeatureMainCard({ article }: FeatureMainCardProps) {
                             </Link>
                         </>
                     )}
-                    <span className="text-gray-400 font-medium normal-case ml-2">
+                    <span className="text-gray-400 text-[10px] normal-case ml-2">
                         {article.date}
                     </span>
                 </div>
                 <button className="text-gray-400 hover:text-red-600 transition-colors">
-                    <Bookmark size={18} />
+                    <Bookmark size={15} />
                 </button>
             </div>
 
             {/* Title */}
             <Link href={`/articles/${article.slug}`}>
-                <h1 className="text-3xl text-[#09365E] md:text-4xl font-extrabold leading-tight hover:underline transition-colors">
+                <h1 className="text-2xl text-[#09365E] md:text-3xl font-extrabold leading-tight hover:underline transition-colors">
                     {article.title}
                 </h1>
             </Link>

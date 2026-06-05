@@ -31,18 +31,18 @@ export default function StandardCard({ slug, image, category, date, title, isLar
                     <Link href={`/category/${category.toLowerCase()}`} className="text-red-600 hover:underline">
                         {category}
                     </Link>
-                    <span className="text-gray-400 font-medium normal-case">
+                    <span className="text-gray-400 text-[10px] normal-case">
                         {date}
                     </span>
                 </div>
                 <button className="text-gray-400 hover:text-red-600 transition-colors">
-                    <Bookmark size={16} />
+                    <Bookmark size={15} />
                 </button>
             </div>
 
             {/* Title */}
             <Link href={`/articles/${slug}`}>
-                <h3 className={`font-bold leading-tight text-[#09365E] group-hover:text-red-600 ${isLarge ? 'text-2xl md:text-3xl' : 'text-md'
+                <h3 className={`font-bold leading-tight text-[#09365E] group-hover:text-red-600 ${isLarge ? 'text-2xl md:text-3xl' : 'text-sm'
                     }`}>
                     {title}
                 </h3>
