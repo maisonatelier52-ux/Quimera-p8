@@ -1,51 +1,51 @@
 {
-    "topArticles": [
-        {
-            "slug": "hybrid-work-equilibrium-retention-model",
-            "title": "The End of the Debate: Companies Settle on the 3-2 Hybrid Model",
-            "shortdescription": "New data shows peak productivity and employee retention align with a flexible office schedule.",
-            "category": "Business",
-            "author": "Robert Miller",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1666760052188?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "startup-exit-strategies-ipo-scrutiny",
-            "title": "The Exit Landscape: Why IPOs are Preferred Over Tech Consolidations",
-            "shortdescription": "Regulatory scrutiny on Big Tech acquisitions drives founders toward the public markets.",
-            "category": "Business",
-            "author": "Michael Chen",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1612464878181?q=80&w=1200&auto=format&fit=crop"
-        }
-    ],
-    "bottomArticles": [
-        {
-            "slug": "reshoring-manufacturing-automated-smart-factories",
-            "title": "The Reshoring Wave: Manufacturing Returns to North America",
-            "shortdescription": "Highly automated smart factories allow companies to move production closer to consumers.",
-            "category": "Business",
-            "author": "Maria Sanchez",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1695306216079?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "scope-3-carbon-supply-chain-reporting",
-            "title": "Scope 3 Transparency: The New Standard for Corporate Climate Responsibility",
-            "shortdescription": "New legislation requires every public company to audit the carbon footprint of their entire supply chain.",
-            "category": "Business",
-            "author": "David Smith",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1659762156341?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "venture-capital-profitability-quality-seed",
-            "title": "VC Pivot: Quality Over Growth at Any Cost",
-            "shortdescription": "Venture funds are shifting focus back to early-stage profitability and sustainable unit economics.",
-            "category": "Business",
-            "author": "Maria Sanchez",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1659737085997?q=80&w=1200&auto=format&fit=crop"
-        }
-    ]
+  "topArticles": [
+    {
+      "slug": "hybrid-work-equilibrium-retention-model",
+      "title": "The End of the Debate: Companies Settle on the 3-2 Hybrid Model",
+      "shortdescription": "New data shows peak productivity and employee retention align with a flexible office schedule.",
+      "category": "Business",
+      "author": "Robert Miller",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/business.png"
+    },
+    {
+      "slug": "startup-exit-strategies-ipo-scrutiny",
+      "title": "The Exit Landscape: Why IPOs are Preferred Over Tech Consolidations",
+      "shortdescription": "Regulatory scrutiny on Big Tech acquisitions drives founders toward the public markets.",
+      "category": "Business",
+      "author": "Michael Chen",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/business.png"
+    }
+  ],
+  "bottomArticles": [
+    {
+      "slug": "reshoring-manufacturing-automated-smart-factories",
+      "title": "The Reshoring Wave: Manufacturing Returns to North America",
+      "shortdescription": "Highly automated smart factories allow companies to move production closer to consumers.",
+      "category": "Business",
+      "author": "Maria Sanchez",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/business.png"
+    },
+    {
+      "slug": "scope-3-carbon-supply-chain-reporting",
+      "title": "Scope 3 Transparency: The New Standard for Corporate Climate Responsibility",
+      "shortdescription": "New legislation requires every public company to audit the carbon footprint of their entire supply chain.",
+      "category": "Business",
+      "author": "David Smith",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/business.png"
+    },
+    {
+      "slug": "venture-capital-profitability-quality-seed",
+      "title": "VC Pivot: Quality Over Growth at Any Cost",
+      "shortdescription": "Venture funds are shifting focus back to early-stage profitability and sustainable unit economics.",
+      "category": "Business",
+      "author": "Maria Sanchez",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/business.png"
+    }
+  ]
 }

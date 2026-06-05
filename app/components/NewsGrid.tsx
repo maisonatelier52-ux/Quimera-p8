@@ -33,7 +33,7 @@ export default function NewsGrid({ title, articles }: NewsGridProps) {
                     <article key={article.slug} className="group flex flex-col cursor-pointer">
                         <Link href={`/articles/${article.slug}`} className="block relative aspect-square overflow-hidden rounded-none bg-gray-100 mb-6 premium-card">
                             <img
-                                src={article.image || '/images/news/markets-1.webp'}
+                                src={article.image || 'https://picsum.photos/seed/news-fallback/800/500'}
                                 alt={article.title}
                                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                             />

@@ -19,7 +19,7 @@ export default function HorizontalCard({ article }: HorizontalCardProps) {
             {/* Image */}
             <Link
                 href={`/articles/${article.slug}`}
-                className="block relative overflow-hidden rounded-xl w-[200px] aspect-[16/10] flex-shrink-0 bg-gray-100"
+                className="block relative overflow-hidden  w-[200px] aspect-[16/10] flex-shrink-0 bg-gray-100"
             >
                 <img
                     src={article.image}

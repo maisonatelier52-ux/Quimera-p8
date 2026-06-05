@@ -1,112 +1,112 @@
 {
-    "featured": {
-        "slug": "solid-state-battery-ev-range-industry",
-        "title": "1,000 Kilometers: Solid-State Batteries Enter Mass Production",
-        "shortdescription": "The range anxiety era for EVs ends as solid-state technology doubles energy density.",
-        "category": "Tech",
-        "author": "Alex Thorne",
-        "date": "February 23, 2026",
-        "image": "https://images.unsplash.com/photo-1681757343298?q=80&w=1200&auto=format&fit=crop"
+  "featured": {
+    "slug": "solid-state-battery-ev-range-industry",
+    "title": "1,000 Kilometers: Solid-State Batteries Enter Mass Production",
+    "shortdescription": "The range anxiety era for EVs ends as solid-state technology doubles energy density.",
+    "category": "Tech",
+    "author": "Alex Thorne",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/solid-state.png"
+  },
+  "sideArticles": [
+    {
+      "slug": "cybersecurity-bio-sensing-continuous-auth",
+      "title": "Beyond Passwords: Bio-Sensing and the Era of Continuous Authentication",
+      "shortdescription": "Security systems move to real-time biometric verification to prevent identity theft.",
+      "category": "Tech",
+      "author": "Robert Miller",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/tech.png"
     },
-    "sideArticles": [
-        {
-            "slug": "cybersecurity-bio-sensing-continuous-auth",
-            "title": "Beyond Passwords: Bio-Sensing and the Era of Continuous Authentication",
-            "shortdescription": "Security systems move to real-time biometric verification to prevent identity theft.",
-            "category": "Tech",
-            "author": "Robert Miller",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1598188195802?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "ai-coaching-analytics-performance-tracking",
-            "title": "The AI Coach: How Real-Time Predictive Analytics is Revolutionizing Team Sports",
-            "shortdescription": "Elite teams leverage continuous biometrics and AI projections to make in-game coaching adjustments.",
-            "category": "Sports",
-            "author": "Sarah Jenkins",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1536132803328?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "esports-olympics-inaugural-games-2026",
-            "title": "The Virtual Arena: Inaugural Olympic Esports Games Set to Begin in 2026",
-            "shortdescription": "Competitive gaming gains ultimate recognition as the IOC prepares for the first virtual Olympic events.",
-            "category": "Sports",
-            "author": "Michael Chen",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1636716310414?q=80&w=1200&auto=format&fit=crop"
-        }
-    ],
-    "bottomArticles": [
-        {
-            "slug": "real-estate-tokenization-fractional-shares",
-            "title": "Fractional Ownership: How Tokenization is Unlocking Real Estate Markets",
-            "shortdescription": "High-rise commercial properties are being broken into digital shares, allowing retail participation.",
-            "category": "Market",
-            "author": "James O'Connor",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1676335130017?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "pension-fund-private-equity-strategy",
-            "title": "Pensions Pivot: Increasing Exposure to Private Equity and Infrastructure",
-            "shortdescription": "Retirement funds look beyond public equities to ensure long-term returns in a low-growth era.",
-            "category": "Finance",
-            "author": "Michael Chen",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1657815121479?q=80&w=1200&auto=format&fit=crop"
-        }
-    ],
-    "mostRead": [
-        {
-            "slug": "emerging-markets-tech-hubs-valuation",
-            "title": "The Next Silicon Valleys: Emerging Market Tech Ecosystems Explode",
-            "shortdescription": "Valuations in Nairobi and Ho Chi Minh City startups signal a shift in global VC allocation.",
-            "category": "Market",
-            "author": "Emily Rodriguez",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1673999281809?q=80&w=1200&auto=format&fit=crop",
-            "id": 1
-        },
-        {
-            "slug": "volatility-index-ai-trading-psychology",
-            "title": "The VIX in the Age of AI: Is Volatility Being Suppressed or Hidden?",
-            "shortdescription": "Algorithms now control 90% of intraday moves, fundamentally changing market psychology.",
-            "category": "Market",
-            "author": "Emily Rodriguez",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1627389902190?q=80&w=1200&auto=format&fit=crop",
-            "id": 2
-        },
-        {
-            "slug": "quantum-computing-error-correction-milestone",
-            "title": "Quantum Stability: The Error Correction Breakthrough of 2026",
-            "shortdescription": "Researchers achieve a fault-tolerant qubit threshold, bringing practical quantum computing closer.",
-            "category": "Tech",
-            "author": "Emily Rodriguez",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1571403884821?q=80&w=1200&auto=format&fit=crop",
-            "id": 3
-        },
-        {
-            "slug": "commodity-supercycle-electrification-metals",
-            "title": "The 2026 Commodity Supercycle: Why Industrial Metals are the New Gold",
-            "shortdescription": "Rare earth elements and copper hit record highs as electrification demand outstrips supply.",
-            "category": "Market",
-            "author": "Alex Thorne",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1608607205623?q=80&w=1200&auto=format&fit=crop",
-            "id": 4
-        },
-        {
-            "slug": "climate-policy-carbon-tax-economic",
-            "title": "Climate Policy Shift: Economic Giants Align on Carbon Taxes",
-            "shortdescription": "Major powers agree on a unified carbon pricing framework to accelerate the green transition.",
-            "category": "Politics",
-            "author": "Robert Miller",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1624825164577?q=80&w=1200&auto=format&fit=crop",
-            "id": 5
-        }
-    ]
+    {
+      "slug": "ai-coaching-analytics-performance-tracking",
+      "title": "The AI Coach: How Real-Time Predictive Analytics is Revolutionizing Team Sports",
+      "shortdescription": "Elite teams leverage continuous biometrics and AI projections to make in-game coaching adjustments.",
+      "category": "Sports",
+      "author": "Sarah Jenkins",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/sports.png"
+    },
+    {
+      "slug": "esports-olympics-inaugural-games-2026",
+      "title": "The Virtual Arena: Inaugural Olympic Esports Games Set to Begin in 2026",
+      "shortdescription": "Competitive gaming gains ultimate recognition as the IOC prepares for the first virtual Olympic events.",
+      "category": "Sports",
+      "author": "Michael Chen",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/sports.png"
+    }
+  ],
+  "bottomArticles": [
+    {
+      "slug": "real-estate-tokenization-fractional-shares",
+      "title": "Fractional Ownership: How Tokenization is Unlocking Real Estate Markets",
+      "shortdescription": "High-rise commercial properties are being broken into digital shares, allowing retail participation.",
+      "category": "Market",
+      "author": "James O'Connor",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/market.png"
+    },
+    {
+      "slug": "pension-fund-private-equity-strategy",
+      "title": "Pensions Pivot: Increasing Exposure to Private Equity and Infrastructure",
+      "shortdescription": "Retirement funds look beyond public equities to ensure long-term returns in a low-growth era.",
+      "category": "Finance",
+      "author": "Michael Chen",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/finance.png"
+    }
+  ],
+  "mostRead": [
+    {
+      "slug": "emerging-markets-tech-hubs-valuation",
+      "title": "The Next Silicon Valleys: Emerging Market Tech Ecosystems Explode",
+      "shortdescription": "Valuations in Nairobi and Ho Chi Minh City startups signal a shift in global VC allocation.",
+      "category": "Market",
+      "author": "Emily Rodriguez",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/market.png",
+      "id": 1
+    },
+    {
+      "slug": "volatility-index-ai-trading-psychology",
+      "title": "The VIX in the Age of AI: Is Volatility Being Suppressed or Hidden?",
+      "shortdescription": "Algorithms now control 90% of intraday moves, fundamentally changing market psychology.",
+      "category": "Market",
+      "author": "Emily Rodriguez",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/market.png",
+      "id": 2
+    },
+    {
+      "slug": "quantum-computing-error-correction-milestone",
+      "title": "Quantum Stability: The Error Correction Breakthrough of 2026",
+      "shortdescription": "Researchers achieve a fault-tolerant qubit threshold, bringing practical quantum computing closer.",
+      "category": "Tech",
+      "author": "Emily Rodriguez",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/tech.png",
+      "id": 3
+    },
+    {
+      "slug": "commodity-supercycle-electrification-metals",
+      "title": "The 2026 Commodity Supercycle: Why Industrial Metals are the New Gold",
+      "shortdescription": "Rare earth elements and copper hit record highs as electrification demand outstrips supply.",
+      "category": "Market",
+      "author": "Alex Thorne",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/market.png",
+      "id": 4
+    },
+    {
+      "slug": "climate-policy-carbon-tax-economic",
+      "title": "Climate Policy Shift: Economic Giants Align on Carbon Taxes",
+      "shortdescription": "Major powers agree on a unified carbon pricing framework to accelerate the green transition.",
+      "category": "Politics",
+      "author": "Robert Miller",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/politics.png",
+      "id": 5
+    }
+  ]
 }

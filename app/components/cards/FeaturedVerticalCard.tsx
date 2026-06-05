@@ -11,7 +11,7 @@ interface FeaturedVerticalCardProps {
 }
 
 export default function FeaturedVerticalCard({ slug, image, category, date, title }: FeaturedVerticalCardProps) {
-    const fallbackImage = '/images/news/markets-1.webp';
+    const fallbackImage = 'https://picsum.photos/seed/news-fallback/800/500';
 
     return (
         <div className="flex flex-col gap-4 group">

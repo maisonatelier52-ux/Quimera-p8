@@ -10,7 +10,7 @@ export const metadata: Metadata = {
         siteName: "Quimera",
         images: [
             {
-                url: "/images/news/markets-1.webp",
+                url: "https://picsum.photos/seed/author-fallback/800/500",
                 width: 1200,
                 height: 630,
                 alt: "Quimera Authors",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Our Authors | Quimera News",
         description: "Meet the voices shaping the future of financial journalism at Quimera.",
-        images: ["/images/news/markets-1.webp"],
+        images: ["https://picsum.photos/seed/author-fallback/800/500"],
     },
 };
 

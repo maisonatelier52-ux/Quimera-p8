@@ -1,110 +1,110 @@
 [
-    {
-        "slug": "climate-policy-carbon-tax-economic",
-        "title": "Climate Policy Shift: Economic Giants Align on Carbon Taxes",
-        "shortdescription": "Major powers agree on a unified carbon pricing framework to accelerate the green transition.",
-        "category": "Politics",
-        "author": "Robert Miller",
-        "date": "February 23, 2026",
-        "image": "https://images.unsplash.com/photo-1624825164577?q=80&w=1200&auto=format&fit=crop"
-    },
-    {
-        "slug": "banking-sector-branchless-mobile-future",
-        "title": "The Branchless Future: Legacy Banks Finally Close Physical Retail Gaps",
-        "shortdescription": "Traditional banking giants complete their shift to mobile-first operations, shuttering legacy branches.",
-        "category": "Finance",
-        "author": "Alex Thorne",
-        "date": "February 23, 2026",
-        "image": "https://images.unsplash.com/photo-1601721137327?q=80&w=1200&auto=format&fit=crop"
-    },
-    {
-        "slug": "electoral-reforms-digital-voting-security",
-        "title": "Electoral Reforms: Can Digital Voting Ever Be Truly Secure?",
-        "shortdescription": "A deep dive into the blockchain-based voting systems being trialed in Northern Europe.",
-        "category": "Politics",
-        "author": "Jessica Wu",
-        "date": "February 23, 2026",
-        "image": "https://images.unsplash.com/photo-1692596212040?q=80&w=1200&auto=format&fit=crop"
-    },
-    {
-        "slug": "inflation-hedging-strategies-tangible-assets",
-        "title": "Hedging for the 20s: Tangible Assets Overcome Monetary Inflation",
-        "shortdescription": "Investors look toward farmland, timber, and fine art to protect purchasing power.",
-        "category": "Finance",
-        "author": "David Smith",
-        "date": "February 23, 2026",
-        "image": "https://images.unsplash.com/photo-1567190216178?q=80&w=1200&auto=format&fit=crop"
-    },
-    {
-        "slug": "micro-investing-fractional-revolution",
-        "title": "The Fractional Revolution: How $5 Can Buy a Piece of the S&P 500",
-        "shortdescription": "Micro-investing apps continue to grow, bringing a new generation into the equity markets.",
-        "category": "Finance",
-        "author": "James O'Connor",
-        "date": "February 23, 2026",
-        "image": "https://images.unsplash.com/photo-1555470863933?q=80&w=1200&auto=format&fit=crop"
-    },
-    {
-        "slug": "venture-capital-profitability-quality-seed",
-        "title": "VC Pivot: Quality Over Growth at Any Cost",
-        "shortdescription": "Venture funds are shifting focus back to early-stage profitability and sustainable unit economics.",
-        "category": "Business",
-        "author": "Maria Sanchez",
-        "date": "February 23, 2026",
-        "image": "https://images.unsplash.com/photo-1659737085997?q=80&w=1200&auto=format&fit=crop"
-    },
-    {
-        "slug": "sustainable-finance-taxonomy-greenwashing",
-        "title": "The Sustainable Finance Map: Aligning Global Green Definitions",
-        "shortdescription": "Regulators finally agree on what constitutes a 'green' investment, reducing greenwashing risks.",
-        "category": "Finance",
-        "author": "David Smith",
-        "date": "February 23, 2026",
-        "image": "https://images.unsplash.com/photo-1508581955072?q=80&w=1200&auto=format&fit=crop"
-    },
-    {
-        "slug": "chief-purpose-officer-corporate-culture",
-        "title": "The Chief Purpose Officer: Why Culture is the Ultimate Competitive Advantage",
-        "shortdescription": "Companies are investing heavily in employee mental health and long-term career fulfillment.",
-        "category": "Business",
-        "author": "David Smith",
-        "date": "February 23, 2026",
-        "image": "https://images.unsplash.com/photo-1599487267941?q=80&w=1200&auto=format&fit=crop"
-    },
-    {
-        "slug": "wearable-sensors-concussion-prevention-safety",
-        "title": "Smart Armor: Sensor-Equipped Gear Leads the Charge in Athlete Concussion Prevention",
-        "shortdescription": "New impact-sensing helmets and mouthguards transmit real-time telemetry to medical staff on the sidelines.",
-        "category": "Sports",
-        "author": "Alex Thorne",
-        "date": "February 23, 2026",
-        "image": "https://images.unsplash.com/photo-1597666137110?q=80&w=1200&auto=format&fit=crop"
-    },
-    {
-        "slug": "high-speed-rail-infrastructure-approved",
-        "title": "Blueprint for the Future: National High-Speed Rail Network Approved",
-        "shortdescription": "A multi-trillion dollar investment into clean transportation infrastructure takes flight.",
-        "category": "Politics",
-        "author": "Emily Rodriguez",
-        "date": "February 23, 2026",
-        "image": "https://images.unsplash.com/photo-1648798897364?q=80&w=1200&auto=format&fit=crop"
-    },
-    {
-        "slug": "athlete-longevity-advanced-biomedical-recovery",
-        "title": "Extending the Peak: How Biomedical Recovery is Keeping Athletes Active Longer",
-        "shortdescription": "Hyperbaric chambers, targeted gene therapy, and stem-cell recovery extend elite athletic careers.",
-        "category": "Sports",
-        "author": "James O'Connor",
-        "date": "February 23, 2026",
-        "image": "https://images.unsplash.com/photo-1689533926551?q=80&w=1200&auto=format&fit=crop"
-    },
-    {
-        "slug": "edge-computing-smart-grid-optimization",
-        "title": "Thinking Power: How AI is Optimizing National Energy Grids",
-        "shortdescription": "Real-time processing at the edge allows for a more responsive and efficient electrical grid.",
-        "category": "Tech",
-        "author": "David Smith",
-        "date": "February 23, 2026",
-        "image": "https://images.unsplash.com/photo-1533491259803?q=80&w=1200&auto=format&fit=crop"
-    }
+  {
+    "slug": "climate-policy-carbon-tax-economic",
+    "title": "Climate Policy Shift: Economic Giants Align on Carbon Taxes",
+    "shortdescription": "Major powers agree on a unified carbon pricing framework to accelerate the green transition.",
+    "category": "Politics",
+    "author": "Robert Miller",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/politics.png"
+  },
+  {
+    "slug": "banking-sector-branchless-mobile-future",
+    "title": "The Branchless Future: Legacy Banks Finally Close Physical Retail Gaps",
+    "shortdescription": "Traditional banking giants complete their shift to mobile-first operations, shuttering legacy branches.",
+    "category": "Finance",
+    "author": "Alex Thorne",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/finance.png"
+  },
+  {
+    "slug": "electoral-reforms-digital-voting-security",
+    "title": "Electoral Reforms: Can Digital Voting Ever Be Truly Secure?",
+    "shortdescription": "A deep dive into the blockchain-based voting systems being trialed in Northern Europe.",
+    "category": "Politics",
+    "author": "Jessica Wu",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/politics.png"
+  },
+  {
+    "slug": "inflation-hedging-strategies-tangible-assets",
+    "title": "Hedging for the 20s: Tangible Assets Overcome Monetary Inflation",
+    "shortdescription": "Investors look toward farmland, timber, and fine art to protect purchasing power.",
+    "category": "Finance",
+    "author": "David Smith",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/finance.png"
+  },
+  {
+    "slug": "micro-investing-fractional-revolution",
+    "title": "The Fractional Revolution: How $5 Can Buy a Piece of the S&P 500",
+    "shortdescription": "Micro-investing apps continue to grow, bringing a new generation into the equity markets.",
+    "category": "Finance",
+    "author": "James O'Connor",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/finance.png"
+  },
+  {
+    "slug": "venture-capital-profitability-quality-seed",
+    "title": "VC Pivot: Quality Over Growth at Any Cost",
+    "shortdescription": "Venture funds are shifting focus back to early-stage profitability and sustainable unit economics.",
+    "category": "Business",
+    "author": "Maria Sanchez",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/business.png"
+  },
+  {
+    "slug": "sustainable-finance-taxonomy-greenwashing",
+    "title": "The Sustainable Finance Map: Aligning Global Green Definitions",
+    "shortdescription": "Regulators finally agree on what constitutes a 'green' investment, reducing greenwashing risks.",
+    "category": "Finance",
+    "author": "David Smith",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/finance.png"
+  },
+  {
+    "slug": "chief-purpose-officer-corporate-culture",
+    "title": "The Chief Purpose Officer: Why Culture is the Ultimate Competitive Advantage",
+    "shortdescription": "Companies are investing heavily in employee mental health and long-term career fulfillment.",
+    "category": "Business",
+    "author": "David Smith",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/business.png"
+  },
+  {
+    "slug": "wearable-sensors-concussion-prevention-safety",
+    "title": "Smart Armor: Sensor-Equipped Gear Leads the Charge in Athlete Concussion Prevention",
+    "shortdescription": "New impact-sensing helmets and mouthguards transmit real-time telemetry to medical staff on the sidelines.",
+    "category": "Sports",
+    "author": "Alex Thorne",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/sports.png"
+  },
+  {
+    "slug": "high-speed-rail-infrastructure-approved",
+    "title": "Blueprint for the Future: National High-Speed Rail Network Approved",
+    "shortdescription": "A multi-trillion dollar investment into clean transportation infrastructure takes flight.",
+    "category": "Politics",
+    "author": "Emily Rodriguez",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/politics.png"
+  },
+  {
+    "slug": "athlete-longevity-advanced-biomedical-recovery",
+    "title": "Extending the Peak: How Biomedical Recovery is Keeping Athletes Active Longer",
+    "shortdescription": "Hyperbaric chambers, targeted gene therapy, and stem-cell recovery extend elite athletic careers.",
+    "category": "Sports",
+    "author": "James O'Connor",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/sports.png"
+  },
+  {
+    "slug": "edge-computing-smart-grid-optimization",
+    "title": "Thinking Power: How AI is Optimizing National Energy Grids",
+    "shortdescription": "Real-time processing at the edge allows for a more responsive and efficient electrical grid.",
+    "category": "Tech",
+    "author": "David Smith",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/tech.png"
+  }
 ]

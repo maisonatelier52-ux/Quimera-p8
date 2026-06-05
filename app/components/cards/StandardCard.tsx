@@ -12,7 +12,7 @@ interface StandardCardProps {
 }
 
 export default function StandardCard({ slug, image, category, date, title, isLarge = false }: StandardCardProps) {
-    const fallbackImage = '/images/news/markets-1.webp';
+    const fallbackImage = 'https://picsum.photos/seed/news-fallback/800/500';
 
     return (
         <div className="flex flex-col gap-3 group">

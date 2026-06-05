@@ -1,94 +1,94 @@
 {
-    "articles": [
-        {
-            "slug": "interest-rate-pivot-central-bank-cuts",
-            "title": "Beyond the Peak: Central Banks Signal the First Cut in Three Years",
-            "shortdescription": "Markets prepare for a gradual easing cycle as inflation stays within target ranges globally.",
-            "category": "Market",
-            "author": "Maria Sanchez",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1646464451800?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "altcoin-etf-capital-inflow-record",
-            "title": "The Second Wave: Institutional Capital Floods Ethereum and Solana ETFs",
-            "shortdescription": "Spot ETFs for altcoins receive regulatory approval, bringing trillions into the digital asset space.",
-            "category": "Market",
-            "author": "Maria Sanchez",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1646844522146?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "midterm-elections-legislative-impact-2026",
-            "title": "The 2026 Midterm Shift: A Deep Dive into the Battle for the House",
-            "shortdescription": "As the midterm elections approach, political analysts are witnessing a seismic shift.",
-            "category": "Politics",
-            "author": "Jessica Wu",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1637131870998?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "satellite-internet-constellations-starlink",
-            "title": "Starlink Competition Heats Up: The Battle for Low-Earth Orbit",
-            "shortdescription": "New constellations from Europe and Asia provide high-speed internet to the remotest corners of Earth.",
-            "category": "Tech",
-            "author": "Sarah Jenkins",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1573598986171?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "hybrid-work-equilibrium-retention-model",
-            "title": "The End of the Debate: Companies Settle on the 3-2 Hybrid Model",
-            "shortdescription": "New data shows peak productivity and employee retention align with a flexible office schedule.",
-            "category": "Business",
-            "author": "Robert Miller",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1666760052188?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "blockchain-integration-markets-settlement",
-            "title": "Instant Liquidity: Moving Markets to T+0 Settlement",
-            "shortdescription": "How blockchain integration is eliminating the two-day settlement window for equity trades.",
-            "category": "Market",
-            "author": "Maria Sanchez",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1697244815813?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "taxing-the-multinationals-2026-policy",
-            "title": "Taxing the Giants: Global Minimum Tax Reaches 20%",
-            "shortdescription": "A historic milestone in international tax law as 140 countries implement the 20% floor.",
-            "category": "Politics",
-            "author": "James O'Connor",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1622049409693?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "green-bonds-debt-sustainable-infrastructure",
-            "title": "Green Bonds Reach $5 Trillion: The Mainstreaming of ESG Debt",
-            "shortdescription": "Institutional investors flee traditional energy debt for certified sustainable infrastructure bonds.",
-            "category": "Market",
-            "author": "Robert Miller",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1590609744435?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "formula-e-electric-motorsport-innovations",
-            "title": "Silent Speed: Formula E Innovations Reshaping the Future of Electric Vehicles",
-            "shortdescription": "Racing innovations in battery thermal management translate directly to production consumer cars.",
-            "category": "Sports",
-            "author": "Robert Miller",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1610376134807?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "mergers-acquisitions-aerospace-consolidation",
-            "title": "Industrial Titans Merge: A New Era of Global Manufacturing Efficiency",
-            "shortdescription": "Consolidation in the aerospace and defense sectors signals a more competitive global landscape.",
-            "category": "Business",
-            "author": "Emily Rodriguez",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1638123613226?q=80&w=1200&auto=format&fit=crop"
-        }
-    ]
+  "articles": [
+    {
+      "slug": "interest-rate-pivot-central-bank-cuts",
+      "title": "Beyond the Peak: Central Banks Signal the First Cut in Three Years",
+      "shortdescription": "Markets prepare for a gradual easing cycle as inflation stays within target ranges globally.",
+      "category": "Market",
+      "author": "Maria Sanchez",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/market.png"
+    },
+    {
+      "slug": "altcoin-etf-capital-inflow-record",
+      "title": "The Second Wave: Institutional Capital Floods Ethereum and Solana ETFs",
+      "shortdescription": "Spot ETFs for altcoins receive regulatory approval, bringing trillions into the digital asset space.",
+      "category": "Market",
+      "author": "Maria Sanchez",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/market.png"
+    },
+    {
+      "slug": "midterm-elections-legislative-impact-2026",
+      "title": "The 2026 Midterm Shift: A Deep Dive into the Battle for the House",
+      "shortdescription": "As the midterm elections approach, political analysts are witnessing a seismic shift.",
+      "category": "Politics",
+      "author": "Jessica Wu",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/politics.png"
+    },
+    {
+      "slug": "satellite-internet-constellations-starlink",
+      "title": "Starlink Competition Heats Up: The Battle for Low-Earth Orbit",
+      "shortdescription": "New constellations from Europe and Asia provide high-speed internet to the remotest corners of Earth.",
+      "category": "Tech",
+      "author": "Sarah Jenkins",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/tech.png"
+    },
+    {
+      "slug": "hybrid-work-equilibrium-retention-model",
+      "title": "The End of the Debate: Companies Settle on the 3-2 Hybrid Model",
+      "shortdescription": "New data shows peak productivity and employee retention align with a flexible office schedule.",
+      "category": "Business",
+      "author": "Robert Miller",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/business.png"
+    },
+    {
+      "slug": "blockchain-integration-markets-settlement",
+      "title": "Instant Liquidity: Moving Markets to T+0 Settlement",
+      "shortdescription": "How blockchain integration is eliminating the two-day settlement window for equity trades.",
+      "category": "Market",
+      "author": "Maria Sanchez",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/market.png"
+    },
+    {
+      "slug": "taxing-the-multinationals-2026-policy",
+      "title": "Taxing the Giants: Global Minimum Tax Reaches 20%",
+      "shortdescription": "A historic milestone in international tax law as 140 countries implement the 20% floor.",
+      "category": "Politics",
+      "author": "James O'Connor",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/politics.png"
+    },
+    {
+      "slug": "green-bonds-debt-sustainable-infrastructure",
+      "title": "Green Bonds Reach $5 Trillion: The Mainstreaming of ESG Debt",
+      "shortdescription": "Institutional investors flee traditional energy debt for certified sustainable infrastructure bonds.",
+      "category": "Market",
+      "author": "Robert Miller",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/market.png"
+    },
+    {
+      "slug": "formula-e-electric-motorsport-innovations",
+      "title": "Silent Speed: Formula E Innovations Reshaping the Future of Electric Vehicles",
+      "shortdescription": "Racing innovations in battery thermal management translate directly to production consumer cars.",
+      "category": "Sports",
+      "author": "Robert Miller",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/sports.png"
+    },
+    {
+      "slug": "mergers-acquisitions-aerospace-consolidation",
+      "title": "Industrial Titans Merge: A New Era of Global Manufacturing Efficiency",
+      "shortdescription": "Consolidation in the aerospace and defense sectors signals a more competitive global landscape.",
+      "category": "Business",
+      "author": "Emily Rodriguez",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/business.png"
+    }
+  ]
 }

@@ -1,27 +1,32 @@
 [
-    {
-        "title": "Fractional Ownership: How Tokenization is Unlocking Real Estate Markets",
-        "category": "Market",
-        "slug": "real-estate-tokenization-fractional-shares"
-    },
-    {
-        "title": "Pensions Pivot: Increasing Exposure to Private Equity and Infrastructure",
-        "category": "Finance",
-        "slug": "pension-fund-private-equity-strategy"
-    },
-    {
-        "title": "The Next Silicon Valleys: Emerging Market Tech Ecosystems Explode",
-        "category": "Market",
-        "slug": "emerging-markets-tech-hubs-valuation"
-    },
-    {
-        "title": "The VIX in the Age of AI: Is Volatility Being Suppressed or Hidden?",
-        "category": "Market",
-        "slug": "volatility-index-ai-trading-psychology"
-    },
-    {
-        "title": "Quantum Stability: The Error Correction Breakthrough of 2026",
-        "category": "Tech",
-        "slug": "quantum-computing-error-correction-milestone"
-    }
+  {
+    "title": "Fractional Ownership: How Tokenization is Unlocking Real Estate Markets",
+    "category": "Market",
+    "slug": "real-estate-tokenization-fractional-shares",
+    "image": "/images/category-news/market.png"
+  },
+  {
+    "title": "Pensions Pivot: Increasing Exposure to Private Equity and Infrastructure",
+    "category": "Finance",
+    "slug": "pension-fund-private-equity-strategy",
+    "image": "/images/category-news/finance.png"
+  },
+  {
+    "title": "The Next Silicon Valleys: Emerging Market Tech Ecosystems Explode",
+    "category": "Market",
+    "slug": "emerging-markets-tech-hubs-valuation",
+    "image": "/images/category-news/market.png"
+  },
+  {
+    "title": "The VIX in the Age of AI: Is Volatility Being Suppressed or Hidden?",
+    "category": "Market",
+    "slug": "volatility-index-ai-trading-psychology",
+    "image": "/images/category-news/market.png"
+  },
+  {
+    "title": "Quantum Stability: The Error Correction Breakthrough of 2026",
+    "category": "Tech",
+    "slug": "quantum-computing-error-correction-milestone",
+    "image": "/images/category-news/tech.png"
+  }
 ]

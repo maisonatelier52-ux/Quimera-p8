@@ -1,80 +1,80 @@
 {
-    "title": "Business",
-    "id": "business",
-    "description": "Corporate strategy, hybrid work trends, venture capital, and industrial shifts.",
-    "count": 8,
-    "articles": [
-        {
-            "slug": "hybrid-work-equilibrium-retention-model",
-            "title": "The End of the Debate: Companies Settle on the 3-2 Hybrid Model",
-            "shortdescription": "New data shows peak productivity and employee retention align with a flexible office schedule.",
-            "category": "Business",
-            "author": "Robert Miller",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1666760052188?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "startup-exit-strategies-ipo-scrutiny",
-            "title": "The Exit Landscape: Why IPOs are Preferred Over Tech Consolidations",
-            "shortdescription": "Regulatory scrutiny on Big Tech acquisitions drives founders toward the public markets.",
-            "category": "Business",
-            "author": "Michael Chen",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1612464878181?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "reshoring-manufacturing-automated-smart-factories",
-            "title": "The Reshoring Wave: Manufacturing Returns to North America",
-            "shortdescription": "Highly automated smart factories allow companies to move production closer to consumers.",
-            "category": "Business",
-            "author": "Maria Sanchez",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1695306216079?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "scope-3-carbon-supply-chain-reporting",
-            "title": "Scope 3 Transparency: The New Standard for Corporate Climate Responsibility",
-            "shortdescription": "New legislation requires every public company to audit the carbon footprint of their entire supply chain.",
-            "category": "Business",
-            "author": "David Smith",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1659762156341?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "venture-capital-profitability-quality-seed",
-            "title": "VC Pivot: Quality Over Growth at Any Cost",
-            "shortdescription": "Venture funds are shifting focus back to early-stage profitability and sustainable unit economics.",
-            "category": "Business",
-            "author": "Maria Sanchez",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1659737085997?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "mergers-acquisitions-aerospace-consolidation",
-            "title": "Industrial Titans Merge: A New Era of Global Manufacturing Efficiency",
-            "shortdescription": "Consolidation in the aerospace and defense sectors signals a more competitive global landscape.",
-            "category": "Business",
-            "author": "Emily Rodriguez",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1638123613226?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "subscription-fatigue-monetization-models",
-            "title": "Subscription Fatigue: The Shift Back to Ownership and Pay-Per-Use",
-            "shortdescription": "Consumers are cutting back on monthly fees, forcing digital services to rethink their monetization.",
-            "category": "Business",
-            "author": "Alex Thorne",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1664561364885?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "chief-purpose-officer-corporate-culture",
-            "title": "The Chief Purpose Officer: Why Culture is the Ultimate Competitive Advantage",
-            "shortdescription": "Companies are investing heavily in employee mental health and long-term career fulfillment.",
-            "category": "Business",
-            "author": "David Smith",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1599487267941?q=80&w=1200&auto=format&fit=crop"
-        }
-    ]
+  "title": "Business",
+  "id": "business",
+  "description": "Corporate strategy, hybrid work trends, venture capital, and industrial shifts.",
+  "count": 8,
+  "articles": [
+    {
+      "slug": "hybrid-work-equilibrium-retention-model",
+      "title": "The End of the Debate: Companies Settle on the 3-2 Hybrid Model",
+      "shortdescription": "New data shows peak productivity and employee retention align with a flexible office schedule.",
+      "category": "Business",
+      "author": "Robert Miller",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/business.png"
+    },
+    {
+      "slug": "startup-exit-strategies-ipo-scrutiny",
+      "title": "The Exit Landscape: Why IPOs are Preferred Over Tech Consolidations",
+      "shortdescription": "Regulatory scrutiny on Big Tech acquisitions drives founders toward the public markets.",
+      "category": "Business",
+      "author": "Michael Chen",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/business.png"
+    },
+    {
+      "slug": "reshoring-manufacturing-automated-smart-factories",
+      "title": "The Reshoring Wave: Manufacturing Returns to North America",
+      "shortdescription": "Highly automated smart factories allow companies to move production closer to consumers.",
+      "category": "Business",
+      "author": "Maria Sanchez",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/business.png"
+    },
+    {
+      "slug": "scope-3-carbon-supply-chain-reporting",
+      "title": "Scope 3 Transparency: The New Standard for Corporate Climate Responsibility",
+      "shortdescription": "New legislation requires every public company to audit the carbon footprint of their entire supply chain.",
+      "category": "Business",
+      "author": "David Smith",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/business.png"
+    },
+    {
+      "slug": "venture-capital-profitability-quality-seed",
+      "title": "VC Pivot: Quality Over Growth at Any Cost",
+      "shortdescription": "Venture funds are shifting focus back to early-stage profitability and sustainable unit economics.",
+      "category": "Business",
+      "author": "Maria Sanchez",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/business.png"
+    },
+    {
+      "slug": "mergers-acquisitions-aerospace-consolidation",
+      "title": "Industrial Titans Merge: A New Era of Global Manufacturing Efficiency",
+      "shortdescription": "Consolidation in the aerospace and defense sectors signals a more competitive global landscape.",
+      "category": "Business",
+      "author": "Emily Rodriguez",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/business.png"
+    },
+    {
+      "slug": "subscription-fatigue-monetization-models",
+      "title": "Subscription Fatigue: The Shift Back to Ownership and Pay-Per-Use",
+      "shortdescription": "Consumers are cutting back on monthly fees, forcing digital services to rethink their monetization.",
+      "category": "Business",
+      "author": "Alex Thorne",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/business.png"
+    },
+    {
+      "slug": "chief-purpose-officer-corporate-culture",
+      "title": "The Chief Purpose Officer: Why Culture is the Ultimate Competitive Advantage",
+      "shortdescription": "Companies are investing heavily in employee mental health and long-term career fulfillment.",
+      "category": "Business",
+      "author": "David Smith",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/business.png"
+    }
+  ]
 }

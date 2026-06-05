@@ -15,14 +15,14 @@ interface FeatureMainCardProps {
 }
 
 export default function FeatureMainCard({ article }: FeatureMainCardProps) {
-    const fallbackImage = '/images/news/markets-1.webp';
+    const fallbackImage = 'https://picsum.photos/seed/news-fallback/800/500';
 
     return (
         <div className="flex flex-col gap-4 group mb-8 md:mb-8">
             {/* Image */}
             <Link
                 href={`/articles/${article.slug}`}
-                className="block relative overflow-hidden rounded-xl aspect-[16/10] bg-gray-100"
+                className="block relative overflow-hidden  aspect-[16/10] bg-gray-100"
             >
                 <img
                     src={article.image || fallbackImage}

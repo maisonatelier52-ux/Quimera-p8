@@ -1,40 +1,40 @@
 {
-    "stories": [
-        {
-            "slug": "banking-sector-branchless-mobile-future",
-            "title": "The Branchless Future: Legacy Banks Finally Close Physical Retail Gaps",
-            "shortdescription": "Traditional banking giants complete their shift to mobile-first operations, shuttering legacy branches.",
-            "category": "Finance",
-            "author": "Alex Thorne",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1601721137327?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "electoral-reforms-digital-voting-security",
-            "title": "Electoral Reforms: Can Digital Voting Ever Be Truly Secure?",
-            "shortdescription": "A deep dive into the blockchain-based voting systems being trialed in Northern Europe.",
-            "category": "Politics",
-            "author": "Jessica Wu",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1692596212040?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "inflation-hedging-strategies-tangible-assets",
-            "title": "Hedging for the 20s: Tangible Assets Overcome Monetary Inflation",
-            "shortdescription": "Investors look toward farmland, timber, and fine art to protect purchasing power.",
-            "category": "Finance",
-            "author": "David Smith",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1567190216178?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "micro-investing-fractional-revolution",
-            "title": "The Fractional Revolution: How $5 Can Buy a Piece of the S&P 500",
-            "shortdescription": "Micro-investing apps continue to grow, bringing a new generation into the equity markets.",
-            "category": "Finance",
-            "author": "James O'Connor",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1555470863933?q=80&w=1200&auto=format&fit=crop"
-        }
-    ]
+  "stories": [
+    {
+      "slug": "banking-sector-branchless-mobile-future",
+      "title": "The Branchless Future: Legacy Banks Finally Close Physical Retail Gaps",
+      "shortdescription": "Traditional banking giants complete their shift to mobile-first operations, shuttering legacy branches.",
+      "category": "Finance",
+      "author": "Alex Thorne",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/finance.png"
+    },
+    {
+      "slug": "electoral-reforms-digital-voting-security",
+      "title": "Electoral Reforms: Can Digital Voting Ever Be Truly Secure?",
+      "shortdescription": "A deep dive into the blockchain-based voting systems being trialed in Northern Europe.",
+      "category": "Politics",
+      "author": "Jessica Wu",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/politics.png"
+    },
+    {
+      "slug": "inflation-hedging-strategies-tangible-assets",
+      "title": "Hedging for the 20s: Tangible Assets Overcome Monetary Inflation",
+      "shortdescription": "Investors look toward farmland, timber, and fine art to protect purchasing power.",
+      "category": "Finance",
+      "author": "David Smith",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/finance.png"
+    },
+    {
+      "slug": "micro-investing-fractional-revolution",
+      "title": "The Fractional Revolution: How $5 Can Buy a Piece of the S&P 500",
+      "shortdescription": "Micro-investing apps continue to grow, bringing a new generation into the equity markets.",
+      "category": "Finance",
+      "author": "James O'Connor",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/finance.png"
+    }
+  ]
 }

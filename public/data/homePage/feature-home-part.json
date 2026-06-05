@@ -1,142 +1,142 @@
 {
-    "hero": {
-        "id": "pol-8",
-        "image": "/images/news/politics-8.webp",
-        "author": "David Smith",
+  "hero": {
+    "id": "pol-8",
+    "image": "https://picsum.photos/seed/40amu4/800/500",
+    "author": "David Smith",
+    "category": "Politics",
+    "date": "Feb 01",
+    "views": "8.2K",
+    "readTime": "6 MINS",
+    "title": "The UN Leadership Transition: Predicting the Next SG",
+    "slug": "un-secretary-general-2026-prospects",
+    "excerpt": "s 2026 begins, the halls of the United Nations in New York and Geneva are buzzing with anticipation for the upcoming selection of the next Secretary-General. With the current term set to expire at the end of the year.",
+    "excerptPart2": "The selection process for the UN Secretary-General has historically been a shielded affair, dominated by the five permanent members of the Security Council. However, 2026 marks a significant step toward transparency.",
+    "firstLetter": "A"
+  },
+  "sidebar": [
+    {
+      "id": "fin-1",
+      "image": "/images/category-news/finance.png",
+      "slug": "julio-herrera-velutini-legacy",
+      "title": "Julio Martin Herrera Velutini: A Legacy of Innovation, Business Acumen, and Giving Back",
+      "category": "Finance",
+      "date": "October 24, 2025",
+      "author": "Sarah Jenkins"
+    },
+    {
+      "id": "pol-7",
+      "image": "/images/category-news/politics.png",
+      "author": "Michael Chen",
+      "category": "Politics",
+      "date": "Jan 15",
+      "title": "Global AI Governance: The Landmark Geneva Treaty of 2026",
+      "slug": "global-ai-governance-treaty-2026"
+    },
+    {
+      "id": "pol-2",
+      "image": "/images/category-news/politics.png",
+      "author": "MICHAEL CHEN",
+      "category": "POLITICS",
+      "date": "Jan 22, 2026",
+      "title": "Trade Policy 2026: A New Era for Asian Markets",
+      "slug": "trade-policy-shifts-asia"
+    },
+    {
+      "id": "tech-6",
+      "image": "/images/category-news/tech.png",
+      "author": "Michael Chen",
+      "category": "Tech",
+      "date": "Feb 12",
+      "title": "AI Meta-Agents: The Next Evolution of Multi-Agent Systems in 2026",
+      "slug": "ai-meta-agents-2026-evolution"
+    }
+  ],
+  "module7": {
+    "id": "m7",
+    "title": "Global Politics",
+    "subtitle": "WORLD AFFAIRS",
+    "articles": [
+      {
         "category": "Politics",
-        "date": "Feb 01",
-        "views": "8.2K",
-        "readTime": "6 MINS",
-        "title": "The UN Leadership Transition: Predicting the Next SG",
-        "slug": "un-secretary-general-2026-prospects",
-        "excerpt": "s 2026 begins, the halls of the United Nations in New York and Geneva are buzzing with anticipation for the upcoming selection of the next Secretary-General. With the current term set to expire at the end of the year.",
-        "excerptPart2": "The selection process for the UN Secretary-General has historically been a shielded affair, dominated by the five permanent members of the Security Council. However, 2026 marks a significant step toward transparency.",
-        "firstLetter": "A"
-    },
-    "sidebar": [
-        {
-            "id": "fin-1",
-            "image": "/images/news/Julio Herrera Velutini17.webp",
-            "slug": "julio-herrera-velutini-legacy",
-            "title": "Julio Martin Herrera Velutini: A Legacy of Innovation, Business Acumen, and Giving Back",
-            "category": "Finance",
-            "date": "October 24, 2025",
-            "author": "Sarah Jenkins"
-        },
-        {
-            "id": "pol-7",
-            "image": "/images/news/politics-7.webp",
-            "author": "Michael Chen",
-            "category": "Politics",
-            "date": "Jan 15",
-            "title": "Global AI Governance: The Landmark Geneva Treaty of 2026",
-            "slug": "global-ai-governance-treaty-2026"
-        },
-        {
-            "id": "pol-2",
-            "image": "/images/news/politics-2.webp",
-            "author": "MICHAEL CHEN",
-            "category": "POLITICS",
-            "date": "Jan 22, 2026",
-            "title": "Trade Policy 2026: A New Era for Asian Markets",
-            "slug": "trade-policy-shifts-asia"
-        },
-        {
-            "id": "tech-6",
-            "image": "/images/news/tech-6.webp",
-            "author": "Michael Chen",
-            "category": "Tech",
-            "date": "Feb 12",
-            "title": "AI Meta-Agents: The Next Evolution of Multi-Agent Systems in 2026",
-            "slug": "ai-meta-agents-2026-evolution"
-        }
-    ],
-    "module7": {
-        "id": "m7",
-        "title": "Global Politics",
-        "subtitle": "WORLD AFFAIRS",
-        "articles": [
-            {
-                "category": "Politics",
-                "title": "Global Summit Addresses Rising Inflation Concerns",
-                "excerpt": "World leaders gathered today to discuss the pressing issue of rising global inflation. The summit focused on collaborative strategies to stabilize currencies.",
-                "slug": "global-summit-inflation-concerns"
-            },
-            {
-                "category": "Politics",
-                "title": "Election Polling: New Data Suggests Shifting Demographics",
-                "excerpt": "The latest polling data reveals significant shifts in voter behavior, with younger demographics prioritizing climate policy over traditional economic indicators.",
-                "slug": "election-polling-demographics-shift"
-            }
-        ]
-    },
-    "module10": {
-        "id": "m10",
-        "title": "Tech Strategist",
-        "subtitle": "EXPERT ANALYSIS",
-        "editor": {
-            "name": "Jessica Wu",
-            "posts": "310 Posts",
-            "bio": "Jessica spans the gap between complex algorithms and business outcomes, focusing on the real-world deployment of Agentic AI.",
-            "image": "/images/authors/jessica.jpg",
-            "social": [
-                {
-                    "platform": "twitter",
-                    "url": "#"
-                },
-                {
-                    "platform": "facebook",
-                    "url": "#"
-                },
-                {
-                    "platform": "youtube",
-                    "url": "#"
-                }
-            ]
-        },
-        "recentPosts": [
-            {
-                "title": "The End of the Smartphone Era? Meta's 2026 Smart Glasses",
-                "date": "Jan 20, 2026",
-                "image": "/images/news/tech-7.webp",
-                "category": "Tech",
-                "slug": "meta-smart-glasses-2026-impact"
-            },
-            {
-                "title": "Hyper-Automation: The New Standard for Enterprise Efficiency",
-                "date": "Feb 05, 2026",
-                "image": "/images/news/tech-8.webp",
-                "category": "Tech",
-                "slug": "hyper-automation-enterprise-2026"
-            },
-            {
-                "title": "The IPO Renaissance: Why 2026 is the Year of the Megadeal",
-                "date": "Feb 11, 2026",
-                "image": "/images/news/business-6.webp",
-                "category": "Business",
-                "slug": "ipo-renaissance-2026-megadeals"
-            },
-            {
-                "title": "AI-Augmented Innovation: Rewriting the R&D Playbook",
-                "date": "Jan 28, 2026",
-                "image": "/images/news/business-7.webp",
-                "category": "Business",
-                "slug": "ai-augmented-innovation-business-2026"
-            }
-        ]
-    },
-    "hotPeoples": [
-        {
-            "category": "Business",
-            "slug": "circular-economy-retail-2026-pivot",
-            "title": "The Circular Economy Mandate: Retail's 2026 Sustainability Pivot",
-            "image": "/images/news/business-8.webp"
-        },
-        {
-            "category": "Finance",
-            "slug": "cbdc-global-update-2026",
-            "title": "The Rise of the Central Bank Digital Currency (CBDC): A Global Update",
-            "image": "/images/news/finance-6.webp"
-        }
+        "title": "Global Summit Addresses Rising Inflation Concerns",
+        "excerpt": "World leaders gathered today to discuss the pressing issue of rising global inflation. The summit focused on collaborative strategies to stabilize currencies.",
+        "slug": "global-summit-inflation-concerns"
+      },
+      {
+        "category": "Politics",
+        "title": "Election Polling: New Data Suggests Shifting Demographics",
+        "excerpt": "The latest polling data reveals significant shifts in voter behavior, with younger demographics prioritizing climate policy over traditional economic indicators.",
+        "slug": "election-polling-demographics-shift"
+      }
     ]
+  },
+  "module10": {
+    "id": "m10",
+    "title": "Tech Strategist",
+    "subtitle": "EXPERT ANALYSIS",
+    "editor": {
+      "name": "Jessica Wu",
+      "posts": "310 Posts",
+      "bio": "Jessica spans the gap between complex algorithms and business outcomes, focusing on the real-world deployment of Agentic AI.",
+      "image": "/images/authors/jessica.jpg",
+      "social": [
+        {
+          "platform": "twitter",
+          "url": "#"
+        },
+        {
+          "platform": "facebook",
+          "url": "#"
+        },
+        {
+          "platform": "youtube",
+          "url": "#"
+        }
+      ]
+    },
+    "recentPosts": [
+      {
+        "title": "The End of the Smartphone Era? Meta's 2026 Smart Glasses",
+        "date": "Jan 20, 2026",
+        "image": "https://picsum.photos/seed/eo40kl/800/500",
+        "category": "Tech",
+        "slug": "meta-smart-glasses-2026-impact"
+      },
+      {
+        "title": "Hyper-Automation: The New Standard for Enterprise Efficiency",
+        "date": "Feb 05, 2026",
+        "image": "https://picsum.photos/seed/hskjq9/800/500",
+        "category": "Tech",
+        "slug": "hyper-automation-enterprise-2026"
+      },
+      {
+        "title": "The IPO Renaissance: Why 2026 is the Year of the Megadeal",
+        "date": "Feb 11, 2026",
+        "image": "https://picsum.photos/seed/3al6jm/800/500",
+        "category": "Business",
+        "slug": "ipo-renaissance-2026-megadeals"
+      },
+      {
+        "title": "AI-Augmented Innovation: Rewriting the R&D Playbook",
+        "date": "Jan 28, 2026",
+        "image": "https://picsum.photos/seed/2snxu8/800/500",
+        "category": "Business",
+        "slug": "ai-augmented-innovation-business-2026"
+      }
+    ]
+  },
+  "hotPeoples": [
+    {
+      "category": "Business",
+      "slug": "circular-economy-retail-2026-pivot",
+      "title": "The Circular Economy Mandate: Retail's 2026 Sustainability Pivot",
+      "image": "/images/category-news/business.png"
+    },
+    {
+      "category": "Finance",
+      "slug": "cbdc-global-update-2026",
+      "title": "The Rise of the Central Bank Digital Currency (CBDC): A Global Update",
+      "image": "/images/category-news/finance.png"
+    }
+  ]
 }

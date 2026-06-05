@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react'; // Re-scan trigger
+import React, { useState, useEffect } from 'react'; // Re-scan trigger
 import {
     Search,
     TrendingUp,
@@ -17,12 +17,18 @@ import { usePathname } from 'next/navigation';
 
 export default function Header() {
     const pathname = usePathname();
+    const [currentDate, setCurrentDate] = useState('');
+
+    useEffect(() => {
+        const dateOptions: Intl.DateTimeFormatOptions = { weekday: 'long', day: 'numeric', month: 'short', year: 'numeric' };
+        setCurrentDate(new Date().toLocaleDateString('en-GB', dateOptions));
+    }, []);
 
     const isActive = (path: string) => pathname === path;
     const isPagesActive = ['/about-us', '/authors', '/privacy-policy', '/terms-and-conditions'].includes(pathname);
 
     return (
-        <header className="flex flex-col w-full font-serif">
+        <header className="flex flex-col w-full font-serif sticky top-[-80px] z-50">
             {/* Top Bar - Deep Blue */}
             <div className="bg-[#00008B] text-white">
                 <div className="max-w-[1330px] mx-auto px-4 h-20 flex items-center justify-between">
@@ -44,7 +50,7 @@ export default function Header() {
                             </Link>
                             {/* Date */}
                             <div className="text-[10px] text-gray-300 mt-1 font-medium tracking-wide">
-                                Monday, 23 Feb 2026
+                                {currentDate}
                             </div>
                         </div>
 

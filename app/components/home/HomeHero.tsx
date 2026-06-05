@@ -25,7 +25,7 @@ export default function HomeHero() {
                         <FeatureMainCard article={featuredArticle} />
 
                         {/* Divider */}
-                        <div className="w-60 h-1 bg-[#09365E] mb-8"></div>
+                        
 
                         <div className="flex flex-col gap-4">
                             {bottomArticles.map((article, idx) => (

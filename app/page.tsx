@@ -35,10 +35,10 @@ export default function Home() {
       <div className="flex-grow">
         {/* New 3-Column Hero Section */}
         <HomeHero />
+        <JustIn />
         <FeaturedStories />
         <NewsStrip />
         <QuickLinks />
-        <JustIn />
         <BusinessSection />
         <AdvertisementSection />
         <WhatToRead />

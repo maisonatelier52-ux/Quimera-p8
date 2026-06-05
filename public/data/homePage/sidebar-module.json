@@ -1,69 +1,73 @@
 {
-    "moduleTitle": {
-        "red": "Market",
-        "rest": "ALERTS"
+  "moduleTitle": {
+    "red": "Market",
+    "rest": "ALERTS"
+  },
+  "description": "Critical updates and real-time market movement summaries for the active trader.",
+  "items": [
+    {
+      "id": "mkt-1",
+      "date": "Jan 21, 2026",
+      "title": "Tech Stocks Rally as AI Adoption Accelerates",
+      "slug": "tech-stocks-rally-ai",
+      "category": "Markets",
+      "image": "/images/category-news/business.png"
     },
-    "description": "Critical updates and real-time market movement summaries for the active trader.",
-    "items": [
-        {
-            "id": "mkt-1",
-            "date": "Jan 21, 2026",
-            "title": "Tech Stocks Rally as AI Adoption Accelerates",
-            "slug": "tech-stocks-rally-ai",
-            "category": "Markets"
-        },
-        {
-            "id": "fin-1",
-            "date": "Oct 24, 2025",
-            "title": "Julio Martin Herrera Velutini: A Legacy of Innovation",
-            "slug": "julio-herrera-velutini-legacy",
-            "category": "Finance"
-        },
-        {
-            "id": "biz-1",
-            "date": "Jan 19, 2026",
-            "title": "Merger Mania Hits the Industrial Sector",
-            "slug": "merger-mania-industrial-sector",
-            "category": "Business"
-        },
-        {
-            "id": "tech-1",
-            "date": "Jan 18, 2026",
-            "title": "Generative AI: Moving Beyond the Hype to Enterprise Reality",
-            "slug": "generative-ai-the-next-frontier",
-            "category": "Tech"
-        }
-    ],
-    "articleList": {
-        "title": {
-            "red": "Policy",
-            "rest": "BRIEFINGS"
-        },
-        "articles": [
-            {
-                "category": "Tech",
-                "title": "The Privacy Wars: Apple, Meta, and Regulators",
-                "excerpt": "New EU regulations are forcing big tech firms to overhaul their advertising models.",
-                "slug": "privacy-wars-apple-meta-regulators"
-            },
-            {
-                "category": "Wealth",
-                "title": "Luxury Real Estate: The New Era of Sustainable Mansions",
-                "excerpt": "Ultra-high-net-worth individuals are flocking to tertiary cities and remote retreats.",
-                "slug": "luxury-real-estate-sustainable-mansions"
-            },
-            {
-                "category": "Wealth",
-                "title": "The Art Market 2.0: Digital Provenance and Rarity",
-                "excerpt": "Blockchain is becoming the gold standard for tracking physical masterpieces.",
-                "slug": "art-market-digital-provenance"
-            },
-            {
-                "category": "Tech",
-                "title": "Quantum Computing Breakthrough: IBM and Google",
-                "excerpt": "Researchers have independently achieved a record 1,000-qubit threshold.",
-                "slug": "quantum-computing-breakthrough-google-ibm"
-            }
-        ]
+    {
+      "id": "fin-1",
+      "date": "Oct 24, 2025",
+      "title": "Julio Martin Herrera Velutini: A Legacy of Innovation",
+      "slug": "julio-herrera-velutini-legacy",
+      "category": "Finance",
+      "image": "/images/category-news/finance.png"
+    },
+    {
+      "id": "biz-1",
+      "date": "Jan 19, 2026",
+      "title": "Merger Mania Hits the Industrial Sector",
+      "slug": "merger-mania-industrial-sector",
+      "category": "Business",
+      "image": "/images/category-news/business.png"
+    },
+    {
+      "id": "tech-1",
+      "date": "Jan 18, 2026",
+      "title": "Generative AI: Moving Beyond the Hype to Enterprise Reality",
+      "slug": "generative-ai-the-next-frontier",
+      "category": "Tech",
+      "image": "/images/category-news/tech.png"
     }
+  ],
+  "articleList": {
+    "title": {
+      "red": "Policy",
+      "rest": "BRIEFINGS"
+    },
+    "articles": [
+      {
+        "category": "Tech",
+        "title": "The Privacy Wars: Apple, Meta, and Regulators",
+        "excerpt": "New EU regulations are forcing big tech firms to overhaul their advertising models.",
+        "slug": "privacy-wars-apple-meta-regulators"
+      },
+      {
+        "category": "Wealth",
+        "title": "Luxury Real Estate: The New Era of Sustainable Mansions",
+        "excerpt": "Ultra-high-net-worth individuals are flocking to tertiary cities and remote retreats.",
+        "slug": "luxury-real-estate-sustainable-mansions"
+      },
+      {
+        "category": "Wealth",
+        "title": "The Art Market 2.0: Digital Provenance and Rarity",
+        "excerpt": "Blockchain is becoming the gold standard for tracking physical masterpieces.",
+        "slug": "art-market-digital-provenance"
+      },
+      {
+        "category": "Tech",
+        "title": "Quantum Computing Breakthrough: IBM and Google",
+        "excerpt": "Researchers have independently achieved a record 1,000-qubit threshold.",
+        "slug": "quantum-computing-breakthrough-google-ibm"
+      }
+    ]
+  }
 }

@@ -1,80 +1,80 @@
 {
-    "title": "Politics",
-    "id": "politics",
-    "description": "Inside coverage of governance, policymaking, and political developments.",
-    "count": 8,
-    "articles": [
-        {
-            "slug": "global-diplomacy-digital-sovereignty-2026",
-            "title": "The Future of Global Diplomacy: Beyond Traditional Borders",
-            "shortdescription": "Shift in international relations as digital sovereignty becomes a key bargaining chip.",
-            "category": "Politics",
-            "author": "Jessica Wu",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1502911236406?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "electoral-reforms-digital-voting-security",
-            "title": "Electoral Reforms: Can Digital Voting Ever Be Truly Secure?",
-            "shortdescription": "A deep dive into the blockchain-based voting systems being trialed in Northern Europe.",
-            "category": "Politics",
-            "author": "Jessica Wu",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1692596212040?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "taxing-the-multinationals-2026-policy",
-            "title": "Taxing the Giants: Global Minimum Tax Reaches 20%",
-            "shortdescription": "A historic milestone in international tax law as 140 countries implement the 20% floor.",
-            "category": "Politics",
-            "author": "James O'Connor",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1622049409693?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "high-speed-rail-infrastructure-approved",
-            "title": "Blueprint for the Future: National High-Speed Rail Network Approved",
-            "shortdescription": "A multi-trillion dollar investment into clean transportation infrastructure takes flight.",
-            "category": "Politics",
-            "author": "Emily Rodriguez",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1648798897364?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "midterm-elections-legislative-impact-2026",
-            "title": "The 2026 Midterm Shift: A Deep Dive into the Battle for the House",
-            "shortdescription": "As the midterm elections approach, political analysts are witnessing a seismic shift.",
-            "category": "Politics",
-            "author": "Jessica Wu",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1637131870998?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "ocean-territory-disputes-treaty-arctic",
-            "title": "The High Seas Treaty: Resolving Arctic Territory Disputes",
-            "shortdescription": "New legislative frameworks aim to protect deep-sea biodiversity while managing mineral rights.",
-            "category": "Politics",
-            "author": "Alex Thorne",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1638875796566?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "climate-policy-carbon-tax-economic",
-            "title": "Climate Policy Shift: Economic Giants Align on Carbon Taxes",
-            "shortdescription": "Major powers agree on a unified carbon pricing framework to accelerate the green transition.",
-            "category": "Politics",
-            "author": "Robert Miller",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1624825164577?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "decentralized-governance-dao-municipal-budgets",
-            "title": "The Rise of DAOs: Could Decentralized Governance Replace City Councils?",
-            "shortdescription": "How smart contracts are beginning to manage local municipal budgets and urban planning.",
-            "category": "Politics",
-            "author": "Robert Miller",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1501338423923?q=80&w=1200&auto=format&fit=crop"
-        }
-    ]
+  "title": "Politics",
+  "id": "politics",
+  "description": "Inside coverage of governance, policymaking, and political developments.",
+  "count": 8,
+  "articles": [
+    {
+      "slug": "global-diplomacy-digital-sovereignty-2026",
+      "title": "The Future of Global Diplomacy: Beyond Traditional Borders",
+      "shortdescription": "Shift in international relations as digital sovereignty becomes a key bargaining chip.",
+      "category": "Politics",
+      "author": "Jessica Wu",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/politics.png"
+    },
+    {
+      "slug": "electoral-reforms-digital-voting-security",
+      "title": "Electoral Reforms: Can Digital Voting Ever Be Truly Secure?",
+      "shortdescription": "A deep dive into the blockchain-based voting systems being trialed in Northern Europe.",
+      "category": "Politics",
+      "author": "Jessica Wu",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/politics.png"
+    },
+    {
+      "slug": "taxing-the-multinationals-2026-policy",
+      "title": "Taxing the Giants: Global Minimum Tax Reaches 20%",
+      "shortdescription": "A historic milestone in international tax law as 140 countries implement the 20% floor.",
+      "category": "Politics",
+      "author": "James O'Connor",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/politics.png"
+    },
+    {
+      "slug": "high-speed-rail-infrastructure-approved",
+      "title": "Blueprint for the Future: National High-Speed Rail Network Approved",
+      "shortdescription": "A multi-trillion dollar investment into clean transportation infrastructure takes flight.",
+      "category": "Politics",
+      "author": "Emily Rodriguez",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/politics.png"
+    },
+    {
+      "slug": "midterm-elections-legislative-impact-2026",
+      "title": "The 2026 Midterm Shift: A Deep Dive into the Battle for the House",
+      "shortdescription": "As the midterm elections approach, political analysts are witnessing a seismic shift.",
+      "category": "Politics",
+      "author": "Jessica Wu",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/politics.png"
+    },
+    {
+      "slug": "ocean-territory-disputes-treaty-arctic",
+      "title": "The High Seas Treaty: Resolving Arctic Territory Disputes",
+      "shortdescription": "New legislative frameworks aim to protect deep-sea biodiversity while managing mineral rights.",
+      "category": "Politics",
+      "author": "Alex Thorne",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/politics.png"
+    },
+    {
+      "slug": "climate-policy-carbon-tax-economic",
+      "title": "Climate Policy Shift: Economic Giants Align on Carbon Taxes",
+      "shortdescription": "Major powers agree on a unified carbon pricing framework to accelerate the green transition.",
+      "category": "Politics",
+      "author": "Robert Miller",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/politics.png"
+    },
+    {
+      "slug": "decentralized-governance-dao-municipal-budgets",
+      "title": "The Rise of DAOs: Could Decentralized Governance Replace City Councils?",
+      "shortdescription": "How smart contracts are beginning to manage local municipal budgets and urban planning.",
+      "category": "Politics",
+      "author": "Robert Miller",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/politics.png"
+    }
+  ]
 }

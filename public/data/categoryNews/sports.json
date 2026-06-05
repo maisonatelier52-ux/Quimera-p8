@@ -1,80 +1,80 @@
 {
-    "title": "Sports",
-    "id": "sports",
-    "description": "Elite athletics, sports technology, industry trends, and global competitions.",
-    "count": 8,
-    "articles": [
-        {
-            "slug": "ai-coaching-analytics-performance-tracking",
-            "title": "The AI Coach: How Real-Time Predictive Analytics is Revolutionizing Team Sports",
-            "shortdescription": "Elite teams leverage continuous biometrics and AI projections to make in-game coaching adjustments.",
-            "category": "Sports",
-            "author": "Sarah Jenkins",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1536132803328?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "esports-olympics-inaugural-games-2026",
-            "title": "The Virtual Arena: Inaugural Olympic Esports Games Set to Begin in 2026",
-            "shortdescription": "Competitive gaming gains ultimate recognition as the IOC prepares for the first virtual Olympic events.",
-            "category": "Sports",
-            "author": "Michael Chen",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1636716310414?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "stadium-tech-smart-venues-fan-experience",
-            "title": "The Connected Stadium: Smart Venues Redefining the Live Fan Experience",
-            "shortdescription": "From holographic replays to autonomous concession delivery, stadiums undergo a digital revolution.",
-            "category": "Sports",
-            "author": "Robert Miller",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1677036021119?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "athlete-longevity-advanced-biomedical-recovery",
-            "title": "Extending the Peak: How Biomedical Recovery is Keeping Athletes Active Longer",
-            "shortdescription": "Hyperbaric chambers, targeted gene therapy, and stem-cell recovery extend elite athletic careers.",
-            "category": "Sports",
-            "author": "James O'Connor",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1689533926551?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "formula-e-electric-motorsport-innovations",
-            "title": "Silent Speed: Formula E Innovations Reshaping the Future of Electric Vehicles",
-            "shortdescription": "Racing innovations in battery thermal management translate directly to production consumer cars.",
-            "category": "Sports",
-            "author": "Robert Miller",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1610376134807?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "women-sports-broadcasting-revenue-records",
-            "title": "The Broadcast Boom: Women's Professional Sports Hit Historic Revenue Milestones",
-            "shortdescription": "Surging viewership drives record-breaking media rights deals and stadium sellouts globally.",
-            "category": "Sports",
-            "author": "Alex Thorne",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1516424241162?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "wearable-sensors-concussion-prevention-safety",
-            "title": "Smart Armor: Sensor-Equipped Gear Leads the Charge in Athlete Concussion Prevention",
-            "shortdescription": "New impact-sensing helmets and mouthguards transmit real-time telemetry to medical staff on the sidelines.",
-            "category": "Sports",
-            "author": "Alex Thorne",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1597666137110?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "sustainability-green-stadiums-net-zero-venues",
-            "title": "Green Venues: The Push for Net-Zero Energy in Professional Sports Stadiums",
-            "shortdescription": "How stadiums are integrating solar arrays, water recycling, and zero-waste policies into matchday operations.",
-            "category": "Sports",
-            "author": "James O'Connor",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1626565689776?q=80&w=1200&auto=format&fit=crop"
-        }
-    ]
+  "title": "Sports",
+  "id": "sports",
+  "description": "Elite athletics, sports technology, industry trends, and global competitions.",
+  "count": 8,
+  "articles": [
+    {
+      "slug": "ai-coaching-analytics-performance-tracking",
+      "title": "The AI Coach: How Real-Time Predictive Analytics is Revolutionizing Team Sports",
+      "shortdescription": "Elite teams leverage continuous biometrics and AI projections to make in-game coaching adjustments.",
+      "category": "Sports",
+      "author": "Sarah Jenkins",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/sports.png"
+    },
+    {
+      "slug": "esports-olympics-inaugural-games-2026",
+      "title": "The Virtual Arena: Inaugural Olympic Esports Games Set to Begin in 2026",
+      "shortdescription": "Competitive gaming gains ultimate recognition as the IOC prepares for the first virtual Olympic events.",
+      "category": "Sports",
+      "author": "Michael Chen",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/sports.png"
+    },
+    {
+      "slug": "stadium-tech-smart-venues-fan-experience",
+      "title": "The Connected Stadium: Smart Venues Redefining the Live Fan Experience",
+      "shortdescription": "From holographic replays to autonomous concession delivery, stadiums undergo a digital revolution.",
+      "category": "Sports",
+      "author": "Robert Miller",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/sports.png"
+    },
+    {
+      "slug": "athlete-longevity-advanced-biomedical-recovery",
+      "title": "Extending the Peak: How Biomedical Recovery is Keeping Athletes Active Longer",
+      "shortdescription": "Hyperbaric chambers, targeted gene therapy, and stem-cell recovery extend elite athletic careers.",
+      "category": "Sports",
+      "author": "James O'Connor",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/sports.png"
+    },
+    {
+      "slug": "formula-e-electric-motorsport-innovations",
+      "title": "Silent Speed: Formula E Innovations Reshaping the Future of Electric Vehicles",
+      "shortdescription": "Racing innovations in battery thermal management translate directly to production consumer cars.",
+      "category": "Sports",
+      "author": "Robert Miller",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/sports.png"
+    },
+    {
+      "slug": "women-sports-broadcasting-revenue-records",
+      "title": "The Broadcast Boom: Women's Professional Sports Hit Historic Revenue Milestones",
+      "shortdescription": "Surging viewership drives record-breaking media rights deals and stadium sellouts globally.",
+      "category": "Sports",
+      "author": "Alex Thorne",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/sports.png"
+    },
+    {
+      "slug": "wearable-sensors-concussion-prevention-safety",
+      "title": "Smart Armor: Sensor-Equipped Gear Leads the Charge in Athlete Concussion Prevention",
+      "shortdescription": "New impact-sensing helmets and mouthguards transmit real-time telemetry to medical staff on the sidelines.",
+      "category": "Sports",
+      "author": "Alex Thorne",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/sports.png"
+    },
+    {
+      "slug": "sustainability-green-stadiums-net-zero-venues",
+      "title": "Green Venues: The Push for Net-Zero Energy in Professional Sports Stadiums",
+      "shortdescription": "How stadiums are integrating solar arrays, water recycling, and zero-waste policies into matchday operations.",
+      "category": "Sports",
+      "author": "James O'Connor",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/sports.png"
+    }
+  ]
 }

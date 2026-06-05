@@ -25,7 +25,7 @@ export default function HeroSection({ mainArticle, sideArticles }: HeroSectionPr
                 <div className="lg:col-span-8 group">
                     <Link href={`/articles/${mainArticle.slug}`} className="block relative aspect-[16/9] overflow-hidden rounded-none bg-gray-100">
                         <img
-                            src={mainArticle.image || '/images/news/markets-1.webp'}
+                            src={mainArticle.image || 'https://picsum.photos/seed/news-fallback/800/500'}
                             alt={mainArticle.title}
                             className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                         />
@@ -68,7 +68,7 @@ export default function HeroSection({ mainArticle, sideArticles }: HeroSectionPr
                                 </div>
                                 <div className="relative w-24 h-24 overflow-hidden rounded-none bg-gray-100 flex-shrink-0">
                                     <img
-                                        src={article.image || '/images/news/markets-1.webp'}
+                                        src={article.image || 'https://picsum.photos/seed/news-fallback/800/500'}
                                         alt={article.title}
                                         className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                     />

@@ -6,7 +6,7 @@
     "columns": [
         {
             "type": "image",
-            "image": "/images/news/tech-5.1.jpg"
+            "image": "https://picsum.photos/seed/5qoe8j/800/500"
         },
         {
             "type": "articles",

@@ -8,7 +8,7 @@
         "date": "Jan 09, 2026",
         "contentLeft": "The focus was on long-term stability and de-escalation in key contested regions.",
         "contentRight": "A joint statement released early Sunday morning highlighted several areas of mutual agreement.\n\nMarkets have reacted positively to the news of the breakthrough.",
-        "image": "/images/news/politics-1.webp",
+        "image": "https://picsum.photos/seed/75x3pj/800/500",
         "slug": "diplomatic-tensions-ease"
     },
     "sportNews": {
@@ -77,21 +77,21 @@
             {
                 "category": "Wealth",
                 "title": "Bio-Hacking and Longevity: The Ultimate Investment",
-                "image": "/images/news/wealth-5.webp",
+                "image": "https://picsum.photos/seed/gw86n9/800/500",
                 "excerpt": "Billionaires are funnelling record sums into biogerontology, hoping to turn back the clock with personalized therapies.",
                 "slug": "bio-hacking-longevity-ultimate-investment"
             },
             {
                 "category": "Finance",
                 "title": "Maximizing Returns in a High-Yield Environment",
-                "image": "/images/news/finance-2.webp",
+                "image": "https://picsum.photos/seed/l7w6rz/800/500",
                 "excerpt": "With benchmark rates sitting at decade highs, we explore the best strategies for retail investors.",
                 "slug": "personal-finance-high-yield-savings"
             },
             {
                 "category": "Markets",
                 "title": "Bond Yields Invert Signaling Recession Risk",
-                "image": "/images/news/markets-3.webp",
+                "image": "https://picsum.photos/seed/o09mz7/800/500",
                 "excerpt": "The spread between the 2-year and 10-year Treasury yields has reached its deepest level in four decades.",
                 "slug": "bond-yields-invert-recession"
             }
@@ -107,22 +107,22 @@
             {
                 "slug": "family-office-trends-2026",
                 "title": "Family Office 2.0: Managing Legacy in a Turbulent Century",
-                "image": "/images/news/wealth-3.webp"
+                "image": "https://picsum.photos/seed/qqppq8/800/500"
             },
             {
                 "slug": "luxury-yachting-sustainable-shifts",
                 "title": "The Rise of the Zero-Emission Superyacht",
-                "image": "/images/news/wealth-4.webp"
+                "image": "https://picsum.photos/seed/fols71/800/500"
             },
             {
                 "slug": "longevity-science-ultimate-investment",
                 "title": "Longevity Science: The Ultimate Wealth Investment",
-                "image": "/images/news/wealth-5.webp"
+                "image": "https://picsum.photos/seed/hg79so/800/500"
             },
             {
                 "slug": "startup-funding-winter-thaws",
                 "title": "Is the Startup Funding Winter Finally Thawing?",
-                "image": "/images/news/business-2.webp"
+                "image": "https://picsum.photos/seed/fmvqoe/800/500"
             }
         ]
     },
@@ -135,13 +135,13 @@
             {
                 "category": "Business",
                 "title": "The Great Remote Work Productivity Debate Intensifies",
-                "image": "/images/news/business-3.webp",
+                "image": "https://picsum.photos/seed/77mcpx/800/500",
                 "slug": "remote-work-productivity-debate"
             },
             {
                 "category": "Business",
                 "title": "Retail Giants Pivot to Advanced Omnichannel Strategies",
-                "image": "/images/news/business-4.webp",
+                "image": "https://picsum.photos/seed/hwggnd/800/500",
                 "slug": "retail-giants-omnichannel-strategy"
             },
             {

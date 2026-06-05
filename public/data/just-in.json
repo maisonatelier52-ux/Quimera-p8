@@ -1,40 +1,40 @@
 {
-    "mainArticle": {
-        "slug": "edge-computing-smart-grid-optimization",
-        "title": "Thinking Power: How AI is Optimizing National Energy Grids",
-        "shortdescription": "Real-time processing at the edge allows for a more responsive and efficient electrical grid.",
-        "category": "Tech",
-        "author": "David Smith",
-        "date": "February 23, 2026",
-        "image": "https://images.unsplash.com/photo-1533491259803?q=80&w=1200&auto=format&fit=crop"
+  "mainArticle": {
+    "slug": "edge-computing-smart-grid-optimization",
+    "title": "Thinking Power: How AI is Optimizing National Energy Grids",
+    "shortdescription": "Real-time processing at the edge allows for a more responsive and efficient electrical grid.",
+    "category": "Tech",
+    "author": "David Smith",
+    "date": "February 23, 2026",
+      "image": "/images/category-news/tech.png"
+  },
+  "bottomArticles": [
+    {
+      "slug": "generative-video-hollywood-production-ai",
+      "title": "Generative Video: The Hollywood Disruption is Ahead of Schedule",
+      "shortdescription": "New AI models can now produce cinematically consistent scenes from simple text prompts.",
+      "category": "Tech",
+      "author": "James O'Connor",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/tech.png"
     },
-    "bottomArticles": [
-        {
-            "slug": "generative-video-hollywood-production-ai",
-            "title": "Generative Video: The Hollywood Disruption is Ahead of Schedule",
-            "shortdescription": "New AI models can now produce cinematically consistent scenes from simple text prompts.",
-            "category": "Tech",
-            "author": "James O'Connor",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1582882852374?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "reshoring-manufacturing-automated-smart-factories",
-            "title": "The Reshoring Wave: Manufacturing Returns to North America",
-            "shortdescription": "Highly automated smart factories allow companies to move production closer to consumers.",
-            "category": "Business",
-            "author": "Maria Sanchez",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1695306216079?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "ocean-territory-disputes-treaty-arctic",
-            "title": "The High Seas Treaty: Resolving Arctic Territory Disputes",
-            "shortdescription": "New legislative frameworks aim to protect deep-sea biodiversity while managing mineral rights.",
-            "category": "Politics",
-            "author": "Alex Thorne",
-            "date": "February 23, 2026",
-            "image": "https://images.unsplash.com/photo-1638875796566?q=80&w=1200&auto=format&fit=crop"
-        }
-    ]
+    {
+      "slug": "reshoring-manufacturing-automated-smart-factories",
+      "title": "The Reshoring Wave: Manufacturing Returns to North America",
+      "shortdescription": "Highly automated smart factories allow companies to move production closer to consumers.",
+      "category": "Business",
+      "author": "Maria Sanchez",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/business.png"
+    },
+    {
+      "slug": "ocean-territory-disputes-treaty-arctic",
+      "title": "The High Seas Treaty: Resolving Arctic Territory Disputes",
+      "shortdescription": "New legislative frameworks aim to protect deep-sea biodiversity while managing mineral rights.",
+      "category": "Politics",
+      "author": "Alex Thorne",
+      "date": "February 23, 2026",
+      "image": "/images/category-news/politics.png"
+    }
+  ]
 }

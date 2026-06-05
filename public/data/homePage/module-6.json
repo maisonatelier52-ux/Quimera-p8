@@ -10,7 +10,7 @@
             "date": "Feb 12, 2026",
             "title": "The 'New Hubs' of Global Wealth: Digital Nomad Elite",
             "slug": "digital-nomad-elite-wealth-hubs-2026",
-            "image": "/images/news/wealth-6.webp"
+            "image": "https://picsum.photos/seed/d8dc66/800/500"
         },
         {
             "id": "wth-7",
@@ -18,7 +18,7 @@
             "date": "Jan 28, 2026",
             "title": "Family Offices in 2026: Shifting to Planetary Impact",
             "slug": "family-offices-planetary-impact-2026",
-            "image": "/images/news/wealth-7.webp"
+            "image": "https://picsum.photos/seed/ngharh/800/500"
         },
         {
             "id": "wth-8",
@@ -26,7 +26,7 @@
             "date": "Feb 08, 2026",
             "title": "Luxury Real Estate 2026: 'Climate-Proof' Sanctuaries",
             "slug": "climate-proof-luxury-real-estate-2026",
-            "image": "/images/news/wealth-8.webp"
+            "image": "https://picsum.photos/seed/moeb7z/800/500"
         },
         {
             "id": "nat-5",
@@ -34,7 +34,7 @@
             "date": "Feb 01, 2026",
             "title": "The Secret Life of the Deep: New Species in Mariana Trench",
             "slug": "mariana-trench-new-species-2026",
-            "image": "/images/news/nature-5.webp"
+            "image": "https://picsum.photos/seed/luzdoe/800/500"
         },
         {
             "id": "nat-6",
@@ -42,7 +42,7 @@
             "date": "Jan 20, 2026",
             "title": "Reforestation 2.0: AI-Drones Planting 1 Billion Trees",
             "slug": "ai-drones-reforestation-2026",
-            "image": "/images/news/nature-6.webp"
+            "image": "https://picsum.photos/seed/zpufpn/800/500"
         },
         {
             "id": "nat-7",
@@ -50,7 +50,7 @@
             "date": "Feb 10, 2026",
             "title": "The Plastic-Eating Enzyme: Scaling Global Ocean Clean-up",
             "slug": "plastic-eating-enzyme-ocean-clean-up-2026",
-            "image": "/images/news/nature-7.webp"
+            "image": "https://picsum.photos/seed/fphde0/800/500"
         },
         {
             "id": "nat-8",
@@ -58,7 +58,7 @@
             "date": "Feb 12, 2026",
             "title": "Vertical Forests: The Rise of the 'Living Skyscraper'",
             "slug": "vertical-forests-living-skyscrapers-2026",
-            "image": "/images/news/nature-8.webp"
+            "image": "https://picsum.photos/seed/wt7spp/800/500"
         },
         {
             "id": "cul-6",
@@ -66,7 +66,7 @@
             "date": "Feb 12, 2026",
             "title": "FIFA World Cup 2026: Global Stage for North America",
             "slug": "fifa-world-cup-2026-preview",
-            "image": "/images/news/culture-6.webp"
+            "image": "https://picsum.photos/seed/2r5uv5/800/500"
         }
     ]
 }
