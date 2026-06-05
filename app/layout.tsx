@@ -17,8 +17,8 @@ const merriweather = Merriweather({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Nexus News | Global Perspective & Premium Insights',
-    template: '%s | Nexus News'
+    default: 'Quimera News | Global Perspective & Premium Insights',
+    template: '%s | Quimera News'
   },
   description: 'Unrivaled news coverage and expert analysis for the discerning reader.',
   keywords: ['news', 'finance', 'tech', 'lifestyle', 'premium insights'],

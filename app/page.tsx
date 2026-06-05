@@ -16,7 +16,7 @@ import AdvertisementSection from './components/home/AdvertisementSection';
 import CategoryAd from './components/ads/CategoryAd';
 
 export const metadata: Metadata = {
-  title: "Nexus News | Global Perspective & Premium Insights",
+  title: "Quimera News | Global Perspective & Premium Insights",
   description: "Your source for the latest global news, financial analysis, and cultural insights.",
 };
 
