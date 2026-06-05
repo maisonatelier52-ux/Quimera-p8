@@ -9,6 +9,7 @@ interface HorizontalCardProps {
         title: string;
         category: string;
         date: string;
+        shortdescription?: string;
     };
 }
 
@@ -50,6 +51,13 @@ export default function HorizontalCard({ article }: HorizontalCardProps) {
                         {article.title}
                     </h3>
                 </Link>
+
+                {/* Excerpt */}
+                {article.shortdescription && (
+                    <p className="text-gray-600 text-[13px] leading-snug line-clamp-2 mt-1">
+                        {article.shortdescription}
+                    </p>
+                )}
             </div>
         </div>
     );

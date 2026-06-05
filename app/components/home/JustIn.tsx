@@ -46,6 +46,11 @@ export default function JustIn() {
                                     {mainArticle.title}
                                 </h3>
                             </Link>
+                            {mainArticle.shortdescription && (
+                                <p className="text-gray-600 text-lg leading-relaxed mt-4">
+                                    {mainArticle.shortdescription}
+                                </p>
+                            )}
                         </div>
                     </div>
 
