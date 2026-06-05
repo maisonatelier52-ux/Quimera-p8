@@ -1,58 +1,110 @@
 [
     {
-        "slug": "glacier-retreat-water-security-impact",
-        "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop",
-        "category": "Climate Change",
-        "date": "Feb 23, 2026",
-        "title": "The Thirst of Nations: Glacier Retreat and Global Water Security"
+        "slug": "climate-policy-carbon-tax-economic",
+        "title": "Climate Policy Shift: Economic Giants Align on Carbon Taxes",
+        "shortdescription": "Major powers agree on a unified carbon pricing framework to accelerate the green transition.",
+        "category": "Politics",
+        "author": "Robert Miller",
+        "date": "February 23, 2026",
+        "image": "https://images.unsplash.com/photo-1624825164577?q=80&w=1200&auto=format&fit=crop"
     },
     {
-        "slug": "climate-migration-urban-planning-adapts",
-        "image": "https://images.unsplash.com/photo-1573167243872-43c6433b9d40?q=80&w=1200&auto=format&fit=crop",
-        "category": "Climate Change",
-        "date": "Feb 23, 2026",
-        "title": "The Resilient City: How Urban Planning is Adapting to Climate Migration"
+        "slug": "banking-sector-branchless-mobile-future",
+        "title": "The Branchless Future: Legacy Banks Finally Close Physical Retail Gaps",
+        "shortdescription": "Traditional banking giants complete their shift to mobile-first operations, shuttering legacy branches.",
+        "category": "Finance",
+        "author": "Alex Thorne",
+        "date": "February 23, 2026",
+        "image": "https://images.unsplash.com/photo-1601721137327?q=80&w=1200&auto=format&fit=crop"
     },
     {
-        "slug": "the-future-of-global-diplomacy-2026",
-        "image": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=1200&auto=format&fit=crop",
-        "category": "Global Affairs",
-        "date": "Feb 22, 2026",
-        "title": "Beyond Borders: A New Framework for International Cooperation in 2026"
+        "slug": "electoral-reforms-digital-voting-security",
+        "title": "Electoral Reforms: Can Digital Voting Ever Be Truly Secure?",
+        "shortdescription": "A deep dive into the blockchain-based voting systems being trialed in Northern Europe.",
+        "category": "Politics",
+        "author": "Jessica Wu",
+        "date": "February 23, 2026",
+        "image": "https://images.unsplash.com/photo-1692596212040?q=80&w=1200&auto=format&fit=crop"
     },
     {
-        "slug": "methane-emissions-tracking-satellite-data",
-        "image": "https://images.unsplash.com/photo-1504700610630-ac6aba3536d3?q=80&w=1200&auto=format&fit=crop",
-        "category": "Climate Change",
-        "date": "Feb 22, 2026",
-        "title": "Methane Hunters: Using Satellites to Trace Invisible Emissions"
+        "slug": "inflation-hedging-strategies-tangible-assets",
+        "title": "Hedging for the 20s: Tangible Assets Overcome Monetary Inflation",
+        "shortdescription": "Investors look toward farmland, timber, and fine art to protect purchasing power.",
+        "category": "Finance",
+        "author": "David Smith",
+        "date": "February 23, 2026",
+        "image": "https://images.unsplash.com/photo-1567190216178?q=80&w=1200&auto=format&fit=crop"
     },
     {
-        "slug": "reforestation-biodiversity-soil-carbon-sink",
-        "image": "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=1200&auto=format&fit=crop",
-        "category": "Climate Change",
-        "date": "Feb 21, 2026",
-        "title": "More Than Just Trees: Restoring Soil as the Ultimate Carbon Sink"
+        "slug": "micro-investing-fractional-revolution",
+        "title": "The Fractional Revolution: How $5 Can Buy a Piece of the S&P 500",
+        "shortdescription": "Micro-investing apps continue to grow, bringing a new generation into the equity markets.",
+        "category": "Finance",
+        "author": "James O'Connor",
+        "date": "February 23, 2026",
+        "image": "https://images.unsplash.com/photo-1555470863933?q=80&w=1200&auto=format&fit=crop"
     },
     {
-        "slug": "extreme-weather-predictive-ai-models",
-        "image": "https://images.unsplash.com/photo-1527482797697-8795b05a13fe?q=80&w=1200&auto=format&fit=crop",
-        "category": "Climate Change",
-        "date": "Feb 21, 2026",
-        "title": "Knowing the Storm: How AI is Revolutionizing Extreme Weather Prediction"
+        "slug": "venture-capital-profitability-quality-seed",
+        "title": "VC Pivot: Quality Over Growth at Any Cost",
+        "shortdescription": "Venture funds are shifting focus back to early-stage profitability and sustainable unit economics.",
+        "category": "Business",
+        "author": "Maria Sanchez",
+        "date": "February 23, 2026",
+        "image": "https://images.unsplash.com/photo-1659737085997?q=80&w=1200&auto=format&fit=crop"
     },
     {
-        "slug": "the-green-transition-economic-winners",
-        "image": "https://images.unsplash.com/photo-1473081556163-2a17de81fc2b?q=80&w=1200&auto=format&fit=crop",
-        "category": "Climate Change",
-        "date": "Feb 20, 2026",
-        "title": "The New Green Titans: Which Economies are Winning the Transition?"
+        "slug": "sustainable-finance-taxonomy-greenwashing",
+        "title": "The Sustainable Finance Map: Aligning Global Green Definitions",
+        "shortdescription": "Regulators finally agree on what constitutes a 'green' investment, reducing greenwashing risks.",
+        "category": "Finance",
+        "author": "David Smith",
+        "date": "February 23, 2026",
+        "image": "https://images.unsplash.com/photo-1508581955072?q=80&w=1200&auto=format&fit=crop"
     },
     {
-        "slug": "perovskite-solar-cells-efficiency-record",
-        "image": "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop",
-        "category": "Renewable Energy",
-        "date": "Feb 20, 2026",
-        "title": "The Solar Breakthrough: Perovskite Cells Hit 35% Efficiency"
+        "slug": "chief-purpose-officer-corporate-culture",
+        "title": "The Chief Purpose Officer: Why Culture is the Ultimate Competitive Advantage",
+        "shortdescription": "Companies are investing heavily in employee mental health and long-term career fulfillment.",
+        "category": "Business",
+        "author": "David Smith",
+        "date": "February 23, 2026",
+        "image": "https://images.unsplash.com/photo-1599487267941?q=80&w=1200&auto=format&fit=crop"
+    },
+    {
+        "slug": "wearable-sensors-concussion-prevention-safety",
+        "title": "Smart Armor: Sensor-Equipped Gear Leads the Charge in Athlete Concussion Prevention",
+        "shortdescription": "New impact-sensing helmets and mouthguards transmit real-time telemetry to medical staff on the sidelines.",
+        "category": "Sports",
+        "author": "Alex Thorne",
+        "date": "February 23, 2026",
+        "image": "https://images.unsplash.com/photo-1597666137110?q=80&w=1200&auto=format&fit=crop"
+    },
+    {
+        "slug": "high-speed-rail-infrastructure-approved",
+        "title": "Blueprint for the Future: National High-Speed Rail Network Approved",
+        "shortdescription": "A multi-trillion dollar investment into clean transportation infrastructure takes flight.",
+        "category": "Politics",
+        "author": "Emily Rodriguez",
+        "date": "February 23, 2026",
+        "image": "https://images.unsplash.com/photo-1648798897364?q=80&w=1200&auto=format&fit=crop"
+    },
+    {
+        "slug": "athlete-longevity-advanced-biomedical-recovery",
+        "title": "Extending the Peak: How Biomedical Recovery is Keeping Athletes Active Longer",
+        "shortdescription": "Hyperbaric chambers, targeted gene therapy, and stem-cell recovery extend elite athletic careers.",
+        "category": "Sports",
+        "author": "James O'Connor",
+        "date": "February 23, 2026",
+        "image": "https://images.unsplash.com/photo-1689533926551?q=80&w=1200&auto=format&fit=crop"
+    },
+    {
+        "slug": "edge-computing-smart-grid-optimization",
+        "title": "Thinking Power: How AI is Optimizing National Energy Grids",
+        "shortdescription": "Real-time processing at the edge allows for a more responsive and efficient electrical grid.",
+        "category": "Tech",
+        "author": "David Smith",
+        "date": "February 23, 2026",
+        "image": "https://images.unsplash.com/photo-1533491259803?q=80&w=1200&auto=format&fit=crop"
     }
 ]

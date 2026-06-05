@@ -1,38 +1,38 @@
 [
     {
         "id": 1,
-        "slug": "quantum-computing-breakthrough-2026",
-        "title": "Quantum Supremacy: How IBM's 'Everest' Changes Everything",
-        "image": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=1200&auto=format&fit=crop"
+        "slug": "solid-state-battery-ev-range-industry",
+        "title": "1,000 Kilometers: Solid-State Batteries Enter Mass Production",
+        "image": "https://images.unsplash.com/photo-1681757343298?q=80&w=1200&auto=format&fit=crop"
     },
     {
         "id": 2,
-        "slug": "the-neural-interface-breakthrough",
-        "title": "Mind to Machine: The Success of the First High-Bandwidth Neural Link",
-        "image": "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?q=80&w=1200&auto=format&fit=crop"
+        "slug": "cybersecurity-bio-sensing-continuous-auth",
+        "title": "Beyond Passwords: Bio-Sensing and the Era of Continuous Authentication",
+        "image": "https://images.unsplash.com/photo-1598188195802?q=80&w=1200&auto=format&fit=crop"
     },
     {
         "id": 3,
-        "slug": "fusion-energy-grid-connection",
-        "title": "Clean Energy: The First Fusion Reactor Hits the Grid",
-        "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=1200&auto=format&fit=crop"
+        "slug": "ai-coaching-analytics-performance-tracking",
+        "title": "The AI Coach: How Real-Time Predictive Analytics is Revolutionizing Team Sports",
+        "image": "https://images.unsplash.com/photo-1536132803328?q=80&w=1200&auto=format&fit=crop"
     },
     {
         "id": 4,
-        "slug": "arctic-silk-road-shipping-boom",
-        "title": "Shipping Revolution: Arctic Routes Cut Transit Times by 40%",
-        "image": "https://images.unsplash.com/photo-1511884642898-4c92249e20b6?q=80&w=1200&auto=format&fit=crop"
+        "slug": "esports-olympics-inaugural-games-2026",
+        "title": "The Virtual Arena: Inaugural Olympic Esports Games Set to Begin in 2026",
+        "image": "https://images.unsplash.com/photo-1636716310414?q=80&w=1200&auto=format&fit=crop"
     },
     {
         "id": 5,
-        "slug": "leaders-rival-factions-agree-peace-talks",
-        "title": "Geneva Peace Talks: A New Hope for the Middle East Conflict",
-        "image": "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?q=80&w=1200&auto=format&fit=crop"
+        "slug": "real-estate-tokenization-fractional-shares",
+        "title": "Fractional Ownership: How Tokenization is Unlocking Real Estate Markets",
+        "image": "https://images.unsplash.com/photo-1676335130017?q=80&w=1200&auto=format&fit=crop"
     },
     {
         "id": 6,
-        "slug": "asteroid-mining-pioneer-returns",
-        "title": "Space Gold Rush: $85M in Rare Minerals Returned from Orbit",
-        "image": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=1200&auto=format&fit=crop"
+        "slug": "pension-fund-private-equity-strategy",
+        "title": "Pensions Pivot: Increasing Exposure to Private Equity and Infrastructure",
+        "image": "https://images.unsplash.com/photo-1657815121479?q=80&w=1200&auto=format&fit=crop"
     }
 ]

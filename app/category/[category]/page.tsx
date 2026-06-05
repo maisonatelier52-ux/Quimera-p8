@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
     const title = data?.title || category.charAt(0).toUpperCase() + category.slice(1);
 
     return {
-        title: `${title} | Foxiz News`,
+        title: `${title} | Quimera News`,
         description: data?.description || `Latest news and updates in ${title}.`,
     };
 }

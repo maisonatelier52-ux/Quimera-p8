@@ -8,7 +8,7 @@ export default function AdvertisementSection() {
                     <span className="text-[10px] text-gray-400 font-medium uppercase tracking-[0.2em] mb-3">
                         - Advertisement -
                     </span>
-                    <div className="w-full max-w-[700px] overflow-hidden rounded-xl shadow-sm">
+                    <div className="w-full max-w-[700px] overflow-hidden rounded-none shadow-sm">
                         <img
                             src="/images/adv2.png"
                             alt="Advertisement"

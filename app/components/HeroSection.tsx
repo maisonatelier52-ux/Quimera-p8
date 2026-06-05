@@ -23,7 +23,7 @@ export default function HeroSection({ mainArticle, sideArticles }: HeroSectionPr
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
                 {/* Main Article */}
                 <div className="lg:col-span-8 group">
-                    <Link href={`/articles/${mainArticle.slug}`} className="block relative aspect-[16/9] overflow-hidden rounded-2xl bg-gray-100">
+                    <Link href={`/articles/${mainArticle.slug}`} className="block relative aspect-[16/9] overflow-hidden rounded-none bg-gray-100">
                         <img
                             src={mainArticle.image || '/images/news/markets-1.webp'}
                             alt={mainArticle.title}
@@ -66,7 +66,7 @@ export default function HeroSection({ mainArticle, sideArticles }: HeroSectionPr
                                         <span>{article.date}</span>
                                     </div>
                                 </div>
-                                <div className="relative w-24 h-24 overflow-hidden rounded-xl bg-gray-100 flex-shrink-0">
+                                <div className="relative w-24 h-24 overflow-hidden rounded-none bg-gray-100 flex-shrink-0">
                                     <img
                                         src={article.image || '/images/news/markets-1.webp'}
                                         alt={article.title}

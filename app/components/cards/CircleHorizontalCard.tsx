@@ -13,7 +13,7 @@ export default function CircleHorizontalCard({ slug, image, category, title }: C
     return (
         <div className="flex items-center gap-4 group">
             {/* Circular Image */}
-            <Link href={`/articles/${slug}`} className="block relative overflow-hidden rounded-full w-[80px] h-[80px] flex-shrink-0 bg-gray-100">
+            <Link href={`/articles/${slug}`} className="block relative overflow-hidden rounded-none w-[80px] h-[80px] flex-shrink-0 bg-gray-100">
                 <img
                     src={image}
                     alt={title}

@@ -1,32 +1,40 @@
 {
     "stories": [
         {
-            "slug": "inside-the-deep-sea-mining-race",
-            "image": "https://images.unsplash.com/photo-1628349932168-0b5e3fac0428?q=80&w=1200&auto=format&fit=crop",
-            "category": "Featured",
-            "date": "Feb 23, 2026",
-            "title": "Deep Blue Gold: The Race for the Most Valuable Rocks on Earth"
+            "slug": "banking-sector-branchless-mobile-future",
+            "title": "The Branchless Future: Legacy Banks Finally Close Physical Retail Gaps",
+            "shortdescription": "Traditional banking giants complete their shift to mobile-first operations, shuttering legacy branches.",
+            "category": "Finance",
+            "author": "Alex Thorne",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1601721137327?q=80&w=1200&auto=format&fit=crop"
         },
         {
-            "slug": "the-lost-cities-of-the-amazon-discovered",
-            "image": "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?q=80&w=1200&auto=format&fit=crop",
-            "category": "Featured",
-            "date": "Feb 23, 2026",
-            "title": "LIDAR Revolution: Mapping the Pre-Columbian Urban Grid of the Amazon"
+            "slug": "electoral-reforms-digital-voting-security",
+            "title": "Electoral Reforms: Can Digital Voting Ever Be Truly Secure?",
+            "shortdescription": "A deep dive into the blockchain-based voting systems being trialed in Northern Europe.",
+            "category": "Politics",
+            "author": "Jessica Wu",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1692596212040?q=80&w=1200&auto=format&fit=crop"
         },
         {
-            "slug": "artificial-organs-longevity-breakthrough",
-            "image": "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?q=80&w=1200&auto=format&fit=crop",
-            "category": "Medical Research",
-            "date": "Feb 23, 2026",
-            "title": "Bionic Future: The Success of Self-Compatible 3D-Bioprinted Organs"
+            "slug": "inflation-hedging-strategies-tangible-assets",
+            "title": "Hedging for the 20s: Tangible Assets Overcome Monetary Inflation",
+            "shortdescription": "Investors look toward farmland, timber, and fine art to protect purchasing power.",
+            "category": "Finance",
+            "author": "David Smith",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1567190216178?q=80&w=1200&auto=format&fit=crop"
         },
         {
-            "slug": "the-great-rewilding-europe-success-stories",
-            "image": "https://images.unsplash.com/photo-1474511320723-9a56873867b5?q=80&w=1200&auto=format&fit=crop",
-            "category": "Nature",
-            "date": "Feb 23, 2026",
-            "title": "Rewilding Europe: The Return of the Lynx and the Bison"
+            "slug": "micro-investing-fractional-revolution",
+            "title": "The Fractional Revolution: How $5 Can Buy a Piece of the S&P 500",
+            "shortdescription": "Micro-investing apps continue to grow, bringing a new generation into the equity markets.",
+            "category": "Finance",
+            "author": "James O'Connor",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1555470863933?q=80&w=1200&auto=format&fit=crop"
         }
     ]
 }

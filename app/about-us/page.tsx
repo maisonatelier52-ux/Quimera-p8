@@ -5,34 +5,34 @@ import Footer from "../components/layout/Footer";
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: "About Us | Foxiz News",
-    description: "Learn about Foxiz - your premier source for global news, economic analysis, and breaking stories across the world.",
+    title: "About Us | Quimera News",
+    description: "Learn about Quimera - your premier source for global news, economic analysis, and breaking stories across the world.",
     openGraph: {
-        title: "About Us | Foxiz News",
-        description: "Discover the journey and mission of Foxiz, a leader in modern financial and global journalism.",
-        url: "https://foxiz-news.com/about-us",
-        siteName: "Foxiz",
+        title: "About Us | Quimera News",
+        description: "Discover the journey and mission of Quimera, a leader in modern financial and global journalism.",
+        url: "https://quimera-news.com/about-us",
+        siteName: "Quimera",
         images: [
             {
                 url: "/images/news/markets-1.webp",
                 width: 1200,
                 height: 630,
-                alt: "About Foxiz",
+                alt: "About Quimera",
             }
         ],
         type: "website",
     },
     twitter: {
         card: "summary_large_image",
-        title: "About Us | Foxiz News",
-        description: "Official Foxiz About Us page - detailing our commitment to journalism and transparency.",
+        title: "About Us | Quimera News",
+        description: "Official Quimera About Us page - detailing our commitment to journalism and transparency.",
         images: ["/images/news/markets-1.webp"],
     },
 };
 
 export default function AboutUsPage() {
     return (
-        <main className="bg-[#f8f9fa] min-h-screen font-sans">
+        <main className="bg-[#f8f9fa] min-h-screen font-serif">
             <Header />
 
             {/* Breadcrumb Section */}
@@ -60,7 +60,7 @@ export default function AboutUsPage() {
                                 </div>
                                 <div className="space-y-6 text-lg leading-relaxed text-gray-700">
                                     <p>
-                                        Founded in 2025, <span className="font-extrabold text-[#00008B]">FOXIZ</span> was born from a simple yet powerful belief: that quality journalism matters. In an era of information overload and clickbait headlines, we set out to create a news platform dedicated to accuracy, integrity, and in-depth reporting that empowers readers.
+                                        Founded in 2025, <span className="font-extrabold text-[#00008B]">QUIMERA</span> was born from a simple yet powerful belief: that quality journalism matters. In an era of information overload and clickbait headlines, we set out to create a news platform dedicated to accuracy, integrity, and in-depth reporting that empowers readers.
                                     </p>
                                     <p>
                                         What began as a small team of passionate journalists working from a modest modern office has evolved into a respected digital news source serving millions of readers worldwide. Our commitment to investigative journalism and unbiased reporting has earned us the trust of the global community.
@@ -69,7 +69,7 @@ export default function AboutUsPage() {
                                         Through market upheavals, global crises, and technological revolutions, we've remained steadfast in our mission: to inform and empower our audience with reliable, well-researched journalism that cuts through the noise.
                                     </p>
                                     <p className="text-xl md:text-2xl font-bold text-red-600 pt-4">
-                                        At Foxiz, we don't just report the news — we help you understand what it means for the world and your future.
+                                        At Quimera, we don't just report the news — we help you understand what it means for the world and your future.
                                     </p>
                                 </div>
                             </div>
@@ -194,7 +194,7 @@ export default function AboutUsPage() {
             {/* Newsletter Call to Action */}
             <section className="py-20 px-4 bg-[#00008B] text-white">
                 <div className="max-w-[1330px] mx-auto text-center">
-                    <h2 className="text-4xl md:text-5xl font-black tracking-tighter mb-8">JOIN THE FOXIZ COMMUNITY</h2>
+                    <h2 className="text-4xl md:text-5xl font-black tracking-tighter mb-8">JOIN THE QUIMERA COMMUNITY</h2>
                     <p className="text-xl text-blue-100 mb-12 max-w-2xl mx-auto">
                         Get the most important stories delivered to your inbox every morning. Stay informed with the global perspective.
                     </p>
@@ -202,7 +202,7 @@ export default function AboutUsPage() {
                         <input
                             type="email"
                             placeholder="Your email address..."
-                            className="w-full sm:w-80 px-6 py-4 rounded-lg bg-white/10 border border-white/20 text-white placeholder:text-blue-200 focus:outline-none focus:ring-2 focus:ring-yellow-400 font-sans"
+                            className="w-full sm:w-80 px-6 py-4 rounded-lg bg-white/10 border border-white/20 text-white placeholder:text-blue-200 focus:outline-none focus:ring-2 focus:ring-yellow-400 font-serif"
                         />
                         <button className="bg-yellow-400 text-black px-10 py-4 rounded-lg font-black uppercase tracking-tighter hover:bg-yellow-300 transition-colors">
                             SUBSCRIBE NOW

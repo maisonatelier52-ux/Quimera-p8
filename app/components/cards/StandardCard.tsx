@@ -17,7 +17,7 @@ export default function StandardCard({ slug, image, category, date, title, isLar
     return (
         <div className="flex flex-col gap-3 group">
             {/* Image */}
-            <Link href={`/articles/${slug}`} className="block relative overflow-hidden rounded-xl aspect-[16/10] bg-gray-100">
+            <Link href={`/articles/${slug}`} className="block relative overflow-hidden rounded-none aspect-[16/10] bg-gray-100">
                 <img
                     src={image || fallbackImage}
                     alt={title}

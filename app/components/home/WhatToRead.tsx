@@ -34,7 +34,7 @@ export default function WhatToRead({ data }: WhatToReadProps) {
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     {/* Left Side: Large Feature with Red Overlay */}
-                    <div className="relative group overflow-hidden rounded-xl aspect-[4/3] lg:aspect-auto lg:h-full min-h-[500px]">
+                    <div className="relative group overflow-hidden rounded-none aspect-[4/3] lg:aspect-auto lg:h-full min-h-[500px]">
                         <Link href={`/articles/${mainArticle.slug}`} className="block h-full">
                             <img
                                 src={mainArticle.image}
@@ -73,7 +73,7 @@ export default function WhatToRead({ data }: WhatToReadProps) {
                         {gridArticles.map((article, index) => (
                             <div key={index} className="flex flex-col gap-4 group">
                                 {/* Image */}
-                                <Link href={`/articles/${article.slug}`} className="block relative overflow-hidden rounded-xl aspect-[1.5/1] bg-gray-100">
+                                <Link href={`/articles/${article.slug}`} className="block relative overflow-hidden rounded-none aspect-[1.5/1] bg-gray-100">
                                     <img
                                         src={article.image}
                                         alt={article.title}

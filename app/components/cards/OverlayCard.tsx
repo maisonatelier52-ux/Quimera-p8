@@ -10,7 +10,7 @@ interface OverlayCardProps {
 
 export default function OverlayCard({ slug, image, category, title }: OverlayCardProps) {
     return (
-        <div className="group relative block overflow-hidden rounded-xl aspect-[1.6/1]">
+        <div className="group relative block overflow-hidden rounded-none aspect-[1.6/1]">
             <Link href={`/articles/${slug}`} className="absolute inset-0 z-0">
                 <img
                     src={image}

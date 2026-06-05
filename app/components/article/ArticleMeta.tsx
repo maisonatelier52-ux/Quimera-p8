@@ -14,7 +14,7 @@ interface ArticleMetaProps {
 export default function ArticleMeta({ author, lastUpdated }: ArticleMetaProps) {
     return (
         <div className="flex items-center gap-4 mb-6">
-            <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-100">
+            <div className="w-12 h-12 rounded-none overflow-hidden bg-gray-100">
                 <img
                     src={author.avatar}
                     alt={author.name}

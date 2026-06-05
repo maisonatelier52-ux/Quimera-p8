@@ -32,8 +32,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     if (!articleData) return { title: 'Article Not Found' };
 
     return {
-        title: `${articleData.title} | Foxiz News`,
-        description: articleData.excerpt || 'Read the latest news report on Foxiz.',
+        title: `${articleData.title} | Quimera News`,
+        description: articleData.excerpt || 'Read the latest news report on Quimera.',
     };
 }
 

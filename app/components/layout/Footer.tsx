@@ -15,7 +15,7 @@ export default function Footer() {
     };
 
     return (
-        <footer className="bg-gradient-to-b from-[#06089bff] to-black text-white pt-10 pb-10  font-sans">
+        <footer className="bg-gradient-to-b from-[#06089bff] to-black text-white pt-10 pb-10  font-serif">
             <div className="max-w-[1330px] mx-auto px-4 md:px-8">
                 {/* Top Row: Logo and Socials */}
                 <div className="flex flex-col md:flex-row justify-between items-center mb-4 gap-8">
@@ -26,7 +26,7 @@ export default function Footer() {
                             <div className="w-1.5 h-full bg-cyan-400"></div>
                         </div>
                         <span className="text-3xl font-black italic tracking-tighter ml-1 text-white">
-                            FOXIZ
+                            QUIMERA
                         </span>
                     </Link>
 
@@ -78,19 +78,17 @@ export default function Footer() {
                                 *** Quick Links
                             </span>
                             <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm font-bold">
-                                <Link href="/history" className="hover:text-red-500 transition-colors">Read History</Link>
+                                <Link href="/category/politics" className="hover:text-red-500 transition-colors">Politics</Link>
                                 <span className="text-white/20 font-normal">|</span>
-                                <Link href="/category/economic" className="hover:text-red-500 transition-colors">Economy</Link>
+                                <Link href="/category/market" className="hover:text-red-500 transition-colors">Market</Link>
                                 <span className="text-white/20 font-normal">|</span>
-                                <Link href="/category/travel" className="hover:text-red-500 transition-colors">Travel</Link>
+                                <Link href="/category/finance" className="hover:text-red-500 transition-colors">Finance</Link>
                                 <span className="text-white/20 font-normal">|</span>
-                                <Link href="/category/global-affairs" className="hover:text-red-500 transition-colors">Global Security</Link>
+                                <Link href="/category/tech" className="hover:text-red-500 transition-colors">Tech</Link>
                                 <span className="text-white/20 font-normal">|</span>
-                                <Link href="/category/global-affairs" className="hover:text-red-500 transition-colors">Global Affairs</Link>
+                                <Link href="/category/business" className="hover:text-red-500 transition-colors">Business</Link>
                                 <span className="text-white/20 font-normal">|</span>
-                                <Link href="/category/world" className="hover:text-red-500 transition-colors">World</Link>
-                                <span className="text-white/20 font-normal">|</span>
-                                <Link href="/category/tech" className="hover:text-red-500 transition-colors">Technology</Link>
+                                <Link href="/category/sports" className="hover:text-red-500 transition-colors">Sports</Link>
                             </div>
                         </div>
 
@@ -115,7 +113,7 @@ export default function Footer() {
                 {/* Bottom Bar */}
                 <div className="pt-8 flex flex-col md:flex-row justify-center items-center relative gap-6">
                     <p className="text-[11px] text-white/40 font-bold tracking-wider text-center">
-                        © Foxiz News Network. Ruby Design Company. All Rights Reserved.
+                        © Quimera News Network. Ruby Design Company. All Rights Reserved.
                     </p>
 
                     {/* Scroll to top */}

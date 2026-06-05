@@ -1,39 +1,49 @@
 {
     "mainArticle": {
-        "slug": "ai-governance-summit-geneva",
+        "slug": "global-diplomacy-digital-sovereignty-2026",
+        "title": "The Future of Global Diplomacy: Beyond Traditional Borders",
+        "shortdescription": "Shift in international relations as digital sovereignty becomes a key bargaining chip.",
         "category": "Politics",
-        "title": "The Geneva Accord: 142 Nations Ban Autonomous Weapons in Landmark Treaty",
-        "date": "Feb 24, 2026",
-        "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200&auto=format&fit=crop"
+        "author": "Jessica Wu",
+        "date": "February 23, 2026",
+        "image": "https://images.unsplash.com/photo-1502911236406?q=80&w=1200&auto=format&fit=crop"
     },
     "gridArticles": [
         {
-            "slug": "tax-policy-inequality-global-prospects",
-            "category": "Economic",
-            "title": "Addressing the Gap: Global Tax Policies for a New Decade",
-            "date": "Feb 23, 2026",
-            "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1200&auto=format&fit=crop"
+            "slug": "subscription-fatigue-monetization-models",
+            "title": "Subscription Fatigue: The Shift Back to Ownership and Pay-Per-Use",
+            "shortdescription": "Consumers are cutting back on monthly fees, forcing digital services to rethink their monetization.",
+            "category": "Business",
+            "author": "Alex Thorne",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1664561364885?q=80&w=1200&auto=format&fit=crop"
         },
         {
-            "slug": "the-silicon-desert-arizona-semiconductors",
-            "category": "Featured",
-            "title": "The Silicon Desert: Arizona's Transformation into a Chip Giant",
-            "date": "Feb 23, 2026",
-            "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop"
+            "slug": "augmented-reality-glasses-mass-adoption",
+            "title": "AR for Everyone: The First Lightweight, Stylish Augmented Reality Glasses",
+            "shortdescription": "Tech giants launch consumer-grade AR wearables that finally look like normal eyewear.",
+            "category": "Tech",
+            "author": "Sarah Jenkins",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1655234954173?q=80&w=1200&auto=format&fit=crop"
         },
         {
-            "slug": "arctic-exploration-new-frontier-2026",
-            "category": "Featured",
-            "title": "The Melting Frontier: A Journey Through the New Arctic Passages",
-            "date": "Feb 22, 2026",
-            "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop"
+            "slug": "stadium-tech-smart-venues-fan-experience",
+            "title": "The Connected Stadium: Smart Venues Redefining the Live Fan Experience",
+            "shortdescription": "From holographic replays to autonomous concession delivery, stadiums undergo a digital revolution.",
+            "category": "Sports",
+            "author": "Robert Miller",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1677036021119?q=80&w=1200&auto=format&fit=crop"
         },
         {
-            "slug": "space-treaty-2026-mining-rights",
-            "category": "Global Affairs",
-            "title": "Ownership in Orbit: The New Global Treaty for Space Mining Rights",
-            "date": "Feb 22, 2026",
-            "image": "https://images.unsplash.com/photo-1457364887197-9150188c107b?q=80&w=1200&auto=format&fit=crop"
+            "slug": "retirement-planning-longevity-portfolios",
+            "title": "Planning for 100: How Increased Longevity is Changing Retirement Math",
+            "shortdescription": "Financial planners adjust models as life expectancy increases, requiring more resilient portfolios.",
+            "category": "Finance",
+            "author": "Emily Rodriguez",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1611455924601?q=80&w=1200&auto=format&fit=crop"
         }
     ]
 }

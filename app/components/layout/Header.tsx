@@ -3,9 +3,6 @@
 import React from 'react'; // Re-scan trigger
 import {
     Search,
-    User,
-    Sun,
-    Mail,
     TrendingUp,
     Youtube,
     Facebook,
@@ -25,7 +22,7 @@ export default function Header() {
     const isPagesActive = ['/about-us', '/authors', '/privacy-policy', '/terms-and-conditions'].includes(pathname);
 
     return (
-        <header className="flex flex-col w-full font-sans">
+        <header className="flex flex-col w-full font-serif">
             {/* Top Bar - Deep Blue */}
             <div className="bg-[#00008B] text-white">
                 <div className="max-w-[1330px] mx-auto px-4 h-20 flex items-center justify-between">
@@ -42,7 +39,7 @@ export default function Header() {
                                 </div>
                                 {/* Text */}
                                 <span className="text-3xl font-black italic tracking-tighter ml-1">
-                                    FOXIZ
+                                    QUIMERA
                                 </span>
                             </Link>
                             {/* Date */}
@@ -51,62 +48,14 @@ export default function Header() {
                             </div>
                         </div>
 
-                        {/* Navigation */}
-                        <nav className="hidden xl:flex items-center gap-1">
-                            <Link
-                                href="/"
-                                className={`px-4 py-2 rounded-md font-bold text-md transition-all duration-300 ${isActive('/') ? 'bg-black text-white' : 'hover:bg-black hover:text-white'
-                                    }`}
-                            >
-                                Home
-                            </Link>
-                            <Link
-                                href="/blog"
-                                className={`px-4 py-2 rounded-md font-bold text-md transition-all duration-300 ${isActive('/blog') ? 'bg-black text-white' : 'hover:bg-black hover:text-white'
-                                    }`}
-                            >
-                                Blog
-                            </Link>
-                            {/* Pages Dropdown */}
-                            <div className="group relative">
-                                <div className={`flex items-center gap-1 px-4 py-2 rounded-md font-bold text-md cursor-pointer transition-all duration-300 ${isPagesActive ? 'bg-black text-white' : 'hover:bg-black hover:text-white'
-                                    }`}>
-                                    Pages <ChevronDown size={14} />
-                                </div>
-                                {/* Dropdown Menu */}
-                                <div className="absolute top-full left-0 w-52 bg-gradient-to-b from-[#00008B] to-black text-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[100] py-2 mt-2">
-                                    <Link href="/about-us" className="block px-5 py-2.5 text-xs font-bold uppercase tracking-wider hover:bg-red-600 hover:text-white transition-colors">
-                                        About Us
-                                    </Link>
-                                    <Link href="/privacy-policy" className="block px-5 py-2.5 text-xs font-bold uppercase tracking-wider hover:bg-red-600 hover:text-white transition-colors">
-                                        Privacy Policy
-                                    </Link>
-                                    <Link href="/authors" className="block px-5 py-2.5 text-xs font-bold uppercase tracking-wider hover:bg-red-600 hover:text-white transition-colors">
-                                        Authors
-                                    </Link>
-                                    <Link href="/terms-and-conditions" className="block px-5 py-2.5 text-xs font-bold uppercase tracking-wider hover:bg-red-600 hover:text-white transition-colors">
-                                        Terms and Conditions
-                                    </Link>
-                                </div>
-                            </div>
-                        </nav>
+
                     </div>
 
                     {/* Right: Actions */}
                     <div className="flex items-center gap-4">
-                        <button className="bg-yellow-400 hover:bg-yellow-300 text-black px-4 py-2 rounded font-bold text-sm flex items-center gap-2 transition-colors">
-                            <Mail size={16} />
-                            Newsletter
-                        </button>
                         <div className="flex items-center gap-3">
                             <button className="p-2 hover:bg-white/10 rounded-full transition-colors">
-                                <User size={20} />
-                            </button>
-                            <button className="p-2 hover:bg-white/10 rounded-full transition-colors">
                                 <Search size={20} />
-                            </button>
-                            <button className="p-2 hover:bg-white/10 rounded-full transition-colors">
-                                <Sun size={20} />
                             </button>
                         </div>
                     </div>
@@ -123,42 +72,57 @@ export default function Header() {
                         </div>
 
                         <div className="flex items-center text-xs font-bold tracking-wide gap-3">
-                            <Link href="/category/opinion" className="hover:underline">Opinion</Link>
-                            <span className="text-white/50">/</span>
-                            <Link href="/category/economic" className="hover:underline">Economic</Link>
-                            <span className="text-white/50">/</span>
-                            <Link href="/category/featured" className="hover:underline">Featured</Link>
-                            <span className="text-white/50">/</span>
-                            <Link href="/category/global-affairs" className="hover:underline">Global Affairs</Link>
-                            <span className="text-white/50">/</span>
-                            <Link href="/category/climate" className="hover:underline">Climate Change</Link>
-                            <span className="text-white/50">/</span>
-                            <Link href="/category/renewable" className="hover:underline">Renewable Energy</Link>
+                            <Link href="/" className={"hover:underline"}>Home</Link>
                             <span className="text-white/50">/</span>
                             <Link href="/category/politics" className="hover:underline">Politics</Link>
                             <span className="text-white/50">/</span>
-                            <Link href="/category/research" className="hover:underline">Research</Link>
+                            <Link href="/category/market" className="hover:underline">Market</Link>
+                            <span className="text-white/50">/</span>
+                            <Link href="/category/finance" className="hover:underline">Finance</Link>
+                            <span className="text-white/50">/</span>
+                            <Link href="/category/tech" className="hover:underline">Tech</Link>
+                            <span className="text-white/50">/</span>
+                            <Link href="/category/business" className="hover:underline">Business</Link>
+                            <span className="text-white/50">/</span>
+                            <Link href="/category/sports" className="hover:underline">Sports</Link>
                         </div>
                     </div>
 
                     {/* Right: Social Icons */}
                     <div className="hidden md:flex items-center gap-4 pl-4 bg-red-600 relative z-10">
                         <Link href="#" className="hover:opacity-80 transition-opacity">
-                            <Youtube size={16} fill="currentColor" />
+                            <Instagram size={16} />
                         </Link>
                         <Link href="#" className="hover:opacity-80 transition-opacity">
-                            <div className="w-4 h-4 bg-white rounded-sm flex items-center justify-center text-red-600 font-black text-[10px]">G</div>
-                            {/* Using a placeholder for Google News/similar as exact icon match might vary */}
+                            <Youtube size={16} />
                         </Link>
-                        <Link href="#" className="hover:opacity-80 transition-opacity font-serif font-black italic">
-                            M
+                        <Link href="#" className="hover:opacity-80 transition-opacity" title="Substack">
+                            <div className="w-4 h-4 bg-orange-500 rounded-sm flex items-center justify-center text-white font-black text-[10px]">S</div>
                         </Link>
-                        <Link href="#" className="hover:opacity-80 transition-opacity">
-                            <Facebook size={16} fill="currentColor" />
-                        </Link>
-                        <Link href="#" className="hover:opacity-80 transition-opacity">
-                            <Rss size={16} />
-                        </Link>
+                    </div>
+                </div>
+            </div>
+
+            {/* Running News Headlines */}
+            <div className="bg-blue-600 text-white py-1.5 overflow-hidden border-t border-blue-500 shadow-md">
+                <div className="max-w-[1330px] mx-auto px-4 flex items-center">
+                    <div className="bg-blue-800 text-white font-black px-3 py-1 text-[10px] uppercase tracking-widest z-10 flex-shrink-0 shadow-sm rounded-sm mr-4">
+                        LATEST HEADLINES
+                    </div>
+                    <div className="flex-1 overflow-hidden relative flex items-center">
+                        <div className="animate-marquee text-sm font-semibold flex items-center gap-16">
+                            <span>Global Markets Hit Record Highs Following Tech Earnings</span>
+                            <span className="text-blue-300 text-xs">●</span>
+                            <span>Election Polls Show Tight Race in Key Swing States</span>
+                            <span className="text-blue-300 text-xs">●</span>
+                            <span>Major Merger Announced in the Telecommunications Sector</span>
+                            <span className="text-blue-300 text-xs">●</span>
+                            <span>New Breakthrough in Renewable Energy Tech Revealed</span>
+                            <span className="text-blue-300 text-xs">●</span>
+                            <span>Championship Finals Set for This Weekend</span>
+                            <span className="text-blue-300 text-xs">●</span>
+                            <span>Global Markets Hit Record Highs Following Tech Earnings</span>
+                        </div>
                     </div>
                 </div>
             </div>

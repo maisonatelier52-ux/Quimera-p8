@@ -25,7 +25,7 @@ export default function MostReadWidget() {
                             <span className="absolute -top-2 -left-2 w-7 h-7 bg-red-600 text-white flex items-center justify-center rounded-full text-sm font-bold border-2 border-white z-10">
                                 {item.id}
                             </span>
-                            <div className="w-[80px] aspect-[1.2/1] rounded-lg overflow-hidden bg-gray-100">
+                            <div className="w-[80px] aspect-[1.2/1] rounded-none overflow-hidden bg-gray-100">
                                 <img
                                     src={item.image}
                                     alt={item.title}

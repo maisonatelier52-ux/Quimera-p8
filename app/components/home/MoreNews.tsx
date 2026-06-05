@@ -36,7 +36,7 @@ export default function MoreNews() {
                     {displayedArticles.map((article, index) => (
                         <div key={index} className="flex gap-6 group">
                             {/* Image side */}
-                            <Link href={`/articles/${article.slug}`} className="block relative overflow-hidden rounded-xl w-[220px] aspect-[1.6/1] flex-shrink-0 bg-gray-100">
+                            <Link href={`/articles/${article.slug}`} className="block relative overflow-hidden rounded-none w-[220px] aspect-[1.6/1] flex-shrink-0 bg-gray-100">
                                 <img
                                     src={article.image}
                                     alt={article.title}

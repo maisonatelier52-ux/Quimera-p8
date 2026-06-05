@@ -21,7 +21,7 @@ export default function BusinessSection() {
                     {topArticles.map((article, index) => (
                         <div key={index} className={`flex gap-6 group ${index === 0 ? 'md:border-r md:border-gray-200 md:pr-10' : 'md:pl-10'}`}>
                             {/* Image */}
-                            <Link href={`/articles/${article.slug}`} className="block relative overflow-hidden rounded-xl w-[220px] aspect-[1.6/1] flex-shrink-0 bg-gray-100">
+                            <Link href={`/articles/${article.slug}`} className="block relative overflow-hidden rounded-none w-[220px] aspect-[1.6/1] flex-shrink-0 bg-gray-100">
                                 <img
                                     src={article.image}
                                     alt={article.title}

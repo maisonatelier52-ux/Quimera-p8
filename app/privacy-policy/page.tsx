@@ -6,19 +6,19 @@ import Link from 'next/link';
 import { ChevronRight, ShieldCheck, Lock, Eye, Bell } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Privacy Policy | Foxiz News",
-    description: "Learn how Foxiz collects, uses, and protects your personal information.",
+    title: "Privacy Policy | Quimera News",
+    description: "Learn how Quimera collects, uses, and protects your personal information.",
     openGraph: {
-        title: "Privacy Policy | Foxiz News",
-        description: "Learn how Foxiz collects, uses, and protects your personal information.",
-        url: "https://foxiz-news.com/privacy-policy",
-        siteName: "Foxiz",
+        title: "Privacy Policy | Quimera News",
+        description: "Learn how Quimera collects, uses, and protects your personal information.",
+        url: "https://quimera-news.com/privacy-policy",
+        siteName: "Quimera",
         type: "website",
     },
     twitter: {
         card: "summary",
-        title: "Privacy Policy | Foxiz News",
-        description: "Learn how Foxiz collects, uses, and protects your personal information.",
+        title: "Privacy Policy | Quimera News",
+        description: "Learn how Quimera collects, uses, and protects your personal information.",
     },
 };
 
@@ -26,7 +26,7 @@ export default function PrivacyPolicyPage() {
     const lastUpdated = "February 23, 2026";
 
     return (
-        <main className="bg-[#f8f9fa] min-h-screen font-sans">
+        <main className="bg-[#f8f9fa] min-h-screen font-serif">
             <Header />
             {/* <Navbar /> */}
 
@@ -58,7 +58,7 @@ export default function PrivacyPolicyPage() {
                             <Lock size={120} />
                         </div>
                         <p className="text-lg md:text-xl leading-relaxed relative z-10 font-medium text-blue-50">
-                            Your privacy is important to us at <span className="font-black text-yellow-400">FOXIZ</span>. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.
+                            Your privacy is important to us at <span className="font-black text-yellow-400">QUIMERA</span>. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.
                         </p>
                     </div>
 

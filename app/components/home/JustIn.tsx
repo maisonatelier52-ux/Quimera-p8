@@ -20,7 +20,7 @@ export default function JustIn() {
                     {/* Main Article (Horizontal) */}
                     <div className="flex flex-col md:flex-row gap-8 items-center mb-6">
                         <div className="w-full md:w-[45%]">
-                            <Link href={`/articles/${mainArticle.slug}`} className="block overflow-hidden rounded-xl aspect-[1.5/1]">
+                            <Link href={`/articles/${mainArticle.slug}`} className="block overflow-hidden rounded-none aspect-[1.5/1]">
                                 <img
                                     src={mainArticle.image}
                                     alt={mainArticle.title}

@@ -6,19 +6,19 @@ import Link from 'next/link';
 import { ChevronRight, FileText, Copyright, UserCheck, MessageSquare, AlertTriangle, ShieldAlert } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Terms & Conditions | Foxiz News",
-    description: "Read the terms and conditions for using Foxiz website and our news services.",
+    title: "Terms & Conditions | Quimera News",
+    description: "Read the terms and conditions for using Quimera website and our news services.",
     openGraph: {
-        title: "Terms & Conditions | Foxiz News",
-        description: "Review the legal agreement and usage policies for Foxiz.",
-        url: "https://foxiz-news.com/terms-and-conditions",
-        siteName: "Foxiz",
+        title: "Terms & Conditions | Quimera News",
+        description: "Review the legal agreement and usage policies for Quimera.",
+        url: "https://quimera-news.com/terms-and-conditions",
+        siteName: "Quimera",
         type: "website",
     },
     twitter: {
         card: "summary",
-        title: "Terms & Conditions | Foxiz News",
-        description: "Official Foxiz Terms & Conditions - outlining usage rights and responsibilities.",
+        title: "Terms & Conditions | Quimera News",
+        description: "Official Quimera Terms & Conditions - outlining usage rights and responsibilities.",
     },
 };
 
@@ -26,7 +26,7 @@ export default function TermsConditionsPage() {
     const lastUpdated = "February 23, 2026";
 
     return (
-        <main className="bg-[#f8f9fa] min-h-screen font-sans">
+        <main className="bg-[#f8f9fa] min-h-screen font-serif">
             <Header />
             {/* <Navbar /> */}
 
@@ -68,7 +68,7 @@ export default function TermsConditionsPage() {
                             <FileText size={140} />
                         </div>
                         <p className="text-lg md:text-xl leading-relaxed relative z-10 font-medium text-blue-50">
-                            Your use of the <span className="font-black text-yellow-400">FOXIZ</span> platform and our digital services is subject to these Terms & Conditions. By accessing or using Foxiz, you agree to be bound by these legal terms. If you do not agree with any part of these terms, you must not use our website or services.
+                            Your use of the <span className="font-black text-yellow-400">QUIMERA</span> platform and our digital services is subject to these Terms & Conditions. By accessing or using Quimera, you agree to be bound by these legal terms. If you do not agree with any part of these terms, you must not use our website or services.
                         </p>
                     </div>
 
@@ -101,7 +101,7 @@ export default function TermsConditionsPage() {
                                         <Copyright size={18} /> Our Content Rights
                                     </h3>
                                     <p className="text-gray-700 mb-6 leading-relaxed">
-                                        All news articles, photographs, videos, graphics, and other content published on Foxiz are protected by international copyright laws and are owned by Foxiz or our content contributors. Unauthorized reproduction is strictly prohibited.
+                                        All news articles, photographs, videos, graphics, and other content published on Quimera are protected by international copyright laws and are owned by Quimera or our content contributors. Unauthorized reproduction is strictly prohibited.
                                     </p>
                                 </div>
 
@@ -153,7 +153,7 @@ export default function TermsConditionsPage() {
                                 <div className="lg:col-span-7">
                                     <h3 className="text-lg font-black text-[#00008B] mb-4 uppercase">Comment Policy</h3>
                                     <p className="text-gray-600 text-sm leading-relaxed">
-                                        We welcome reader discussions. By posting, you grant Foxiz a non-exclusive license to display your comments. You are solely responsible for the content of your submissions.
+                                        We welcome reader discussions. By posting, you grant Quimera a non-exclusive license to display your comments. You are solely responsible for the content of your submissions.
                                     </p>
                                 </div>
                                 <div className="lg:col-span-5 bg-gray-900 p-6 rounded-2xl text-white">
@@ -179,7 +179,7 @@ export default function TermsConditionsPage() {
                             <div className="bg-yellow-50 border-2 border-yellow-200 p-8 rounded-3xl relative">
                                 <div className="absolute top-0 right-0 -mt-3 mr-6 bg-yellow-400 text-black px-4 py-1 rounded text-[10px] font-black uppercase tracking-widest">Corrections Policy</div>
                                 <p className="text-lg font-bold text-gray-900 mb-4">"We strive for 100% accuracy, but we are committed to transparency when we fall short."</p>
-                                <p className="text-sm text-gray-700 mb-6">If you believe we have published inaccurate information, please contact our editorial team. Opinions expressed are those of the authors, not necessarily Foxiz News.</p>
+                                <p className="text-sm text-gray-700 mb-6">If you believe we have published inaccurate information, please contact our editorial team. Opinions expressed are those of the authors, not necessarily Quimera News.</p>
                                 <Link href="/contact" className="text-xs font-black uppercase border-b-2 border-yellow-600 pb-0.5 hover:text-red-600 hover:border-red-600 transition-all">Submit a Correction Request</Link>
                             </div>
                         </div>

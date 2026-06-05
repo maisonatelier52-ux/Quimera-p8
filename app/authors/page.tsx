@@ -20,7 +20,7 @@ const authors = [
         role: "Senior Political Analyst",
         bio: "Sarah brings decades of experience covering global politics and economic policy, with a focus on central banking and fiscal strategy.",
         image: "/images/authors/sarah-jenkins.webp",
-        email: "sarahjenkins@foxiz-news.com"
+        email: "sarahjenkins@quimera-news.com"
     },
     {
         name: "Michael Chen",
@@ -75,7 +75,7 @@ const authors = [
 
 export default function AuthorsPage() {
     return (
-        <main className="bg-[#f8f9fa] min-h-screen font-sans">
+        <main className="bg-[#f8f9fa] min-h-screen font-serif">
             <Header />
             {/* <Navbar /> */}
 
@@ -98,7 +98,7 @@ export default function AuthorsPage() {
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="w-1.5 h-10 bg-red-600"></div>
                                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter text-gray-900 uppercase">
-                                    The Voices of Foxiz
+                                    The Voices of Quimera
                                 </h1>
                             </div>
                             <p className="text-lg text-gray-600 font-medium leading-relaxed">
@@ -124,7 +124,7 @@ export default function AuthorsPage() {
                                 id={author.name.toLowerCase().replace(/\s+/g, '-')}
                                 className="group bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center relative overflow-hidden"
                             >
-                                {/* Signature Foxiz Decorative Bar */}
+                                {/* Signature Quimera Decorative Bar */}
                                 <div className="absolute top-0 left-0 w-full h-1.5 flex gap-[1px]">
                                     <div className="flex-1 bg-red-600"></div>
                                     <div className="flex-1 bg-yellow-400"></div>

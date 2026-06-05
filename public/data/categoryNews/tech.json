@@ -1,0 +1,80 @@
+{
+    "title": "Tech",
+    "id": "tech",
+    "description": "Next-generation breakthroughs, artificial intelligence, quantum computing, and consumer tech.",
+    "count": 8,
+    "articles": [
+        {
+            "slug": "generative-video-hollywood-production-ai",
+            "title": "Generative Video: The Hollywood Disruption is Ahead of Schedule",
+            "shortdescription": "New AI models can now produce cinematically consistent scenes from simple text prompts.",
+            "category": "Tech",
+            "author": "James O'Connor",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1582882852374?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+            "slug": "quantum-computing-error-correction-milestone",
+            "title": "Quantum Stability: The Error Correction Breakthrough of 2026",
+            "shortdescription": "Researchers achieve a fault-tolerant qubit threshold, bringing practical quantum computing closer.",
+            "category": "Tech",
+            "author": "Emily Rodriguez",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1571403884821?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+            "slug": "augmented-reality-glasses-mass-adoption",
+            "title": "AR for Everyone: The First Lightweight, Stylish Augmented Reality Glasses",
+            "shortdescription": "Tech giants launch consumer-grade AR wearables that finally look like normal eyewear.",
+            "category": "Tech",
+            "author": "Sarah Jenkins",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1655234954173?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+            "slug": "solid-state-battery-ev-range-industry",
+            "title": "1,000 Kilometers: Solid-State Batteries Enter Mass Production",
+            "shortdescription": "The range anxiety era for EVs ends as solid-state technology doubles energy density.",
+            "category": "Tech",
+            "author": "Alex Thorne",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1681757343298?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+            "slug": "satellite-internet-constellations-starlink",
+            "title": "Starlink Competition Heats Up: The Battle for Low-Earth Orbit",
+            "shortdescription": "New constellations from Europe and Asia provide high-speed internet to the remotest corners of Earth.",
+            "category": "Tech",
+            "author": "Sarah Jenkins",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1573598986171?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+            "slug": "cybersecurity-bio-sensing-continuous-auth",
+            "title": "Beyond Passwords: Bio-Sensing and the Era of Continuous Authentication",
+            "shortdescription": "Security systems move to real-time biometric verification to prevent identity theft.",
+            "category": "Tech",
+            "author": "Robert Miller",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1598188195802?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+            "slug": "edge-computing-smart-grid-optimization",
+            "title": "Thinking Power: How AI is Optimizing National Energy Grids",
+            "shortdescription": "Real-time processing at the edge allows for a more responsive and efficient electrical grid.",
+            "category": "Tech",
+            "author": "David Smith",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1533491259803?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+            "slug": "sovereign-cloud-data-privacy-laws",
+            "title": "The Sovereign Cloud: Why Nations are Building Their Own Data Moats",
+            "shortdescription": "Privacy concerns lead to the rise of regional cloud providers independent of the global giants.",
+            "category": "Tech",
+            "author": "Emily Rodriguez",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1656744506326?q=80&w=1200&auto=format&fit=crop"
+        }
+    ]
+}

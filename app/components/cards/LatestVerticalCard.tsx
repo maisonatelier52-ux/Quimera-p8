@@ -15,7 +15,7 @@ export default function LatestVerticalCard({ slug, image, category, title, showD
         <div className="relative group">
             <div className="flex flex-col gap-4">
                 {/* Image */}
-                <Link href={`/articles/${slug}`} className="block relative overflow-hidden rounded-xl aspect-[1.3/1] bg-gray-100">
+                <Link href={`/articles/${slug}`} className="block relative overflow-hidden rounded-none aspect-[1.3/1] bg-gray-100">
                     <img
                         src={image}
                         alt={title}

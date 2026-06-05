@@ -48,10 +48,10 @@ export default function MostReadWidget({ items }: MostReadWidgetProps) {
                 ))}
             </div>
             {/* Ad Space */}
-            <div className="mt-8 bg-black rounded-lg overflow-hidden text-center text-white relative aspect-[4/4] flex items-center justify-center">
+            <div className="mt-8 bg-black rounded-none overflow-hidden text-center text-white relative aspect-[4/4] flex items-center justify-center">
                 <div className="absolute inset-0 bg-gradient-to-br from-red-600 to-blue-900 opacity-20"></div>
                 <div className="relative z-10 px-6">
-                    <h3 className="text-3xl font-black italic mb-2 tracking-tighter">FOXIZ</h3>
+                    <h3 className="text-3xl font-black italic mb-2 tracking-tighter">QUIMERA</h3>
                     <p className="text-sm font-medium opacity-90">Modern Mobile-First WP Theme for News & Magazines</p>
                     <button className="mt-4 bg-white text-black px-4 py-2 text-xs font-bold uppercase rounded hover:bg-gray-200 transition-colors">
                         Buy Now

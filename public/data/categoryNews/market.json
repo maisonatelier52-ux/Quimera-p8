@@ -1,0 +1,80 @@
+{
+    "title": "Market",
+    "id": "market",
+    "description": "In-depth analysis of global trade, commodities, and market indices.",
+    "count": 8,
+    "articles": [
+        {
+            "slug": "commodity-supercycle-electrification-metals",
+            "title": "The 2026 Commodity Supercycle: Why Industrial Metals are the New Gold",
+            "shortdescription": "Rare earth elements and copper hit record highs as electrification demand outstrips supply.",
+            "category": "Market",
+            "author": "Alex Thorne",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1608607205623?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+            "slug": "emerging-markets-tech-hubs-valuation",
+            "title": "The Next Silicon Valleys: Emerging Market Tech Ecosystems Explode",
+            "shortdescription": "Valuations in Nairobi and Ho Chi Minh City startups signal a shift in global VC allocation.",
+            "category": "Market",
+            "author": "Emily Rodriguez",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1673999281809?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+            "slug": "blockchain-integration-markets-settlement",
+            "title": "Instant Liquidity: Moving Markets to T+0 Settlement",
+            "shortdescription": "How blockchain integration is eliminating the two-day settlement window for equity trades.",
+            "category": "Market",
+            "author": "Maria Sanchez",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1697244815813?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+            "slug": "volatility-index-ai-trading-psychology",
+            "title": "The VIX in the Age of AI: Is Volatility Being Suppressed or Hidden?",
+            "shortdescription": "Algorithms now control 90% of intraday moves, fundamentally changing market psychology.",
+            "category": "Market",
+            "author": "Emily Rodriguez",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1627389902190?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+            "slug": "green-bonds-debt-sustainable-infrastructure",
+            "title": "Green Bonds Reach $5 Trillion: The Mainstreaming of ESG Debt",
+            "shortdescription": "Institutional investors flee traditional energy debt for certified sustainable infrastructure bonds.",
+            "category": "Market",
+            "author": "Robert Miller",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1590609744435?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+            "slug": "altcoin-etf-capital-inflow-record",
+            "title": "The Second Wave: Institutional Capital Floods Ethereum and Solana ETFs",
+            "shortdescription": "Spot ETFs for altcoins receive regulatory approval, bringing trillions into the digital asset space.",
+            "category": "Market",
+            "author": "Maria Sanchez",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1646844522146?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+            "slug": "real-estate-tokenization-fractional-shares",
+            "title": "Fractional Ownership: How Tokenization is Unlocking Real Estate Markets",
+            "shortdescription": "High-rise commercial properties are being broken into digital shares, allowing retail participation.",
+            "category": "Market",
+            "author": "James O'Connor",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1676335130017?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+            "slug": "interest-rate-pivot-central-bank-cuts",
+            "title": "Beyond the Peak: Central Banks Signal the First Cut in Three Years",
+            "shortdescription": "Markets prepare for a gradual easing cycle as inflation stays within target ranges globally.",
+            "category": "Market",
+            "author": "Maria Sanchez",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1646464451800?q=80&w=1200&auto=format&fit=crop"
+        }
+    ]
+}

@@ -1,12 +1,10 @@
 {
     "links": [
-        "Opinion",
-        "Economic",
-        "Featured",
-        "Global Affairs",
-        "Climate Change",
-        "Renewable Energy",
         "Politics",
-        "Research"
+        "Market",
+        "Finance",
+        "Tech",
+        "Business",
+        "Sports"
     ]
 }

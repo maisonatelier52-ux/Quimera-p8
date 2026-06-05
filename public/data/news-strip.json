@@ -1,41 +1,58 @@
 {
     "items": [
         {
-            "slug": "cyberwarfare-defense-strategies-nato",
-            "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200&auto=format&fit=crop",
-            "category": "Security",
-            "title": "NATO Activates Digital Article 5 Protocols"
+            "slug": "venture-capital-profitability-quality-seed",
+            "title": "VC Pivot: Quality Over Growth at Any Cost",
+            "shortdescription": "Venture funds are shifting focus back to early-stage profitability and sustainable unit economics.",
+            "category": "Business",
+            "author": "Maria Sanchez",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1659737085997?q=80&w=1200&auto=format&fit=crop"
         },
         {
-            "slug": "the-future-of-privacy-is-it-already-gone",
-            "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200&auto=format&fit=crop",
-            "category": "Opinion",
-            "title": "The Illusion of Privacy: Can We Ever Truly Disconnect?"
+            "slug": "sustainable-finance-taxonomy-greenwashing",
+            "title": "The Sustainable Finance Map: Aligning Global Green Definitions",
+            "shortdescription": "Regulators finally agree on what constitutes a 'green' investment, reducing greenwashing risks.",
+            "category": "Finance",
+            "author": "David Smith",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1508581955072?q=80&w=1200&auto=format&fit=crop"
         },
         {
-            "slug": "space-exploration-priority-vs-earth-issues",
-            "image": "https://images.unsplash.com/photo-1446941611757-91d2c3bd3d45?q=80&w=1200&auto=format&fit=crop",
-            "category": "Opinion",
-            "title": "The Mars Dilemma: Why Exploration Inspires Solutions for Earth"
+            "slug": "chief-purpose-officer-corporate-culture",
+            "title": "The Chief Purpose Officer: Why Culture is the Ultimate Competitive Advantage",
+            "shortdescription": "Companies are investing heavily in employee mental health and long-term career fulfillment.",
+            "category": "Business",
+            "author": "David Smith",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1599487267941?q=80&w=1200&auto=format&fit=crop"
         },
         {
-            "slug": "universal-basic-income-the-looming-necessity",
-            "image": "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=1200&auto=format&fit=crop",
-            "category": "Opinion",
-            "title": "The AI Safety Net: Why UBI is No Longer an Option, but a Necessity",
-            "hasVideo": true
+            "slug": "wearable-sensors-concussion-prevention-safety",
+            "title": "Smart Armor: Sensor-Equipped Gear Leads the Charge in Athlete Concussion Prevention",
+            "shortdescription": "New impact-sensing helmets and mouthguards transmit real-time telemetry to medical staff on the sidelines.",
+            "category": "Sports",
+            "author": "Alex Thorne",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1597666137110?q=80&w=1200&auto=format&fit=crop"
         },
         {
-            "slug": "mental-health-infrastructure-social-priority",
-            "image": "https://images.unsplash.com/photo-1493836512294-502baa1986e2?q=80&w=1200&auto=format&fit=crop",
-            "category": "Opinion",
-            "title": "The Silent Crisis: Why Mental Health must be the Priority of 2026"
+            "slug": "high-speed-rail-infrastructure-approved",
+            "title": "Blueprint for the Future: National High-Speed Rail Network Approved",
+            "shortdescription": "A multi-trillion dollar investment into clean transportation infrastructure takes flight.",
+            "category": "Politics",
+            "author": "Emily Rodriguez",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1648798897364?q=80&w=1200&auto=format&fit=crop"
         },
         {
-            "slug": "genomic-editing-precision-medicine-2026",
-            "image": "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?q=80&w=1200&auto=format&fit=crop",
-            "category": "Health",
-            "title": "CRISPR 2.0: Error-Free DNA Editing"
+            "slug": "athlete-longevity-advanced-biomedical-recovery",
+            "title": "Extending the Peak: How Biomedical Recovery is Keeping Athletes Active Longer",
+            "shortdescription": "Hyperbaric chambers, targeted gene therapy, and stem-cell recovery extend elite athletic careers.",
+            "category": "Sports",
+            "author": "James O'Connor",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1689533926551?q=80&w=1200&auto=format&fit=crop"
         }
     ]
 }

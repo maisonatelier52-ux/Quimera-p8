@@ -1,38 +1,51 @@
 {
     "topArticles": [
         {
-            "slug": "labor-market-shifts-automation-impact",
-            "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1200&auto=format&fit=crop",
-            "category": "Economy",
-            "date": "Feb 24, 2026",
-            "title": "The AI Labor Shift: How Automation is Creating a New Class of Digital Workforce"
+            "slug": "hybrid-work-equilibrium-retention-model",
+            "title": "The End of the Debate: Companies Settle on the 3-2 Hybrid Model",
+            "shortdescription": "New data shows peak productivity and employee retention align with a flexible office schedule.",
+            "category": "Business",
+            "author": "Robert Miller",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1666760052188?q=80&w=1200&auto=format&fit=crop"
         },
         {
-            "slug": "global-supply-chain-rebalancing-act",
-            "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1200&auto=format&fit=crop",
-            "category": "Economic",
-            "date": "Feb 23, 2026",
-            "title": "Supply Chain 2026: The Strategic Move Toward Regional Resilience and Local Fabs"
+            "slug": "startup-exit-strategies-ipo-scrutiny",
+            "title": "The Exit Landscape: Why IPOs are Preferred Over Tech Consolidations",
+            "shortdescription": "Regulatory scrutiny on Big Tech acquisitions drives founders toward the public markets.",
+            "category": "Business",
+            "author": "Michael Chen",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1612464878181?q=80&w=1200&auto=format&fit=crop"
         }
     ],
     "bottomArticles": [
         {
-            "slug": "the-future-of-commercial-real-estate",
-            "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=1200&auto=format&fit=crop",
-            "category": "Economic",
-            "title": "The Post-Office Era: How Commercial Real Estate is Being Reimagined as Living Spaces"
+            "slug": "reshoring-manufacturing-automated-smart-factories",
+            "title": "The Reshoring Wave: Manufacturing Returns to North America",
+            "shortdescription": "Highly automated smart factories allow companies to move production closer to consumers.",
+            "category": "Business",
+            "author": "Maria Sanchez",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1695306216079?q=80&w=1200&auto=format&fit=crop"
         },
         {
-            "slug": "fdi-trends-emerging-tech-hubs-asia",
-            "image": "https://images.unsplash.com/photo-1474314170901-f351b68f544f?q=80&w=1200&auto=format&fit=crop",
-            "category": "Economic",
-            "title": "Asia's New Tech Hubs: Why FDI is Pouring into Vietnam and Indonesia in 2026"
+            "slug": "scope-3-carbon-supply-chain-reporting",
+            "title": "Scope 3 Transparency: The New Standard for Corporate Climate Responsibility",
+            "shortdescription": "New legislation requires every public company to audit the carbon footprint of their entire supply chain.",
+            "category": "Business",
+            "author": "David Smith",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1659762156341?q=80&w=1200&auto=format&fit=crop"
         },
         {
-            "slug": "consumer-spending-patterns-post-recession",
-            "image": "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?q=80&w=1200&auto=format&fit=crop",
-            "category": "Economic",
-            "title": "The Experience Economy: Why Consumer Spending is Shifting from Goods to Memory"
+            "slug": "venture-capital-profitability-quality-seed",
+            "title": "VC Pivot: Quality Over Growth at Any Cost",
+            "shortdescription": "Venture funds are shifting focus back to early-stage profitability and sustainable unit economics.",
+            "category": "Business",
+            "author": "Maria Sanchez",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1659737085997?q=80&w=1200&auto=format&fit=crop"
         }
     ]
 }

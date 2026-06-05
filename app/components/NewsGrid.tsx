@@ -31,7 +31,7 @@ export default function NewsGrid({ title, articles }: NewsGridProps) {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
                 {articles.map((article) => (
                     <article key={article.slug} className="group flex flex-col cursor-pointer">
-                        <Link href={`/articles/${article.slug}`} className="block relative aspect-square overflow-hidden rounded-2xl bg-gray-100 mb-6 premium-card">
+                        <Link href={`/articles/${article.slug}`} className="block relative aspect-square overflow-hidden rounded-none bg-gray-100 mb-6 premium-card">
                             <img
                                 src={article.image || '/images/news/markets-1.webp'}
                                 alt={article.title}

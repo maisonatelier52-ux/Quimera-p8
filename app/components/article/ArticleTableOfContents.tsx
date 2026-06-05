@@ -7,7 +7,7 @@ export default function ArticleTableOfContents() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="my-8 border border-gray-100 rounded-xl overflow-hidden max-w-sm">
+        <div className="my-8 border border-gray-100 rounded-none overflow-hidden max-w-sm">
             <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="w-full flex items-center justify-between p-4 bg-gray-50/50 hover:bg-gray-50 transition-colors"

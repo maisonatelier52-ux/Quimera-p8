@@ -11,7 +11,7 @@ export default function NewsletterSidebar() {
                     <div className="w-1.5 h-full bg-cyan-400"></div>
                 </div>
                 <span className="text-2xl font-black italic tracking-tighter text-[#09365E]">
-                    FOXIZ
+                    QUIMERA
                 </span>
             </div>
 

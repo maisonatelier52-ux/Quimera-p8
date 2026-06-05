@@ -1,80 +1,80 @@
 {
     "title": "Politics",
     "id": "politics",
-    "description": "Inside coverage of governance, policy-making, and political developments.",
+    "description": "Inside coverage of governance, policymaking, and political developments.",
     "count": 8,
     "articles": [
         {
-            "slug": "un-security-council-expansion-debate",
-            "title": "Diplomatic Deadlock: The Heated Debate Over UN Security Council Expansion",
-            "shortdescription": "A high-level summit in New York has reignited the long-standing push to reform the United Nations Security Council.",
+            "slug": "global-diplomacy-digital-sovereignty-2026",
+            "title": "The Future of Global Diplomacy: Beyond Traditional Borders",
+            "shortdescription": "Shift in international relations as digital sovereignty becomes a key bargaining chip.",
             "category": "Politics",
-            "author": "James Sinclair",
-            "date": "Feb 24, 2026",
-            "image": "https://images.unsplash.com/photo-1541873676947-9c6196bc5458?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "global-democracy-index-2026-results",
-            "title": "Democracy Index 2026: Nordic Nations Lead as Global Stability Falters",
-            "shortdescription": "The latest annual report reveals a widening gap between 'full democracies' and 'authoritarian hybrid' states.",
-            "category": "Politics",
-            "author": "James Sinclair",
-            "date": "Feb 23, 2026",
-            "image": "https://images.unsplash.com/photo-1529101091760-61df6be24296?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "trans-atlantic-trade-partnership-renewal",
-            "title": "A New Economic Shield: Trans-Atlantic Partnership Renewed for 2026",
-            "shortdescription": "Leaders from the European Union and the United States have signed the 'Brussels Accords' for green tech.",
-            "category": "Politics",
-            "author": "Isabella Moretti",
-            "date": "Feb 22, 2026",
-            "image": "https://images.unsplash.com/photo-1541873676947-9c6196bc5458?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "ai-governance-summit-geneva",
-            "title": "The Geneva Accord: World Leaders Sign Binding Treaty on Autonomous Weapons",
-            "shortdescription": "In a landmark diplomatic achievement, 142 nations have agreed to a total ban on 'lethal autonomous systems'.",
-            "category": "Politics",
-            "author": "James Sinclair",
-            "date": "Feb 21, 2026",
-            "image": "https://images.unsplash.com/photo-1589254065878-42c9da997008?q=80&w=1200&auto=format&fit=crop"
-        },
-        {
-            "slug": "midterm-shift-2026-analysis",
-            "title": "The 2026 Midterm Shift: A Deep Dive into the Battle for the House",
-            "shortdescription": "With record-breaking turnout, the 2026 midterms are shaping up to be a historic pivot in the national landscape.",
-            "category": "Politics",
-            "author": "Robert Miller",
-            "date": "Feb 20, 2026",
-            "image": "https://images.unsplash.com/photo-1587654754713?q=80&w=1200&auto=format&fit=crop"
+            "author": "Jessica Wu",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1502911236406?q=80&w=1200&auto=format&fit=crop"
         },
         {
             "slug": "electoral-reforms-digital-voting-security",
             "title": "Electoral Reforms: Can Digital Voting Ever Be Truly Secure?",
-            "shortdescription": "Following successful state-level trials, the push for a national digital voting standard has reached Congress.",
+            "shortdescription": "A deep dive into the blockchain-based voting systems being trialed in Northern Europe.",
             "category": "Politics",
-            "author": "David Smith",
-            "date": "Feb 19, 2026",
-            "image": "https://images.unsplash.com/photo-1510766801085?q=80&w=1200&auto=format&fit=crop"
+            "author": "Jessica Wu",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1692596212040?q=80&w=1200&auto=format&fit=crop"
         },
         {
-            "slug": "the-rise-of-decentralized-governance",
-            "title": "The Rise of DAOs: Could Decentralized Governance Replace City Councils?",
-            "shortdescription": "A small town in Wyoming has become the world's first 'Algorithmic Municipality' using a DAO.",
+            "slug": "taxing-the-multinationals-2026-policy",
+            "title": "Taxing the Giants: Global Minimum Tax Reaches 20%",
+            "shortdescription": "A historic milestone in international tax law as 140 countries implement the 20% floor.",
             "category": "Politics",
-            "author": "David Smith",
-            "date": "Feb 18, 2026",
-            "image": "https://images.unsplash.com/photo-1620361923136?q=80&w=1200&auto=format&fit=crop"
+            "author": "James O'Connor",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1622049409693?q=80&w=1200&auto=format&fit=crop"
         },
         {
-            "slug": "the-future-of-global-diplomacy-2026",
-            "title": "The Future of Global Diplomacy: Beyond Traditional Borders",
-            "shortdescription": "As non-state actors gain power, the traditional model of diplomacy is being replaced by a fluid network.",
+            "slug": "high-speed-rail-infrastructure-approved",
+            "title": "Blueprint for the Future: National High-Speed Rail Network Approved",
+            "shortdescription": "A multi-trillion dollar investment into clean transportation infrastructure takes flight.",
             "category": "Politics",
             "author": "Emily Rodriguez",
-            "date": "Feb 17, 2026",
-            "image": "https://images.unsplash.com/photo-1525949901654?q=80&w=1200&auto=format&fit=crop"
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1648798897364?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+            "slug": "midterm-elections-legislative-impact-2026",
+            "title": "The 2026 Midterm Shift: A Deep Dive into the Battle for the House",
+            "shortdescription": "As the midterm elections approach, political analysts are witnessing a seismic shift.",
+            "category": "Politics",
+            "author": "Jessica Wu",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1637131870998?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+            "slug": "ocean-territory-disputes-treaty-arctic",
+            "title": "The High Seas Treaty: Resolving Arctic Territory Disputes",
+            "shortdescription": "New legislative frameworks aim to protect deep-sea biodiversity while managing mineral rights.",
+            "category": "Politics",
+            "author": "Alex Thorne",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1638875796566?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+            "slug": "climate-policy-carbon-tax-economic",
+            "title": "Climate Policy Shift: Economic Giants Align on Carbon Taxes",
+            "shortdescription": "Major powers agree on a unified carbon pricing framework to accelerate the green transition.",
+            "category": "Politics",
+            "author": "Robert Miller",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1624825164577?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+            "slug": "decentralized-governance-dao-municipal-budgets",
+            "title": "The Rise of DAOs: Could Decentralized Governance Replace City Councils?",
+            "shortdescription": "How smart contracts are beginning to manage local municipal budgets and urban planning.",
+            "category": "Politics",
+            "author": "Robert Miller",
+            "date": "February 23, 2026",
+            "image": "https://images.unsplash.com/photo-1501338423923?q=80&w=1200&auto=format&fit=crop"
         }
     ]
 }

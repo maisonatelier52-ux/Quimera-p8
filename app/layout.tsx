@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, Playfair_Display } from 'next/font/google';
+import { Inter, Merriweather } from 'next/font/google';
 import './globals.css';
 
 const inter = Inter({
@@ -8,9 +8,10 @@ const inter = Inter({
   display: 'swap',
 });
 
-const playfair = Playfair_Display({
+const merriweather = Merriweather({
+  weight: ['300', '400', '700', '900'],
   subsets: ['latin'],
-  variable: '--font-playfair',
+  variable: '--font-serif-next',
   display: 'swap',
 });
 
@@ -29,8 +30,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`} suppressHydrationWarning>
-      <body className="antialiased font-sans">
+    <html lang="en" className={`${inter.variable} ${merriweather.variable}`} suppressHydrationWarning>
+      <body className="antialiased font-serif">
         {children}
       </body>
     </html>
