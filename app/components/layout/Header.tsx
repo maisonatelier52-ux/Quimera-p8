@@ -14,10 +14,12 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import SearchModal from '../SearchModal';
 
 export default function Header() {
     const pathname = usePathname();
     const [currentDateTime, setCurrentDateTime] = useState('');
+    const [isSearchOpen, setIsSearchOpen] = useState(false);
 
     useEffect(() => {
         const updateDateTime = () => {
@@ -71,7 +73,10 @@ export default function Header() {
 
                     {/* Right: Actions */}
                     <div className="flex justify-end gap-4">
-                        <button className="p-2 hover:bg-white/10 rounded-full transition-colors">
+                        <button 
+                            className="p-2 hover:bg-white/10 rounded-full transition-colors"
+                            onClick={() => setIsSearchOpen(true)}
+                        >
                             <Search size={20} />
                         </button>
                     </div>
@@ -142,6 +147,9 @@ export default function Header() {
                     </div>
                 </div>
             </div>
+            
+            {/* Search Modal */}
+            <SearchModal isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
         </header>
     );
 }
