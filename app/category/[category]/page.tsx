@@ -29,10 +29,40 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
     const { category } = await params;
     const data = await getCategoryData(category);
     const title = data?.title || category.charAt(0).toUpperCase() + category.slice(1);
+    const fullTitle = `${title} | Quimera News`;
+    const description = data?.description || `Latest news and updates in ${title}.`;
+    const canonicalUrl = `https://quimera-news.com/category/${category.toLowerCase()}`;
 
     return {
-        title: `${title} | Quimera News`,
-        description: data?.description || `Latest news and updates in ${title}.`,
+        title: fullTitle,
+        description,
+        keywords: [title, "Quimera", "news", "updates", category],
+        alternates: {
+            canonical: canonicalUrl,
+        },
+        openGraph: {
+            title: fullTitle,
+            description,
+            url: canonicalUrl,
+            siteName: "Quimera News",
+            images: [
+                {
+                    url: "/images/news/markets-1.webp",
+                    width: 1200,
+                    height: 630,
+                    alt: `${title} News - Quimera`,
+                }
+            ],
+            type: "website",
+            locale: "en_US",
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: fullTitle,
+            description,
+            site: "@quimeranews",
+            images: ["/images/news/markets-1.webp"],
+        },
     };
 }
 

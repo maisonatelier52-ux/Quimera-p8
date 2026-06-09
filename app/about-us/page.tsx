@@ -7,11 +7,15 @@ import Link from 'next/link';
 export const metadata: Metadata = {
     title: "About Us | Quimera News",
     description: "Learn about Quimera - your premier source for global news, economic analysis, and breaking stories across the world.",
+    keywords: ["Quimera", "about us", "global news", "news company", "journalism", "media organization", "financial news", "editorial team"],
+    alternates: {
+        canonical: "https://quimera-news.com/about-us",
+    },
     openGraph: {
         title: "About Us | Quimera News",
         description: "Discover the journey and mission of Quimera, a leader in modern financial and global journalism.",
         url: "https://quimera-news.com/about-us",
-        siteName: "Quimera",
+        siteName: "Quimera News",
         images: [
             {
                 url: "/images/news/markets-1.webp",
@@ -21,11 +25,13 @@ export const metadata: Metadata = {
             }
         ],
         type: "website",
+        locale: "en_US",
     },
     twitter: {
         card: "summary_large_image",
         title: "About Us | Quimera News",
         description: "Official Quimera About Us page - detailing our commitment to journalism and transparency.",
+        site: "@quimeranews",
         images: ["/images/news/markets-1.webp"],
     },
 };

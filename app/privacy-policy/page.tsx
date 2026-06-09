@@ -7,18 +7,33 @@ import { ChevronRight, ShieldCheck, Lock, Eye, Bell } from "lucide-react";
 
 export const metadata: Metadata = {
     title: "Privacy Policy | Quimera News",
-    description: "Learn how Quimera collects, uses, and protects your personal information.",
+    description: "Learn how Quimera collects, uses, and protects your personal information. Read our comprehensive Privacy Policy.",
+    keywords: ["Quimera", "privacy policy", "data protection", "user privacy", "cookies", "information security"],
+    alternates: {
+        canonical: "https://quimera-news.com/privacy-policy",
+    },
     openGraph: {
         title: "Privacy Policy | Quimera News",
         description: "Learn how Quimera collects, uses, and protects your personal information.",
         url: "https://quimera-news.com/privacy-policy",
-        siteName: "Quimera",
+        siteName: "Quimera News",
+        images: [
+            {
+                url: "/images/news/markets-1.webp",
+                width: 1200,
+                height: 630,
+                alt: "Privacy Policy - Quimera",
+            }
+        ],
         type: "website",
+        locale: "en_US",
     },
     twitter: {
-        card: "summary",
+        card: "summary_large_image",
         title: "Privacy Policy | Quimera News",
-        description: "Learn how Quimera collects, uses, and protects your personal information.",
+        description: "Review our privacy practices and data protection policies.",
+        site: "@quimeranews",
+        images: ["/images/news/markets-1.webp"],
     },
 };
 

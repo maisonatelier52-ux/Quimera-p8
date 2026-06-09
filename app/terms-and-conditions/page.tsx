@@ -7,18 +7,33 @@ import { ChevronRight, FileText, Copyright, UserCheck, MessageSquare, AlertTrian
 
 export const metadata: Metadata = {
     title: "Terms & Conditions | Quimera News",
-    description: "Read the terms and conditions for using Quimera website and our news services.",
+    description: "Read the terms and conditions for using Quimera website and our news services. Review our legal agreement and usage policies.",
+    keywords: ["Quimera", "terms and conditions", "terms of service", "legal agreement", "usage policies", "user guidelines"],
+    alternates: {
+        canonical: "https://quimera-news.com/terms-and-conditions",
+    },
     openGraph: {
         title: "Terms & Conditions | Quimera News",
         description: "Review the legal agreement and usage policies for Quimera.",
         url: "https://quimera-news.com/terms-and-conditions",
-        siteName: "Quimera",
+        siteName: "Quimera News",
+        images: [
+            {
+                url: "/images/news/markets-1.webp",
+                width: 1200,
+                height: 630,
+                alt: "Terms and Conditions - Quimera",
+            }
+        ],
         type: "website",
+        locale: "en_US",
     },
     twitter: {
-        card: "summary",
+        card: "summary_large_image",
         title: "Terms & Conditions | Quimera News",
         description: "Official Quimera Terms & Conditions - outlining usage rights and responsibilities.",
+        site: "@quimeranews",
+        images: ["/images/news/markets-1.webp"],
     },
 };
 
