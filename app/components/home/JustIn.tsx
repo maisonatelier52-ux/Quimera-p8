@@ -2,10 +2,11 @@ import React from 'react';
 import Link from 'next/link';
 import { Bookmark } from 'lucide-react';
 import OverlayCard from '../cards/OverlayCard';
-import justInData from '@/public/data/just-in.json';
+import allArticles from '@/public/data/all-articles-index.json';
 
 export default function JustIn() {
-    const { mainArticle, bottomArticles } = justInData;
+    const mainArticle = allArticles[9];
+    const bottomArticles = allArticles.slice(10, 13);
 
     return (
         <section className="w-full bg-white py-8">

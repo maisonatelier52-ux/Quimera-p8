@@ -1,8 +1,9 @@
 import React from 'react';
 import LatestVerticalCard from '../cards/LatestVerticalCard';
-import latestData from '@/public/data/latest-news.json';
+import allArticles from '@/public/data/all-articles-index.json';
 
 export default function TheLatest() {
+    const latestArticles = allArticles.slice(28, 33);
     return (
         <section className="w-full bg-white py-8 pb-8">
             <div className="max-w-[1330px] mx-auto px-4">
@@ -12,13 +13,12 @@ export default function TheLatest() {
                     <span className="text-red-600 text-2xl font-black italic">//</span>
                 </div>
 
-                {/* Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-8">
-                    {latestData.articles.map((article, index) => (
+                    {latestArticles.map((article, index) => (
                         <LatestVerticalCard
                             key={index}
                             {...article}
-                            showDivider={index < latestData.articles.length - 1}
+                            showDivider={index < latestArticles.length - 1}
                         />
                     ))}
                 </div>

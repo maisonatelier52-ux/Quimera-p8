@@ -31,9 +31,41 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const articleData = await getArticleData(slug);
     if (!articleData) return { title: 'Article Not Found' };
 
+    const title = `${articleData.title} | Quimera News`;
+    const description = articleData.excerpt || articleData.shortdescription || 'Read the latest news report on Quimera.';
+    const image = articleData.mainImage || articleData.image || '/images/news/markets-1.webp';
+    const canonicalUrl = `https://quimera-news.com/articles/${slug}`;
+
     return {
-        title: `${articleData.title} | Quimera News`,
-        description: articleData.excerpt || 'Read the latest news report on Quimera.',
+        title,
+        description,
+        keywords: [articleData.category, "Quimera", "global news", articleData.author?.name || articleData.author, "breaking news"],
+        alternates: {
+            canonical: canonicalUrl,
+        },
+        openGraph: {
+            title,
+            description,
+            url: canonicalUrl,
+            siteName: "Quimera News",
+            images: [
+                {
+                    url: image,
+                    width: 1200,
+                    height: 630,
+                    alt: articleData.title,
+                }
+            ],
+            type: "article",
+            locale: "en_US",
+        },
+        twitter: {
+            card: "summary_large_image",
+            title,
+            description,
+            site: "@quimeranews",
+            images: [image],
+        },
     };
 }
 

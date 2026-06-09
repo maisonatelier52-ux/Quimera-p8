@@ -1,12 +1,147 @@
 [
   {
-    "slug": "global-diplomacy-digital-sovereignty-2026",
-    "title": "The Future of Global Diplomacy: Beyond Traditional Borders",
-    "shortdescription": "Shift in international relations as digital sovereignty becomes a key bargaining chip.",
+    "slug": "edge-computing-smart-grid-optimization",
+    "title": "Thinking Power: How AI is Optimizing National Energy Grids",
+    "shortdescription": "Real-time processing at the edge allows for a more responsive and efficient electrical grid.",
+    "category": "Tech",
+    "author": "David Smith",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/tech.png"
+  },
+  {
+    "slug": "venture-capital-profitability-quality-seed",
+    "title": "VC Pivot: Quality Over Growth at Any Cost",
+    "shortdescription": "Venture funds are shifting focus back to early-stage profitability and sustainable unit economics.",
+    "category": "Business",
+    "author": "Maria Sanchez",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/business.png"
+  },
+  {
+    "slug": "satellite-internet-constellations-starlink",
+    "title": "Starlink Competition Heats Up: The Battle for Low-Earth Orbit",
+    "shortdescription": "New constellations from Europe and Asia provide high-speed internet to the remotest corners of Earth.",
+    "category": "Tech",
+    "author": "Sarah Jenkins",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/tech.png"
+  },
+  {
+    "slug": "generative-video-hollywood-production-ai",
+    "title": "Generative Video: The Hollywood Disruption is Ahead of Schedule",
+    "shortdescription": "New AI models can now produce cinematically consistent scenes from simple text prompts.",
+    "category": "Tech",
+    "author": "James O'Connor",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/tech.png"
+  },
+  {
+    "slug": "mergers-acquisitions-aerospace-consolidation",
+    "title": "Industrial Titans Merge: A New Era of Global Manufacturing Efficiency",
+    "shortdescription": "Consolidation in the aerospace and defense sectors signals a more competitive global landscape.",
+    "category": "Business",
+    "author": "Emily Rodriguez",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/business.png"
+  },
+  {
+    "slug": "emerging-markets-tech-hubs-valuation",
+    "title": "The Next Silicon Valleys: Emerging Market Tech Ecosystems Explode",
+    "shortdescription": "Valuations in Nairobi and Ho Chi Minh City startups signal a shift in global VC allocation.",
+    "category": "Market",
+    "author": "Emily Rodriguez",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/market.png"
+  },
+  {
+    "slug": "pension-fund-private-equity-strategy",
+    "title": "Pensions Pivot: Increasing Exposure to Private Equity and Infrastructure",
+    "shortdescription": "Retirement funds look beyond public equities to ensure long-term returns in a low-growth era.",
+    "category": "Finance",
+    "author": "Michael Chen",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/finance.png"
+  },
+  {
+    "slug": "cybersecurity-bio-sensing-continuous-auth",
+    "title": "Beyond Passwords: Bio-Sensing and the Era of Continuous Authentication",
+    "shortdescription": "Security systems move to real-time biometric verification to prevent identity theft.",
+    "category": "Tech",
+    "author": "Robert Miller",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/tech.png"
+  },
+  {
+    "slug": "central-bank-digital-currencies-pilot",
+    "title": "The Digital Dollar: Fed Launches Pilot for Institutional CBDC",
+    "shortdescription": "A significant step toward the modernization of the US payment system begins its trial phase.",
+    "category": "Finance",
+    "author": "Michael Chen",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/finance.png"
+  },
+  {
+    "slug": "commodity-supercycle-electrification-metals",
+    "title": "The 2026 Commodity Supercycle: Why Industrial Metals are the New Gold",
+    "shortdescription": "Rare earth elements and copper hit record highs as electrification demand outstrips supply.",
+    "category": "Market",
+    "author": "Alex Thorne",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/market.png"
+  },
+  {
+    "slug": "banking-sector-branchless-mobile-future",
+    "title": "The Branchless Future: Legacy Banks Finally Close Physical Retail Gaps",
+    "shortdescription": "Traditional banking giants complete their shift to mobile-first operations, shuttering legacy branches.",
+    "category": "Finance",
+    "author": "Alex Thorne",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/finance.png"
+  },
+  {
+    "slug": "solid-state-battery-ev-range-industry",
+    "title": "1,000 Kilometers: Solid-State Batteries Enter Mass Production",
+    "shortdescription": "The range anxiety era for EVs ends as solid-state technology doubles energy density.",
+    "category": "Tech",
+    "author": "Alex Thorne",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/tech.png"
+  },
+  {
+    "slug": "scope-3-carbon-supply-chain-reporting",
+    "title": "Scope 3 Transparency: The New Standard for Corporate Climate Responsibility",
+    "shortdescription": "New legislation requires every public company to audit the carbon footprint of their entire supply chain.",
+    "category": "Business",
+    "author": "David Smith",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/business.png"
+  },
+  {
+    "slug": "taxing-the-multinationals-2026-policy",
+    "title": "Taxing the Giants: Global Minimum Tax Reaches 20%",
+    "shortdescription": "A historic milestone in international tax law as 140 countries implement the 20% floor.",
     "category": "Politics",
-    "author": "Jessica Wu",
+    "author": "James O'Connor",
     "date": "February 23, 2026",
     "image": "/images/category-news/politics.png"
+  },
+  {
+    "slug": "personal-wealth-management-ai-advisors",
+    "title": "The AI Financial Advisor: Democratizing Elite Wealth Management",
+    "shortdescription": "Sophisticated wealth strategies are now accessible to retail investors through low-cost AI platforms.",
+    "category": "Finance",
+    "author": "Robert Miller",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/finance.png"
+  },
+  {
+    "slug": "women-sports-broadcasting-revenue-records",
+    "title": "The Broadcast Boom: Women's Professional Sports Hit Historic Revenue Milestones",
+    "shortdescription": "Surging viewership drives record-breaking media rights deals and stadium sellouts globally.",
+    "category": "Sports",
+    "author": "Alex Thorne",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/sports.png"
   },
   {
     "slug": "electoral-reforms-digital-voting-security",
@@ -18,11 +153,56 @@
     "image": "/images/category-news/politics.png"
   },
   {
-    "slug": "taxing-the-multinationals-2026-policy",
-    "title": "Taxing the Giants: Global Minimum Tax Reaches 20%",
-    "shortdescription": "A historic milestone in international tax law as 140 countries implement the 20% floor.",
+    "slug": "ai-coaching-analytics-performance-tracking",
+    "title": "The AI Coach: How Real-Time Predictive Analytics is Revolutionizing Team Sports",
+    "shortdescription": "Elite teams leverage continuous biometrics and AI projections to make in-game coaching adjustments.",
+    "category": "Sports",
+    "author": "Sarah Jenkins",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/sports.png"
+  },
+  {
+    "slug": "chief-purpose-officer-corporate-culture",
+    "title": "The Chief Purpose Officer: Why Culture is the Ultimate Competitive Advantage",
+    "shortdescription": "Companies are investing heavily in employee mental health and long-term career fulfillment.",
+    "category": "Business",
+    "author": "David Smith",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/business.png"
+  },
+  {
+    "slug": "esports-olympics-inaugural-games-2026",
+    "title": "The Virtual Arena: Inaugural Olympic Esports Games Set to Begin in 2026",
+    "shortdescription": "Competitive gaming gains ultimate recognition as the IOC prepares for the first virtual Olympic events.",
+    "category": "Sports",
+    "author": "Michael Chen",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/sports.png"
+  },
+  {
+    "slug": "inflation-hedging-strategies-tangible-assets",
+    "title": "Hedging for the 20s: Tangible Assets Overcome Monetary Inflation",
+    "shortdescription": "Investors look toward farmland, timber, and fine art to protect purchasing power.",
+    "category": "Finance",
+    "author": "David Smith",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/finance.png"
+  },
+  {
+    "slug": "hybrid-work-equilibrium-retention-model",
+    "title": "The End of the Debate: Companies Settle on the 3-2 Hybrid Model",
+    "shortdescription": "New data shows peak productivity and employee retention align with a flexible office schedule.",
+    "category": "Business",
+    "author": "Robert Miller",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/business.png"
+  },
+  {
+    "slug": "global-diplomacy-digital-sovereignty-2026",
+    "title": "The Future of Global Diplomacy: Beyond Traditional Borders",
+    "shortdescription": "Shift in international relations as digital sovereignty becomes a key bargaining chip.",
     "category": "Politics",
-    "author": "James O'Connor",
+    "author": "Jessica Wu",
     "date": "February 23, 2026",
     "image": "/images/category-news/politics.png"
   },
@@ -36,6 +216,15 @@
     "image": "/images/category-news/politics.png"
   },
   {
+    "slug": "athlete-longevity-advanced-biomedical-recovery",
+    "title": "Extending the Peak: How Biomedical Recovery is Keeping Athletes Active Longer",
+    "shortdescription": "Hyperbaric chambers, targeted gene therapy, and stem-cell recovery extend elite athletic careers.",
+    "category": "Sports",
+    "author": "James O'Connor",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/sports.png"
+  },
+  {
     "slug": "midterm-elections-legislative-impact-2026",
     "title": "The 2026 Midterm Shift: A Deep Dive into the Battle for the House",
     "shortdescription": "As the midterm elections approach, political analysts are witnessing a seismic shift.",
@@ -45,47 +234,11 @@
     "image": "/images/category-news/politics.png"
   },
   {
-    "slug": "ocean-territory-disputes-treaty-arctic",
-    "title": "The High Seas Treaty: Resolving Arctic Territory Disputes",
-    "shortdescription": "New legislative frameworks aim to protect deep-sea biodiversity while managing mineral rights.",
-    "category": "Politics",
-    "author": "Alex Thorne",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/politics.png"
-  },
-  {
-    "slug": "climate-policy-carbon-tax-economic",
-    "title": "Climate Policy Shift: Economic Giants Align on Carbon Taxes",
-    "shortdescription": "Major powers agree on a unified carbon pricing framework to accelerate the green transition.",
-    "category": "Politics",
-    "author": "Robert Miller",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/politics.png"
-  },
-  {
-    "slug": "decentralized-governance-dao-municipal-budgets",
-    "title": "The Rise of DAOs: Could Decentralized Governance Replace City Councils?",
-    "shortdescription": "How smart contracts are beginning to manage local municipal budgets and urban planning.",
-    "category": "Politics",
-    "author": "Robert Miller",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/politics.png"
-  },
-  {
-    "slug": "commodity-supercycle-electrification-metals",
-    "title": "The 2026 Commodity Supercycle: Why Industrial Metals are the New Gold",
-    "shortdescription": "Rare earth elements and copper hit record highs as electrification demand outstrips supply.",
+    "slug": "altcoin-etf-capital-inflow-record",
+    "title": "The Second Wave: Institutional Capital Floods Ethereum and Solana ETFs",
+    "shortdescription": "Spot ETFs for altcoins receive regulatory approval, bringing trillions into the digital asset space.",
     "category": "Market",
-    "author": "Alex Thorne",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/market.png"
-  },
-  {
-    "slug": "emerging-markets-tech-hubs-valuation",
-    "title": "The Next Silicon Valleys: Emerging Market Tech Ecosystems Explode",
-    "shortdescription": "Valuations in Nairobi and Ho Chi Minh City startups signal a shift in global VC allocation.",
-    "category": "Market",
-    "author": "Emily Rodriguez",
+    "author": "Maria Sanchez",
     "date": "February 23, 2026",
     "image": "/images/category-news/market.png"
   },
@@ -99,13 +252,13 @@
     "image": "/images/category-news/market.png"
   },
   {
-    "slug": "volatility-index-ai-trading-psychology",
-    "title": "The VIX in the Age of AI: Is Volatility Being Suppressed or Hidden?",
-    "shortdescription": "Algorithms now control 90% of intraday moves, fundamentally changing market psychology.",
-    "category": "Market",
-    "author": "Emily Rodriguez",
+    "slug": "decentralized-governance-dao-municipal-budgets",
+    "title": "The Rise of DAOs: Could Decentralized Governance Replace City Councils?",
+    "shortdescription": "How smart contracts are beginning to manage local municipal budgets and urban planning.",
+    "category": "Politics",
+    "author": "Robert Miller",
     "date": "February 23, 2026",
-    "image": "/images/category-news/market.png"
+    "image": "/images/category-news/politics.png"
   },
   {
     "slug": "green-bonds-debt-sustainable-infrastructure",
@@ -115,114 +268,6 @@
     "author": "Robert Miller",
     "date": "February 23, 2026",
     "image": "/images/category-news/market.png"
-  },
-  {
-    "slug": "altcoin-etf-capital-inflow-record",
-    "title": "The Second Wave: Institutional Capital Floods Ethereum and Solana ETFs",
-    "shortdescription": "Spot ETFs for altcoins receive regulatory approval, bringing trillions into the digital asset space.",
-    "category": "Market",
-    "author": "Maria Sanchez",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/market.png"
-  },
-  {
-    "slug": "real-estate-tokenization-fractional-shares",
-    "title": "Fractional Ownership: How Tokenization is Unlocking Real Estate Markets",
-    "shortdescription": "High-rise commercial properties are being broken into digital shares, allowing retail participation.",
-    "category": "Market",
-    "author": "James O'Connor",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/market.png"
-  },
-  {
-    "slug": "interest-rate-pivot-central-bank-cuts",
-    "title": "Beyond the Peak: Central Banks Signal the First Cut in Three Years",
-    "shortdescription": "Markets prepare for a gradual easing cycle as inflation stays within target ranges globally.",
-    "category": "Market",
-    "author": "Maria Sanchez",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/market.png"
-  },
-  {
-    "slug": "personal-wealth-management-ai-advisors",
-    "title": "The AI Financial Advisor: Democratizing Elite Wealth Management",
-    "shortdescription": "Sophisticated wealth strategies are now accessible to retail investors through low-cost AI platforms.",
-    "category": "Finance",
-    "author": "Robert Miller",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/finance.png"
-  },
-  {
-    "slug": "retirement-planning-longevity-portfolios",
-    "title": "Planning for 100: How Increased Longevity is Changing Retirement Math",
-    "shortdescription": "Financial planners adjust models as life expectancy increases, requiring more resilient portfolios.",
-    "category": "Finance",
-    "author": "Emily Rodriguez",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/finance.png"
-  },
-  {
-    "slug": "central-bank-digital-currencies-pilot",
-    "title": "The Digital Dollar: Fed Launches Pilot for Institutional CBDC",
-    "shortdescription": "A significant step toward the modernization of the US payment system begins its trial phase.",
-    "category": "Finance",
-    "author": "Michael Chen",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/finance.png"
-  },
-  {
-    "slug": "pension-fund-private-equity-strategy",
-    "title": "Pensions Pivot: Increasing Exposure to Private Equity and Infrastructure",
-    "shortdescription": "Retirement funds look beyond public equities to ensure long-term returns in a low-growth era.",
-    "category": "Finance",
-    "author": "Michael Chen",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/finance.png"
-  },
-  {
-    "slug": "banking-sector-branchless-mobile-future",
-    "title": "The Branchless Future: Legacy Banks Finally Close Physical Retail Gaps",
-    "shortdescription": "Traditional banking giants complete their shift to mobile-first operations, shuttering legacy branches.",
-    "category": "Finance",
-    "author": "Alex Thorne",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/finance.png"
-  },
-  {
-    "slug": "sustainable-finance-taxonomy-greenwashing",
-    "title": "The Sustainable Finance Map: Aligning Global Green Definitions",
-    "shortdescription": "Regulators finally agree on what constitutes a 'green' investment, reducing greenwashing risks.",
-    "category": "Finance",
-    "author": "David Smith",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/finance.png"
-  },
-  {
-    "slug": "micro-investing-fractional-revolution",
-    "title": "The Fractional Revolution: How $5 Can Buy a Piece of the S&P 500",
-    "shortdescription": "Micro-investing apps continue to grow, bringing a new generation into the equity markets.",
-    "category": "Finance",
-    "author": "James O'Connor",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/finance.png"
-  },
-  {
-    "slug": "inflation-hedging-strategies-tangible-assets",
-    "title": "Hedging for the 20s: Tangible Assets Overcome Monetary Inflation",
-    "shortdescription": "Investors look toward farmland, timber, and fine art to protect purchasing power.",
-    "category": "Finance",
-    "author": "David Smith",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/finance.png"
-  },
-  {
-    "slug": "generative-video-hollywood-production-ai",
-    "title": "Generative Video: The Hollywood Disruption is Ahead of Schedule",
-    "shortdescription": "New AI models can now produce cinematically consistent scenes from simple text prompts.",
-    "category": "Tech",
-    "author": "James O'Connor",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/tech.png"
   },
   {
     "slug": "quantum-computing-error-correction-milestone",
@@ -243,67 +288,13 @@
     "image": "/images/category-news/tech.png"
   },
   {
-    "slug": "solid-state-battery-ev-range-industry",
-    "title": "1,000 Kilometers: Solid-State Batteries Enter Mass Production",
-    "shortdescription": "The range anxiety era for EVs ends as solid-state technology doubles energy density.",
-    "category": "Tech",
-    "author": "Alex Thorne",
+    "slug": "real-estate-tokenization-fractional-shares",
+    "title": "Fractional Ownership: How Tokenization is Unlocking Real Estate Markets",
+    "shortdescription": "High-rise commercial properties are being broken into digital shares, allowing retail participation.",
+    "category": "Market",
+    "author": "James O'Connor",
     "date": "February 23, 2026",
-    "image": "/images/category-news/tech.png"
-  },
-  {
-    "slug": "satellite-internet-constellations-starlink",
-    "title": "Starlink Competition Heats Up: The Battle for Low-Earth Orbit",
-    "shortdescription": "New constellations from Europe and Asia provide high-speed internet to the remotest corners of Earth.",
-    "category": "Tech",
-    "author": "Sarah Jenkins",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/tech.png"
-  },
-  {
-    "slug": "cybersecurity-bio-sensing-continuous-auth",
-    "title": "Beyond Passwords: Bio-Sensing and the Era of Continuous Authentication",
-    "shortdescription": "Security systems move to real-time biometric verification to prevent identity theft.",
-    "category": "Tech",
-    "author": "Robert Miller",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/tech.png"
-  },
-  {
-    "slug": "edge-computing-smart-grid-optimization",
-    "title": "Thinking Power: How AI is Optimizing National Energy Grids",
-    "shortdescription": "Real-time processing at the edge allows for a more responsive and efficient electrical grid.",
-    "category": "Tech",
-    "author": "David Smith",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/tech.png"
-  },
-  {
-    "slug": "sovereign-cloud-data-privacy-laws",
-    "title": "The Sovereign Cloud: Why Nations are Building Their Own Data Moats",
-    "shortdescription": "Privacy concerns lead to the rise of regional cloud providers independent of the global giants.",
-    "category": "Tech",
-    "author": "Emily Rodriguez",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/tech.png"
-  },
-  {
-    "slug": "hybrid-work-equilibrium-retention-model",
-    "title": "The End of the Debate: Companies Settle on the 3-2 Hybrid Model",
-    "shortdescription": "New data shows peak productivity and employee retention align with a flexible office schedule.",
-    "category": "Business",
-    "author": "Robert Miller",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/business.png"
-  },
-  {
-    "slug": "startup-exit-strategies-ipo-scrutiny",
-    "title": "The Exit Landscape: Why IPOs are Preferred Over Tech Consolidations",
-    "shortdescription": "Regulatory scrutiny on Big Tech acquisitions drives founders toward the public markets.",
-    "category": "Business",
-    "author": "Michael Chen",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/business.png"
+    "image": "/images/category-news/market.png"
   },
   {
     "slug": "reshoring-manufacturing-automated-smart-factories",
@@ -315,85 +306,13 @@
     "image": "/images/category-news/business.png"
   },
   {
-    "slug": "scope-3-carbon-supply-chain-reporting",
-    "title": "Scope 3 Transparency: The New Standard for Corporate Climate Responsibility",
-    "shortdescription": "New legislation requires every public company to audit the carbon footprint of their entire supply chain.",
-    "category": "Business",
-    "author": "David Smith",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/business.png"
-  },
-  {
-    "slug": "venture-capital-profitability-quality-seed",
-    "title": "VC Pivot: Quality Over Growth at Any Cost",
-    "shortdescription": "Venture funds are shifting focus back to early-stage profitability and sustainable unit economics.",
-    "category": "Business",
-    "author": "Maria Sanchez",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/business.png"
-  },
-  {
-    "slug": "mergers-acquisitions-aerospace-consolidation",
-    "title": "Industrial Titans Merge: A New Era of Global Manufacturing Efficiency",
-    "shortdescription": "Consolidation in the aerospace and defense sectors signals a more competitive global landscape.",
-    "category": "Business",
+    "slug": "sovereign-cloud-data-privacy-laws",
+    "title": "The Sovereign Cloud: Why Nations are Building Their Own Data Moats",
+    "shortdescription": "Privacy concerns lead to the rise of regional cloud providers independent of the global giants.",
+    "category": "Tech",
     "author": "Emily Rodriguez",
     "date": "February 23, 2026",
-    "image": "/images/category-news/business.png"
-  },
-  {
-    "slug": "subscription-fatigue-monetization-models",
-    "title": "Subscription Fatigue: The Shift Back to Ownership and Pay-Per-Use",
-    "shortdescription": "Consumers are cutting back on monthly fees, forcing digital services to rethink their monetization.",
-    "category": "Business",
-    "author": "Alex Thorne",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/business.png"
-  },
-  {
-    "slug": "chief-purpose-officer-corporate-culture",
-    "title": "The Chief Purpose Officer: Why Culture is the Ultimate Competitive Advantage",
-    "shortdescription": "Companies are investing heavily in employee mental health and long-term career fulfillment.",
-    "category": "Business",
-    "author": "David Smith",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/business.png"
-  },
-  {
-    "slug": "ai-coaching-analytics-performance-tracking",
-    "title": "The AI Coach: How Real-Time Predictive Analytics is Revolutionizing Team Sports",
-    "shortdescription": "Elite teams leverage continuous biometrics and AI projections to make in-game coaching adjustments.",
-    "category": "Sports",
-    "author": "Sarah Jenkins",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/sports.png"
-  },
-  {
-    "slug": "esports-olympics-inaugural-games-2026",
-    "title": "The Virtual Arena: Inaugural Olympic Esports Games Set to Begin in 2026",
-    "shortdescription": "Competitive gaming gains ultimate recognition as the IOC prepares for the first virtual Olympic events.",
-    "category": "Sports",
-    "author": "Michael Chen",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/sports.png"
-  },
-  {
-    "slug": "stadium-tech-smart-venues-fan-experience",
-    "title": "The Connected Stadium: Smart Venues Redefining the Live Fan Experience",
-    "shortdescription": "From holographic replays to autonomous concession delivery, stadiums undergo a digital revolution.",
-    "category": "Sports",
-    "author": "Robert Miller",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/sports.png"
-  },
-  {
-    "slug": "athlete-longevity-advanced-biomedical-recovery",
-    "title": "Extending the Peak: How Biomedical Recovery is Keeping Athletes Active Longer",
-    "shortdescription": "Hyperbaric chambers, targeted gene therapy, and stem-cell recovery extend elite athletic careers.",
-    "category": "Sports",
-    "author": "James O'Connor",
-    "date": "February 23, 2026",
-    "image": "/images/category-news/sports.png"
+    "image": "/images/category-news/tech.png"
   },
   {
     "slug": "formula-e-electric-motorsport-innovations",
@@ -405,11 +324,29 @@
     "image": "/images/category-news/sports.png"
   },
   {
-    "slug": "women-sports-broadcasting-revenue-records",
-    "title": "The Broadcast Boom: Women's Professional Sports Hit Historic Revenue Milestones",
-    "shortdescription": "Surging viewership drives record-breaking media rights deals and stadium sellouts globally.",
-    "category": "Sports",
+    "slug": "volatility-index-ai-trading-psychology",
+    "title": "The VIX in the Age of AI: Is Volatility Being Suppressed or Hidden?",
+    "shortdescription": "Algorithms now control 90% of intraday moves, fundamentally changing market psychology.",
+    "category": "Market",
+    "author": "Emily Rodriguez",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/market.png"
+  },
+  {
+    "slug": "ocean-territory-disputes-treaty-arctic",
+    "title": "The High Seas Treaty: Resolving Arctic Territory Disputes",
+    "shortdescription": "New legislative frameworks aim to protect deep-sea biodiversity while managing mineral rights.",
+    "category": "Politics",
     "author": "Alex Thorne",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/politics.png"
+  },
+  {
+    "slug": "stadium-tech-smart-venues-fan-experience",
+    "title": "The Connected Stadium: Smart Venues Redefining the Live Fan Experience",
+    "shortdescription": "From holographic replays to autonomous concession delivery, stadiums undergo a digital revolution.",
+    "category": "Sports",
+    "author": "Robert Miller",
     "date": "February 23, 2026",
     "image": "/images/category-news/sports.png"
   },
@@ -423,6 +360,51 @@
     "image": "/images/category-news/sports.png"
   },
   {
+    "slug": "retirement-planning-longevity-portfolios",
+    "title": "Planning for 100: How Increased Longevity is Changing Retirement Math",
+    "shortdescription": "Financial planners adjust models as life expectancy increases, requiring more resilient portfolios.",
+    "category": "Finance",
+    "author": "Emily Rodriguez",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/finance.png"
+  },
+  {
+    "slug": "micro-investing-fractional-revolution",
+    "title": "The Fractional Revolution: How $5 Can Buy a Piece of the S&P 500",
+    "shortdescription": "Micro-investing apps continue to grow, bringing a new generation into the equity markets.",
+    "category": "Finance",
+    "author": "James O'Connor",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/finance.png"
+  },
+  {
+    "slug": "sustainable-finance-taxonomy-greenwashing",
+    "title": "The Sustainable Finance Map: Aligning Global Green Definitions",
+    "shortdescription": "Regulators finally agree on what constitutes a 'green' investment, reducing greenwashing risks.",
+    "category": "Finance",
+    "author": "David Smith",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/finance.png"
+  },
+  {
+    "slug": "subscription-fatigue-monetization-models",
+    "title": "Subscription Fatigue: The Shift Back to Ownership and Pay-Per-Use",
+    "shortdescription": "Consumers are cutting back on monthly fees, forcing digital services to rethink their monetization.",
+    "category": "Business",
+    "author": "Alex Thorne",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/business.png"
+  },
+  {
+    "slug": "startup-exit-strategies-ipo-scrutiny",
+    "title": "The Exit Landscape: Why IPOs are Preferred Over Tech Consolidations",
+    "shortdescription": "Regulatory scrutiny on Big Tech acquisitions drives founders toward the public markets.",
+    "category": "Business",
+    "author": "Michael Chen",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/business.png"
+  },
+  {
     "slug": "sustainability-green-stadiums-net-zero-venues",
     "title": "Green Venues: The Push for Net-Zero Energy in Professional Sports Stadiums",
     "shortdescription": "How stadiums are integrating solar arrays, water recycling, and zero-waste policies into matchday operations.",
@@ -430,5 +412,23 @@
     "author": "James O'Connor",
     "date": "February 23, 2026",
     "image": "/images/category-news/sports.png"
+  },
+  {
+    "slug": "interest-rate-pivot-central-bank-cuts",
+    "title": "Beyond the Peak: Central Banks Signal the First Cut in Three Years",
+    "shortdescription": "Markets prepare for a gradual easing cycle as inflation stays within target ranges globally.",
+    "category": "Market",
+    "author": "Maria Sanchez",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/market.png"
+  },
+  {
+    "slug": "climate-policy-carbon-tax-economic",
+    "title": "Climate Policy Shift: Economic Giants Align on Carbon Taxes",
+    "shortdescription": "Major powers agree on a unified carbon pricing framework to accelerate the green transition.",
+    "category": "Politics",
+    "author": "Robert Miller",
+    "date": "February 23, 2026",
+    "image": "/images/category-news/politics.png"
   }
 ]

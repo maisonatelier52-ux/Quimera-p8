@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 interface MostReadItem {
-    id: number;
+    id?: number;
     title: string;
     slug: string;
     image: string;
@@ -23,7 +23,7 @@ export default function MostReadWidget({ items }: MostReadWidgetProps) {
             </h2>
             <div className="flex flex-col gap-6">
                 {items.map((item, index) => (
-                    <div key={item.id} className="group flex items-start gap-4">
+                    <div key={item.slug || index} className="group flex items-start gap-4">
                         {/* Number */}
                         <div className="flex-shrink-0 w-8 h-8 rounded bg-red-600 text-white flex items-center justify-center font-bold text-sm">
                             {index + 1}

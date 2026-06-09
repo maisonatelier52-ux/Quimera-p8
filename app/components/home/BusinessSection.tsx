@@ -2,10 +2,12 @@ import React from 'react';
 import Link from 'next/link';
 import { Bookmark } from 'lucide-react';
 import CircleHorizontalCard from '../cards/CircleHorizontalCard';
-import businessData from '@/public/data/business.json';
+import allArticles from '@/public/data/all-articles-index.json';
 
 export default function BusinessSection() {
-    const { topArticles, bottomArticles } = businessData;
+    const businessArticles = allArticles.filter(a => a.category === 'Business');
+    const topArticles = businessArticles.slice(0, 2);
+    const bottomArticles = businessArticles.slice(2, 5);
 
     return (
         <section className="w-full bg-white py-8">

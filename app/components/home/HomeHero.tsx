@@ -3,10 +3,13 @@ import StandardCard from '../cards/StandardCard';
 import FeatureMainCard from '../cards/FeatureMainCard';
 import HorizontalCard from '../cards/HorizontalCard';
 import MostReadWidget from '../sidebar/MostReadWidget';
-import heroData from '@/public/data/home-hero.json';
+import allArticles from '@/public/data/all-articles-index.json';
 
 export default function HomeHero() {
-    const { featured: featuredArticle, sideArticles, bottomArticles, mostRead } = heroData;
+    const featuredArticle = allArticles[0];
+    const sideArticles = allArticles.slice(1, 4);
+    const bottomArticles = allArticles.slice(4, 6);
+    const mostRead = allArticles.slice(6, 12);
 
     return (
         <section className="w-full bg-white py-8">

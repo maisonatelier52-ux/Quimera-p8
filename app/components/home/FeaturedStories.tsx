@@ -1,9 +1,9 @@
 import React from 'react';
 import FeaturedVerticalCard from '../cards/FeaturedVerticalCard';
-import featuredData from '@/public/data/featured-stories.json';
+import allArticles from '@/public/data/all-articles-index.json';
 
 export default function FeaturedStories() {
-    const { stories } = featuredData;
+    const stories = allArticles.slice(13, 17);
 
     return (
         <section className="w-full bg-white py-8">

@@ -3,11 +3,11 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Bookmark, Play } from 'lucide-react';
-import moreNewsData from '@/public/data/more-news.json';
+import allArticles from '@/public/data/all-articles-index.json';
 
 interface NewsArticle {
     slug: string;
-    image: string;
+    image?: string;
     category: string;
     date: string;
     title: string;
@@ -19,7 +19,7 @@ export default function MoreNews() {
 
     // Each row has 2 articles. Initial: 3 rows (6 articles). Total: 6 rows (12 articles).
     const initialArticlesCount = 6;
-    const articles = (moreNewsData as NewsArticle[]);
+    const articles = (allArticles.slice(33, 45) as NewsArticle[]);
     const displayedArticles = showAll ? articles : articles.slice(0, initialArticlesCount);
 
     return (
