@@ -16,6 +16,7 @@ const merriweather = Merriweather({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://quimera-news.com'),
   title: {
     default: 'Quimera News | Global Perspective & Premium Insights',
     template: '%s | Quimera News'
