@@ -128,7 +128,7 @@ export default function Header() {
             </div>
 
             {/* Bottom Bar - Black */}
-            <div className="bg-red-50 text-gray-900 overflow-hidden">
+            <div className="bg-black/90 text-white overflow-hidden">
                 <div className="max-w-[1330px] mx-auto px-4 h-10 flex items-center justify-between">
                     {/* Left: Trending/Scroller */}
                     <div className="flex items-center gap-4 overflow-x-auto no-scrollbar whitespace-nowrap ">
@@ -154,7 +154,7 @@ export default function Header() {
                     </div>
 
                     {/* Right: Social Icons */}
-                    <div className="hidden md:flex items-center gap-4 pl-4 bg-red-50 relative z-10">
+                    <div className="hidden md:flex items-center gap-4 pl-4 relative z-10">
                         <Link href="#" className="hover:opacity-80 transition-opacity">
                             <Instagram size={16} />
                         </Link>
