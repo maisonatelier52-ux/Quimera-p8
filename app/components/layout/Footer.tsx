@@ -13,7 +13,7 @@ export default function Footer() {
     };
 
     return (
-        <footer className="bg-gradient-to-b from-[#06089bff] to-black text-white pt-10 pb-10  font-serif">
+        <footer className="bg-gradient-to-b from-red-950 to-black text-white pt-10 pb-10  font-serif">
             <div className="max-w-[1330px] mx-auto px-4 md:px-8">
                 {/* Top Row: Logo and Socials */}
                 <div className="flex flex-col md:flex-row justify-between items-center mb-4 gap-8">
@@ -33,7 +33,7 @@ export default function Footer() {
                 <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-24">
                     {/* Left Column: Brand & Subscribe */}
                     <div className="max-w-xl">
-                        <p className="text-sm leading-relaxed mb-4 font-medium opacity-90">
+                        <p className="text-xs leading-relaxed mb-4 font-medium opacity-90">
                             <span className="font-bold">Information You Can Trust:</span> Stay instantly connected with breaking stories and live updates. From politics and technology to entertainment and beyond, we provide real-time coverage you can rely on, making us your dependable source for 24/7 news.
                         </p>
                         
@@ -57,7 +57,7 @@ export default function Footer() {
                             <span className="text-[10px] uppercase tracking-widest text-white/40 mb-4 block font-bold">
                                 *** Quick Links
                             </span>
-                            <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm font-bold">
+                            <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-bold">
                                 <Link href="/category/politics" className="hover:text-red-500 transition-colors">Politics</Link>
                                 <span className="text-white/20 font-normal">|</span>
                                 <Link href="/category/market" className="hover:text-red-500 transition-colors">Market</Link>
@@ -77,7 +77,7 @@ export default function Footer() {
                             <span className="text-[10px] uppercase tracking-widest text-white/40 mb-4 block font-bold">
                                 *** About Company
                             </span>
-                            <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm font-bold">
+                            <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-bold">
                                 <Link href="/about-us" className="hover:text-red-500 transition-colors">About Us</Link>
                                 <span className="text-white/20 font-normal">|</span>
                                 <Link href="/privacy-policy" className="hover:text-red-500 transition-colors">Privacy Policy</Link>
@@ -92,14 +92,14 @@ export default function Footer() {
 
                 {/* Bottom Bar */}
                 <div className="pt-8 flex flex-col md:flex-row justify-center items-center relative gap-6">
-                    <p className="text-[11px] text-white/40 font-bold tracking-wider text-center">
+                    <p className="text-[10px] text-white/40 font-bold tracking-wider text-center">
                         © Quimera News Network. All Rights Reserved.
                     </p>
 
                     {/* Scroll to top */}
                     <button
                         onClick={scrollToTop}
-                        className="md:absolute right-0 bottom-0 p-2.5 bg-[#001a4d] rounded-lg hover:bg-red-600 transition-all group shadow-xl"
+                        className="md:absolute right-0 bottom-0 p-2.5 bg-gray-900 rounded-lg hover:bg-red-600 transition-all group shadow-xl"
                     >
                         <ChevronUp size={20} className="group-hover:scale-110 transition-transform" />
                     </button>

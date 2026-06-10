@@ -31,7 +31,7 @@ export default function MostReadWidget() {
                                     alt={item.title}
                                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                 />
-                            </div>
+                            </div> 
                         </div>
                         <Link href={`/articles/${item.slug}`} className="flex-1">
                             <h4 className="text-[14px] font-bold leading-tight text-[#09365E] group-hover:text-red-600 transition-colors line-clamp-3">

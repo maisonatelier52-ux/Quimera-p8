@@ -80,7 +80,7 @@ export default function MoreNews() {
                 <div className="mt-12 flex justify-center">
                     <button
                         onClick={() => setShowAll(!showAll)}
-                        className="px-20 w-full py-2 bg-white border border-gray-200 rounded-2xl text-[#09365E] font-bold text-sm hover:bg-[#ED1C24] hover:text-white hover:border-[#ED1C24] transition-all duration-300 shadow-sm"
+                        className="px-20 w-full py-2 bg-white border border-gray-200 rounded-2xl text-[#09365E] font-bold text-sm hover:bg-red-900 hover:text-white hover:border-[#ED1C24] transition-all duration-300 shadow-sm"
                     >
                         {showAll ? 'Show Less' : 'Show More'}
                     </button>

@@ -15,7 +15,7 @@ interface MostReadWidgetProps {
 export default function MostReadWidget({ items }: MostReadWidgetProps) {
     return (
         <div className="bg-white">
-            <h2 className="text-lg text-[#09365E] font-bold uppercase mb-6 flex items-center gap-2">
+            <h2 className="text-sm text-[#09365E] font-bold uppercase mb-6 flex items-center gap-2">
                 Most Read
                 <span className="text-red-600 text-lg font-black italic">
                     <span className=" inline-block">//</span>
@@ -25,7 +25,7 @@ export default function MostReadWidget({ items }: MostReadWidgetProps) {
                 {items.map((item, index) => (
                     <div key={item.slug || index} className="group flex items-start gap-4">
                         {/* Number */}
-                        <div className="flex-shrink-0 w-8 h-8 rounded bg-red-600 text-white flex items-center justify-center font-bold text-sm">
+                        <div className="flex-shrink-0 w-8 h-8 rounded bg-red-900 text-white flex items-center justify-center font-bold text-sm">
                             {index + 1}
                         </div>
 

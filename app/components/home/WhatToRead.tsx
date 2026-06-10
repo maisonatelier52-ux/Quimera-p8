@@ -28,7 +28,7 @@ export default function WhatToRead() {
                         </Link>
 
                         {/* Red Box Overlay */}
-                        <div className="absolute bottom-6 left-6 right-6 bg-[#ED1C24] p-8 rounded-xl text-white shadow-xl transform transition-transform duration-300 group-hover:-translate-y-2">
+                        <div className="absolute bottom-6 left-6 right-6 bg-red-900 p-8 rounded-xl text-white shadow-xl transform transition-transform duration-300 group-hover:-translate-y-2">
                             <div className="flex items-center justify-between mb-4">
                                 <div className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-wider">
                                     <Link
