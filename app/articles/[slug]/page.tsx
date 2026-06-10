@@ -72,6 +72,17 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
     const articleData = await getArticleData(slug);
+    
+    const allArticlesPath = path.join(process.cwd(), 'public', 'data', 'all-articles-index.json');
+    let moreNewsArticles = [];
+    try {
+        const allArticlesContent = await fs.readFile(allArticlesPath, 'utf8');
+        const allArticles = JSON.parse(allArticlesContent);
+        const filteredMoreNews = allArticles.filter((a: any) => a.slug !== slug);
+        moreNewsArticles = [...filteredMoreNews].sort(() => 0.5 - Math.random()).slice(0, 4);
+    } catch (e) {
+        console.error('Error loading more news:', e);
+    }
 
     if (!articleData) {
         return (
@@ -247,6 +258,46 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                     </div>
                 </div>
             </div>
+
+            {/* More News Section */}
+            {moreNewsArticles.length > 0 && (
+                <div className="max-w-[1330px] mx-auto px-4 py-4 pb-8 border-t border-gray-100 w-full">
+                    <div className="flex items-center gap-2 mb-4">
+                        <h2 className="text-md font-black text-[#09365E]">More News</h2>
+                        <span className="text-red-600 text-2xl font-black italic">//</span>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {moreNewsArticles.map((article: any, index: number) => (
+                            <div key={index} className="group">
+                                <Link href={`/articles/${article.slug}`} className="block relative overflow-hidden aspect-[4/3] mb-3 bg-gray-100 rounded-lg">
+                                    <img
+                                        src={article.image || '/images/news/markets-1.webp'}
+                                        alt={article.title}
+                                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                    />
+                                </Link>
+                                <div className="flex flex-col py-1">
+                                    <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest mb-2">
+                                        <Link
+                                            href={`/category/${article.category?.toLowerCase().replace(/\s+/g, '-')}`}
+                                            className="text-red-600 hover:text-gray-900 transition-colors"
+                                        >
+                                            {article.category}
+                                        </Link>
+                                        <span className="text-gray-300 font-normal">|</span>
+                                        <span className="text-gray-400 font-medium normal-case">{article.date}</span>
+                                    </div>
+                                    <Link href={`/articles/${article.slug}`}>
+                                        <h3 className="text-lg font-bold leading-tight text-[#09365E] group-hover:text-red-600 transition-colors line-clamp-3">
+                                            {article.title}
+                                        </h3>
+                                    </Link>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            )}
 
             <Footer />
         </main>
