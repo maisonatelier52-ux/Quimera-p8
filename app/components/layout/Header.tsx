@@ -47,22 +47,42 @@ export default function Header() {
             {/* Running News Headlines */}
             <div className="bg-red-950 text-gray-300 py-1.5 overflow-hidden  shadow-md">
                 <div className="max-w-[1330px] mx-auto px-4 flex items-center">
-                    <div className="bg-gray-900 text-white font-black px-3 py-1 text-[8px] uppercase tracking-widest z-10 flex-shrink-0 shadow-sm rounded-sm mr-4">
+                    <div className="bg-white/50 text-black font-black px-2 py-1 text-[8px] uppercase tracking-widest z-10 flex-shrink-0 shadow-sm rounded-sm mr-4">
                         LATEST HEADLINES
                     </div>
                     <div className="flex-1 overflow-hidden relative flex items-center">
                         <div className="animate-marquee text-[10px] font-normal flex items-center gap-16">
-                            <span>Global Markets Hit Record Highs Following Tech Earnings</span>
+                            <Link href="/articles/chief-purpose-officer-corporate-culture" className="hover:underline">
+                                <span>The Chief Purpose Officer: Why Culture is the Ultimate Competitive Advantage</span>
+                            </Link>
                             <span className="text-blue-300 text-xs">  ●  </span>
-                            <span>Election Polls Show Tight Race in Key Swing States</span>
+                            <Link href="/articles/esports-olympics-inaugural-games-2026" className="hover:underline">
+                                <span>The Virtual Arena: Inaugural Olympic Esports Games Set to Begin in 2026</span>
+                            </Link>
                             <span className="text-blue-300 text-xs">  ●  </span>
-                            <span>Major Merger Announced in the Telecommunications Sector</span>
+                            <Link href="/articles/inflation-hedging-strategies-tangible-assets" className="hover:underline">
+                                <span>Hedging for the 20s: Tangible Assets Overcome Monetary Inflation</span>
+                            </Link>
                             <span className="text-blue-300 text-xs">  ●  </span>
-                            <span>New Breakthrough in Renewable Energy Tech Revealed</span>
+                            <Link href="/articles/hybrid-work-equilibrium-retention-model" className="hover:underline">
+                                <span>The End of the Debate: Companies Settle on the 3-2 Hybrid Model</span>
+                            </Link>
                             <span className="text-blue-300 text-xs">  ●  </span>
-                            <span>Championship Finals Set for This Weekend</span>
+                            <Link href="/articles/global-diplomacy-digital-sovereignty-2026" className="hover:underline">
+                                <span>The Future of Global Diplomacy: Beyond Traditional Borders</span>
+                            </Link>
                             <span className="text-blue-300 text-xs">  ●  </span>
-                            <span>Global Markets Hit Record Highs Following Tech Earnings</span>
+                            <Link href="/articles/high-speed-rail-infrastructure-approved" className="hover:underline">
+                                <span>Blueprint for the Future: National High-Speed Rail Network Approved</span>
+                            </Link>
+                            <span className="text-blue-300 text-xs">  ●  </span>
+                            <Link href="/articles/athlete-longevity-advanced-biomedical-recovery" className="hover:underline">
+                                <span>Extending the Peak: How Biomedical Recovery is Keeping Athletes Active Longer</span>
+                            </Link>
+                            <span className="text-blue-300 text-xs">  ●  </span>
+                            <Link href="/articles/chief-purpose-officer-corporate-culture" className="hover:underline">
+                                <span>The Chief Purpose Officer: Why Culture is the Ultimate Competitive Advantage</span>
+                            </Link>
                         </div>
                     </div>
                 </div>
