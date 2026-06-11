@@ -13,7 +13,7 @@ export default function Footer() {
     };
 
     return (
-        <footer className="bg-gradient-to-b from-red-950 to-black text-white pt-10 pb-10  font-serif">
+        <footer className="bg-gradient-to-b from-red-950 to-black text-white pt-16 pb-12 font-serif">
             <div className="max-w-[1330px] mx-auto px-4 md:px-8">
                 {/* Top Row: Logo and Socials */}
                 <div className="flex flex-col md:flex-row justify-between items-center mb-4 gap-8">
@@ -78,13 +78,29 @@ export default function Footer() {
                                 *** About Company
                             </span>
                             <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-bold">
-                                <Link href="/about-us" className="hover:text-red-500 transition-colors">About Us</Link>
-                                <span className="text-white/20 font-normal">|</span>
-                                <Link href="/privacy-policy" className="hover:text-red-500 transition-colors">Privacy Policy</Link>
-                                <span className="text-white/20 font-normal">|</span>
-                                <Link href="/authors" className="hover:text-red-500 transition-colors">Authors</Link>
-                                <span className="text-white/20 font-normal">|</span>
-                                <Link href="/terms-and-conditions" className="hover:text-red-500 transition-colors">Terms and Conditions</Link>
+                                {[
+                                    { name: "About Us", href: "/about-us" },
+                                    { name: "Authors", href: "/authors" },
+                                    { name: "Privacy Policy", href: "/privacy-policy" },
+                                    { name: "Terms & Conditions", href: "/terms-conditions" },
+                                    { name: "Contact Us", href: "/contact-us" },
+                                    { name: "Editorial Policy", href: "/editorial-policy" },
+                                    { name: "Corrections Policy", href: "/corrections-policy" },
+                                    { name: "Source Methodology", href: "/source-methodology" },
+                                    { name: "Ownership & Funding", href: "/ownership-funding" },
+                                    { name: "Advertising Policy", href: "/advertising-policy" },
+                                    { name: "Right of Reply", href: "/right-of-reply" },
+                                    { name: "Legal", href: "/legal" }
+                                ].map((item, index, array) => (
+                                    <React.Fragment key={item.name}>
+                                        <Link href={item.href} className="hover:text-red-500 transition-colors">
+                                            {item.name}
+                                        </Link>
+                                        {index < array.length - 1 && (
+                                            <span className="text-white/20 font-normal">|</span>
+                                        )}
+                                    </React.Fragment>
+                                ))}
                             </div>
                         </div>
                     </div>
