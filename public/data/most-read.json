@@ -3,36 +3,36 @@
         "id": 1,
         "slug": "solid-state-battery-ev-range-industry",
         "title": "1,000 Kilometers: Solid-State Batteries Enter Mass Production",
-        "image": "https://images.unsplash.com/photo-1681757343298?q=80&w=1200&auto=format&fit=crop"
+        "image": "/images/category-news/tech.png"
     },
     {
         "id": 2,
         "slug": "cybersecurity-bio-sensing-continuous-auth",
         "title": "Beyond Passwords: Bio-Sensing and the Era of Continuous Authentication",
-        "image": "https://images.unsplash.com/photo-1598188195802?q=80&w=1200&auto=format&fit=crop"
+        "image": "/images/category-news/tech.png"
     },
     {
         "id": 3,
         "slug": "ai-coaching-analytics-performance-tracking",
         "title": "The AI Coach: How Real-Time Predictive Analytics is Revolutionizing Team Sports",
-        "image": "https://images.unsplash.com/photo-1536132803328?q=80&w=1200&auto=format&fit=crop"
+        "image": "/images/category-news/sports.png"
     },
     {
         "id": 4,
         "slug": "esports-olympics-inaugural-games-2026",
         "title": "The Virtual Arena: Inaugural Olympic Esports Games Set to Begin in 2026",
-        "image": "https://images.unsplash.com/photo-1636716310414?q=80&w=1200&auto=format&fit=crop"
+        "image": "/images/category-news/sports.png"
     },
     {
         "id": 5,
         "slug": "real-estate-tokenization-fractional-shares",
         "title": "Fractional Ownership: How Tokenization is Unlocking Real Estate Markets",
-        "image": "https://images.unsplash.com/photo-1676335130017?q=80&w=1200&auto=format&fit=crop"
+        "image": "/images/category-news/market.png"
     },
     {
         "id": 6,
         "slug": "pension-fund-private-equity-strategy",
         "title": "Pensions Pivot: Increasing Exposure to Private Equity and Infrastructure",
-        "image": "https://images.unsplash.com/photo-1657815121479?q=80&w=1200&auto=format&fit=crop"
+        "image": "/images/category-news/finance.png"
     }
 ]

@@ -25,7 +25,7 @@ export default function MostReadWidget({ items }: MostReadWidgetProps) {
                 {items.map((item, index) => (
                     <div key={item.slug || index} className="group flex items-start gap-4">
                         {/* Number */}
-                        <div className="flex-shrink-0 w-8 h-8 rounded bg-red-900 text-white flex items-center justify-center font-bold text-sm">
+                        <div className="flex-shrink-0 w-8 h-8 rounded bg-[#09365E] text-white flex items-center justify-center font-bold text-sm">
                             {index + 1}
                         </div>
 

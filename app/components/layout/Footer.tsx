@@ -13,7 +13,7 @@ export default function Footer() {
     };
 
     return (
-        <footer className="bg-gradient-to-b from-red-950 to-black text-white pt-16 pb-12 font-serif">
+        <footer className="bg-gradient-to-b from-[#09365E] to-black text-white pt-16 pb-12 font-serif">
             <div className="max-w-[1330px] mx-auto px-4 md:px-8">
                 {/* Top Row: Logo and Socials */}
                 <div className="flex flex-col md:flex-row justify-between items-center mb-4 gap-8">

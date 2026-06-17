@@ -45,7 +45,7 @@ export default function Header() {
     return (
         <header className="flex flex-col w-full font-serif sticky top-[-109px] z-50">
             {/* Running News Headlines */}
-            <div className="bg-red-950 text-gray-300 py-1.5 overflow-hidden  shadow-md">
+            <div className="bg-[#09365E] text-gray-300 py-1.5 overflow-hidden  shadow-md">
                 <div className="max-w-[1330px] mx-auto px-4 flex items-center">
                     <div className="bg-white/50 text-black font-black px-2 py-1 text-[8px] uppercase tracking-widest z-10 flex-shrink-0 shadow-sm rounded-sm mr-4">
                         LATEST HEADLINES
