@@ -77,7 +77,7 @@ export default function Footer() {
                             <span className="text-[10px] uppercase tracking-widest text-white/40 mb-4 block font-bold">
                                 *** About Company
                             </span>
-                            <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-bold">
+                            <div className="flex flex-wrap items-center gap-x-5 gap-y-5 text-xs font-bold">
                                 {[
                                     { name: "About Us", href: "/about-us" },
                                     { name: "Authors", href: "/authors" },
