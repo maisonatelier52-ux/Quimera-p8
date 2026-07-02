@@ -63,32 +63,32 @@ export default function EditHomepagePage({ params }: { params: Promise<{ id: str
     setFormData((prev) => {
       const newSections = [...prev.sections];
       newSections[index] = { ...newSections[index], [field]: value };
-      const handleSubmit = async (e: React.FormEvent) => {
-        e.preventDefault();
-        setLoading(true);
-        try {
-          const res = await fetch(`http://localhost:5000/api/homepage/${id}`, {
-            method: "PUT",
-            headers: {
-              "Content-Type": "application/json",
-              Authorization: `Bearer ${localStorage.getItem("token")}`
-            },
-            body: JSON.stringify(formData),
-          });
+      return { ...prev, sections: newSections };
+    });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    try {
+      const res = await fetch(`http://localhost:5000/api/homepage/${id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
           Authorization: `Bearer ${localStorage.getItem("token")}`
         },
         body: JSON.stringify(formData),
       });
 
-    if (!res.ok) throw new Error("Failed to update homepage layout");
-    router.push("/admin/homepage");
-  } catch (error) {
-    console.error(error);
-    alert("Error updating homepage layout");
-  } finally {
-    setLoading(false);
-  }
-};
+      if (!res.ok) throw new Error("Failed to update homepage layout");
+      router.push("/admin/homepage");
+    } catch (error) {
+      console.error(error);
+      alert("Error updating homepage layout");
+    } finally {
+      setLoading(false);
+    }
+  };
 
 return (
   <div className="space-y-6 max-w-4xl">
