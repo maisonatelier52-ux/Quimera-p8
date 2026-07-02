@@ -69,13 +69,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     };
 }
 
-export default async function ArticlePage({ params, searchParams }: { params: Promise<{ slug: string }>, searchParams?: { layout?: string } }) {
+export default async function ArticlePage({ params, searchParams }: { params: Promise<{ slug: string }>, searchParams?: Promise<{ layout?: string }> }) {
     const { slug } = await params;
+    const resolvedSearchParams = searchParams ? await searchParams : {};
     const articleData = await getArticleData(slug);
 
     let moreNewsArticles = [];
     try {
-        const res = await fetch("http://localhost:5000/api/public/articles", { cache: "no-store" });
+        const res = await fetch(process.env.NEXT_PUBLIC_API_URL ? `${process.env.NEXT_PUBLIC_API_URL}/api/public/articles` : "http://localhost:5000/api/public/articles", { cache: "no-store" });
         const allArticles = await res.json();
         const filteredMoreNews = allArticles.filter((a: any) => a.slug !== slug);
         moreNewsArticles = [...filteredMoreNews].sort(() => 0.5 - Math.random()).slice(0, 4);
@@ -107,11 +108,11 @@ export default async function ArticlePage({ params, searchParams }: { params: Pr
     };
 
     let articleLayout = ['ArticleContent', 'RelatedArticles'];
-    if (searchParams?.layout) {
-        articleLayout = searchParams.layout.split(',');
+    if (resolvedSearchParams?.layout) {
+        articleLayout = resolvedSearchParams.layout.split(',');
     } else {
         try {
-            const res = await fetch("http://localhost:5000/api/public/article-settings", { cache: 'no-store' });
+            const res = await fetch(process.env.NEXT_PUBLIC_API_URL ? `${process.env.NEXT_PUBLIC_API_URL}/api/public/article-settings` : "http://localhost:5000/api/public/article-settings", { cache: 'no-store' });
             if (res.ok) {
                 const appearance = await res.json();
                 if (appearance && appearance.articleLayout && appearance.articleLayout.length > 0) {

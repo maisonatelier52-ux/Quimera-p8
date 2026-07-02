@@ -5,12 +5,19 @@ import HorizontalCard from '../cards/HorizontalCard';
 import MostReadWidget from '../sidebar/MostReadWidget';
 
 export default async function HomeHero() {
-    const res = await fetch("http://127.0.0.1:5000/api/public/articles", { cache: "no-store" });
-    const allArticles = await res.json();
-    const featuredArticle = allArticles[0];
-    const sideArticles = allArticles.slice(1, 4);
-    const bottomArticles = allArticles.slice(4, 6);
-    const mostRead = allArticles.slice(6, 12);
+    let allArticles = [];
+    try {
+        const res = await fetch(process.env.NEXT_PUBLIC_API_URL ? `${process.env.NEXT_PUBLIC_API_URL}/api/public/articles` : "http://127.0.0.1:5000/api/public/articles", { cache: "no-store" });
+        if (res.ok) {
+            allArticles = await res.json();
+        }
+    } catch (e) {
+        console.error("Failed to fetch articles:", e);
+    }
+    const featuredArticle = allArticles[0] || null;
+    const sideArticles = allArticles.slice(1, 4) || [];
+    const bottomArticles = allArticles.slice(4, 6) || [];
+    const mostRead = allArticles.slice(6, 12) || [];
 
     return (
         <section className="w-full bg-white py-8">

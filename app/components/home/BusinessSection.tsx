@@ -4,8 +4,15 @@ import { Bookmark } from 'lucide-react';
 import CircleHorizontalCard from '../cards/CircleHorizontalCard';
 
 export default async function BusinessSection() {
-    const res = await fetch("http://localhost:5000/api/public/articles", { cache: "no-store" });
-    const allArticles = await res.json();
+    let allArticles = [];
+    try {
+        const res = await fetch(process.env.NEXT_PUBLIC_API_URL ? `${process.env.NEXT_PUBLIC_API_URL}/api/public/articles` : "http://localhost:5000/api/public/articles", { cache: "no-store" });
+        if (res.ok) {
+            allArticles = await res.json();
+        }
+    } catch (e) {
+        console.error("Failed to fetch business articles:", e);
+    }
     const businessArticles = allArticles.filter((a: any) => a.category?.name === 'Business');
     const topArticles = businessArticles.slice(0, 2);
     const bottomArticles = businessArticles.slice(2, 5);
