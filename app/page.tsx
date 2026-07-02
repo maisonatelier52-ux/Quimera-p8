@@ -3,7 +3,6 @@ import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import HomeHero from './components/home/HomeHero';
 import NewsGrid from './components/NewsGrid';
-import articlesData from '@/public/data/all-articles-index.json';
 import FeaturedStories from './components/home/FeaturedStories';
 import NewsStrip from './components/home/NewsStrip';
 import QuickLinks from './components/home/QuickLinks';
@@ -47,33 +46,53 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Home() {
-  // Logic to organize data for the new UI - Currently HomeHero uses its own mock data 
-  // to match the specific request, but eventually we can pass props.
+export default async function Home({ searchParams }: { searchParams: Promise<{ layout?: string }> }) {
+  const { layout } = await searchParams;
+  let homeLayout = [
+    'HomeHero', 'JustIn', 'FeaturedStories', 'NewsStrip', 'QuickLinks',
+    'BusinessSection', 'AdvertisementSection', 'WhatToRead', 'TheLatest',
+    'CategoryAd', 'MoreNews'
+  ];
 
-  const economicArticles = articlesData.filter(a => a.category === 'Economic').slice(0, 4);
-  const globalAffairsArticles = articlesData.filter(a => a.category === 'Global Affairs').slice(0, 4);
-  const climateArticles = articlesData.filter(a => a.category === 'Climate Change').slice(0, 4);
+  if (layout) {
+    homeLayout = layout.split(',');
+  } else {
+    try {
+      const res = await fetch("http://127.0.0.1:5000/api/public/homepage", { cache: 'no-store' });
+      if (res.ok) {
+        const homepage = await res.json();
+        if (homepage && homepage.homeLayout && homepage.homeLayout.length > 0) {
+          homeLayout = homepage.homeLayout;
+        }
+      }
+    } catch (error) {
+      console.error("Failed to fetch homepage settings:", error);
+    }
+  }
+
+  const componentMap: Record<string, React.ElementType> = {
+    HomeHero,
+    JustIn,
+    FeaturedStories,
+    NewsStrip,
+    QuickLinks,
+    BusinessSection,
+    AdvertisementSection,
+    WhatToRead,
+    TheLatest,
+    CategoryAd,
+    MoreNews
+  };
 
   return (
-    <main className="min-h-screen flex flex-col">
+    <main className="min-h-screen flex flex-col" suppressHydrationWarning>
       <Header />
 
-      <div className="flex-grow">
-        {/* New 3-Column Hero Section */}
-        <HomeHero />
-        <JustIn />
-        <FeaturedStories />
-        <NewsStrip />
-        <QuickLinks />
-        <BusinessSection />
-        <AdvertisementSection />
-        <WhatToRead />
-        <AdvertisementSection />
-        <TheLatest />
-        <CategoryAd />
-        <MoreNews />
-      </div>
+      {homeLayout.map((componentName, index) => {
+        const Component = componentMap[componentName];
+        if (!Component) return null;
+        return <Component key={`${componentName}-${index}`} />;
+      })}
 
       <Footer />
     </main>

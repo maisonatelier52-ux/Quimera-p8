@@ -17,6 +17,24 @@ interface FeatureMainCardProps {
 export default function FeatureMainCard({ article }: FeatureMainCardProps) {
     const fallbackImage = 'https://picsum.photos/seed/news-fallback/800/500';
 
+    const getCatDetails = (cat: any) => {
+        if (!cat) return { name: '', slug: '' };
+        if (Array.isArray(cat)) cat = cat[0];
+        if (typeof cat === 'object') {
+            return {
+                name: cat.name || '',
+                slug: cat.slug || (cat.name || '').toLowerCase().replace(/\s+/g, '-')
+            };
+        }
+        return {
+            name: String(cat),
+            slug: String(cat).toLowerCase().replace(/\s+/g, '-')
+        };
+    };
+
+    const categoryData = getCatDetails(article?.category);
+    const subcategoryData = getCatDetails(article?.subcategory);
+
     return (
         <div className="flex flex-col gap-4 group mb-8 md:mb-8">
             {/* Image */}
@@ -34,14 +52,16 @@ export default function FeatureMainCard({ article }: FeatureMainCardProps) {
             {/* Meta */}
             <div className="flex items-center justify-between font-bold text-xs uppercase tracking-wider">
                 <div className="flex items-center gap-3">
-                    <Link href={`/category/${article.category.toLowerCase()}`} className="text-red-600 hover:underline">
-                        {article.category}
-                    </Link>
-                    {article.subcategory && (
+                    {categoryData.name && (
+                        <Link href={`/category/${categoryData.slug}`} className="text-red-600 hover:underline">
+                            {categoryData.name}
+                        </Link>
+                    )}
+                    {subcategoryData.name && (
                         <>
                             <span className="text-gray-300">|</span>
-                            <Link href={`/category/${article.subcategory.toLowerCase()}`} className="text-red-600 hover:underline">
-                                {article.subcategory}
+                            <Link href={`/category/${subcategoryData.slug}`} className="text-red-600 hover:underline">
+                                {subcategoryData.name}
                             </Link>
                         </>
                     )}

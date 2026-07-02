@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, Merriweather } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import './globals.css';
 
 const inter = Inter({
@@ -8,8 +8,7 @@ const inter = Inter({
   display: 'swap',
 });
 
-const merriweather = Merriweather({
-  weight: ['300', '400', '700', '900'],
+const interSecondary = Inter({
   subsets: ['latin'],
   variable: '--font-serif-next',
   display: 'swap',
@@ -25,13 +24,38 @@ export const metadata: Metadata = {
   keywords: ['news', 'finance', 'tech', 'lifestyle', 'premium insights'],
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  let appearance = {
+    headerBgColor: "#09365E",
+    footerBgColor: "#09365E",
+    primaryAccentColor: "#E12A32"
+  };
+
+  try {
+    const res = await fetch("http://127.0.0.1:5000/api/public/appearance", { cache: 'no-store' });
+    if (res.ok) {
+      appearance = await res.json();
+    }
+  } catch (error) {
+    console.error("Failed to fetch appearance settings:", error);
+  }
+
   return (
-    <html lang="en" className={`${inter.variable} ${merriweather.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${inter.variable} ${interSecondary.variable}`} suppressHydrationWarning>
+      <head>
+        <style dangerouslySetInnerHTML={{
+          __html: `
+          :root {
+            --header-bg: ${appearance.headerBgColor};
+            --footer-bg: ${appearance.footerBgColor};
+            --primary-accent: ${appearance.primaryAccentColor};
+          }
+        `}} />
+      </head>
       <body className="antialiased font-serif">
         {children}
       </body>

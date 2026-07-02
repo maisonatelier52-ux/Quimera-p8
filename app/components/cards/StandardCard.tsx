@@ -13,6 +13,10 @@ interface StandardCardProps {
 
 export default function StandardCard({ slug, image, category, date, title, isLarge = false }: StandardCardProps) {
     const fallbackImage = 'https://picsum.photos/seed/news-fallback/800/500';
+    // @ts-ignore
+    const catName = typeof category === 'object' && category ? category.name : (category || 'Unknown');
+    // @ts-ignore
+    const catSlug = typeof category === 'object' && category ? (category.slug || catName.toLowerCase()) : (category || '').toLowerCase();
 
     return (
         <div className="flex flex-col gap-3 group">
@@ -28,8 +32,8 @@ export default function StandardCard({ slug, image, category, date, title, isLar
             {/* Meta */}
             <div className="flex items-center justify-between text-xs font-bold uppercase tracking-wider">
                 <div className="flex items-center gap-2">
-                    <Link href={`/category/${category.toLowerCase()}`} className="text-red-600 hover:underline">
-                        {category}
+                    <Link href={`/category/${catSlug}`} className="text-red-600 hover:underline">
+                        {catName}
                     </Link>
                     <span className="text-gray-400 text-[10px] normal-case">
                         {date}

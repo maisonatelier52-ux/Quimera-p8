@@ -13,6 +13,23 @@ interface FeaturedVerticalCardProps {
 export default function FeaturedVerticalCard({ slug, image, category, date, title }: FeaturedVerticalCardProps) {
     const fallbackImage = 'https://picsum.photos/seed/news-fallback/800/500';
 
+    const getCatDetails = (cat: any) => {
+        if (!cat) return { name: '', slug: '' };
+        if (Array.isArray(cat)) cat = cat[0];
+        if (typeof cat === 'object') {
+            return {
+                name: cat.name || '',
+                slug: cat.slug || (cat.name || '').toLowerCase().replace(/\s+/g, '-')
+            };
+        }
+        return {
+            name: String(cat),
+            slug: String(cat).toLowerCase().replace(/\s+/g, '-')
+        };
+    };
+
+    const categoryData = getCatDetails(category);
+
     return (
         <div className="flex flex-col gap-4 group">
             {/* Image */}
@@ -27,9 +44,11 @@ export default function FeaturedVerticalCard({ slug, image, category, date, titl
             {/* Meta */}
             <div className="flex items-center justify-between text-[11px] font-bold uppercase tracking-wider mt-1">
                 <div className="flex items-center gap-1.5">
-                    <Link href={`/category/${category.toLowerCase()}`} className="text-red-600 hover:text-red-700 transition-colors">
-                        {category}
-                    </Link>
+                    {categoryData.name && (
+                        <Link href={`/category/${categoryData.slug}`} className="text-red-600 hover:text-red-700 transition-colors">
+                            {categoryData.name}
+                        </Link>
+                    )}
                     <span className="text-gray-300 font-normal">|</span>
                     <span className="text-gray-500 font-medium normal-case">
                         {date}

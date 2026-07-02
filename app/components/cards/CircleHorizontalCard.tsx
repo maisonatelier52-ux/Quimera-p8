@@ -10,6 +10,23 @@ interface CircleHorizontalCardProps {
 }
 
 export default function CircleHorizontalCard({ slug, image, category, title }: CircleHorizontalCardProps) {
+    const getCatDetails = (cat: any) => {
+        if (!cat) return { name: '', slug: '' };
+        if (Array.isArray(cat)) cat = cat[0];
+        if (typeof cat === 'object') {
+            return {
+                name: cat.name || '',
+                slug: cat.slug || (cat.name || '').toLowerCase().replace(/\s+/g, '-')
+            };
+        }
+        return {
+            name: String(cat),
+            slug: String(cat).toLowerCase().replace(/\s+/g, '-')
+        };
+    };
+
+    const categoryData = getCatDetails(category);
+
     return (
         <div className="flex items-center gap-4 group">
             {/* Circular Image */}
@@ -29,12 +46,14 @@ export default function CircleHorizontalCard({ slug, image, category, title }: C
                     </h3>
                 </Link>
                 <div className="flex items-center justify-between">
-                    <Link
-                        href={`/category/${category.toLowerCase()}`}
-                        className="text-[10px] font-extrabold text-red-600 uppercase tracking-widest hover:text-gray-900 transition-colors"
-                    >
-                        {category}
-                    </Link>
+                    {categoryData.name && (
+                        <Link
+                            href={`/category/${categoryData.slug}`}
+                            className="text-[10px] font-extrabold text-red-600 uppercase tracking-widest hover:text-gray-900 transition-colors"
+                        >
+                            {categoryData.name}
+                        </Link>
+                    )}
                     <button className="text-gray-400 hover:text-red-600 transition-colors">
                         <Bookmark size={14} />
                     </button>

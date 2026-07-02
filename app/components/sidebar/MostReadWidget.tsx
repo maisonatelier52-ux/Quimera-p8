@@ -14,8 +14,8 @@ interface MostReadWidgetProps {
 
 export default function MostReadWidget({ items }: MostReadWidgetProps) {
     return (
-        <div className="bg-white">
-            <h2 className="text-sm text-[#09365E] font-bold uppercase mb-6 flex items-center gap-2">
+        <div className="bg-white" suppressHydrationWarning>
+            <h2 className="text-sm text-black font-bold uppercase mb-6 flex items-center gap-2">
                 Most Read
                 <span className="text-red-600 text-lg font-black italic">
                     <span className=" inline-block">//</span>
@@ -31,7 +31,7 @@ export default function MostReadWidget({ items }: MostReadWidgetProps) {
 
                         {/* Content */}
                         <div className="flex justify-between w-full">
-                            <Link href={`/articles/${item.slug}`} className="group-hover:text-red-600 transition-colors font-bold text-[#09365E] text-xs leading-snug line-clamp-3">
+                            <Link href={`/articles/${item.slug}`} className="group-hover:text-red-600 transition-colors font-bold text-black text-xs leading-snug line-clamp-3">
                                 {item.title}
                             </Link>
 

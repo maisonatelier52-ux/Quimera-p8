@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import {
     Youtube,
@@ -8,12 +8,31 @@ import {
 } from 'lucide-react';
 
 export default function Footer() {
+    const [footerData, setFooterData] = useState<any>(null);
+    const [categories, setCategories] = useState<any>([]);
+
+    useEffect(() => {
+        fetch("http://127.0.0.1:5000/api/public/footer")
+            .then(res => res.json())
+            .then(data => setFooterData(data))
+            .catch(console.error);
+
+        fetch("http://127.0.0.1:5000/api/public/categories")
+            .then(res => res.json())
+            .then(data => setCategories(data))
+            .catch(console.error);
+    }, []);
+
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
+    if (!footerData) {
+        return <footer className="text-white pt-16 pb-12 font-serif mt-auto min-h-[400px]" style={{ background: 'linear-gradient(to bottom, #09365E, black)' }}></footer>;
+    }
+
     return (
-        <footer className="bg-gradient-to-b from-[#09365E] to-black text-white pt-16 pb-12 font-serif">
+        <footer className="text-white pt-16 pb-12 font-serif mt-auto" style={{ background: `linear-gradient(to bottom, ${footerData.footerBgColor || '#09365E'}, black)` }}>
             <div className="max-w-[1330px] mx-auto px-4 md:px-8">
                 {/* Top Row: Logo and Socials */}
                 <div className="flex flex-col md:flex-row justify-between items-center mb-4 gap-8">
@@ -34,73 +53,96 @@ export default function Footer() {
                     {/* Left Column: Brand & Subscribe */}
                     <div className="max-w-xl">
                         <p className="text-xs leading-relaxed mb-4 font-medium opacity-90">
-                            <span className="font-bold">Information You Can Trust:</span> Stay instantly connected with breaking stories and live updates. From politics and technology to entertainment and beyond, we provide real-time coverage you can rely on, making us your dependable source for 24/7 news.
+                            {footerData.siteDescription || "Information You Can Trust: Stay instantly connected with breaking stories and live updates."}
                         </p>
-                        
+
                         <div className="flex items-center gap-5 mt-6">
-                            <Link href="#" className="hover:opacity-80 transition-opacity">
-                                <Instagram size={18} />
-                            </Link>
-                            <Link href="#" className="hover:opacity-80 transition-opacity">
-                                <Youtube size={18} />
-                            </Link>
-                            <Link href="#" className="hover:opacity-80 transition-opacity" title="Substack">
-                                <div className="w-4 h-4 bg-orange-500 rounded-sm flex items-center justify-center text-white font-black text-[10px]">S</div>
-                            </Link>
+                            {footerData.socialLinks?.instagram && (
+                                <Link href={footerData.socialLinks.instagram} className="hover:opacity-80 transition-opacity">
+                                    <Instagram size={18} />
+                                </Link>
+                            )}
+                            {footerData.socialLinks?.youtube && (
+                                <Link href={footerData.socialLinks.youtube} className="hover:opacity-80 transition-opacity">
+                                    <Youtube size={18} />
+                                </Link>
+                            )}
+                            {footerData.socialLinks?.substack && (
+                                <Link href={footerData.socialLinks.substack} className="hover:opacity-80 transition-opacity" title="Substack">
+                                    <div className="w-4 h-4 bg-orange-500 rounded-sm flex items-center justify-center text-white font-black text-[10px]">S</div>
+                                </Link>
+                            )}
                         </div>
                     </div>
 
                     {/* Right Column: Links */}
                     <div className="flex-1">
-                        {/* Quick Links */}
+                        {/* Newsroom */}
                         <div className="mb-10">
                             <span className="text-[10px] uppercase tracking-widest text-white/40 mb-4 block font-bold">
-                                *** Quick Links
+                                *** {footerData.column1Title || 'Newsroom'}
                             </span>
                             <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-bold">
-                                <Link href="/category/politics" className="hover:text-red-500 transition-colors">Politics</Link>
-                                <span className="text-white/20 font-normal">|</span>
-                                <Link href="/category/market" className="hover:text-red-500 transition-colors">Market</Link>
-                                <span className="text-white/20 font-normal">|</span>
-                                <Link href="/category/finance" className="hover:text-red-500 transition-colors">Finance</Link>
-                                <span className="text-white/20 font-normal">|</span>
-                                <Link href="/category/tech" className="hover:text-red-500 transition-colors">Tech</Link>
-                                <span className="text-white/20 font-normal">|</span>
-                                <Link href="/category/business" className="hover:text-red-500 transition-colors">Business</Link>
-                                <span className="text-white/20 font-normal">|</span>
-                                <Link href="/category/sports" className="hover:text-red-500 transition-colors">Sports</Link>
+                                {footerData.column1Links && footerData.column1Links.length > 0 ? (
+                                    footerData.column1Links.map((link: any, index: number) => (
+                                        <React.Fragment key={index}>
+                                            <Link href={link.externalUrl} className="hover:text-red-500 transition-colors">{link.title}</Link>
+                                            {index < footerData.column1Links.length - 1 && <span className="text-white/20 font-normal">|</span>}
+                                        </React.Fragment>
+                                    ))
+                                ) : (
+                                    categories.map((cat: any, index: number) => (
+                                        <React.Fragment key={cat._id}>
+                                            <Link href={`/category/${cat.slug}`} className="hover:text-red-500 transition-colors">{cat.name}</Link>
+                                            {index < categories.length - 1 && <span className="text-white/20 font-normal">|</span>}
+                                        </React.Fragment>
+                                    ))
+                                )}
                             </div>
                         </div>
 
-                        {/* About Company */}
+                        {/* Standards */}
                         <div>
                             <span className="text-[10px] uppercase tracking-widest text-white/40 mb-4 block font-bold">
-                                *** About Company
+                                *** {footerData.column2Title || 'Standards'}
                             </span>
                             <div className="flex flex-wrap items-center gap-x-5 gap-y-5 text-xs font-bold">
-                                {[
-                                    { name: "About Us", href: "/about-us" },
-                                    { name: "Authors", href: "/authors" },
-                                    { name: "Privacy Policy", href: "/privacy-policy" },
-                                    { name: "Terms & Conditions", href: "/terms-conditions" },
-                                    { name: "Contact Us", href: "/contact-us" },
-                                    { name: "Editorial Policy", href: "/editorial-policy" },
-                                    { name: "Corrections Policy", href: "/corrections-policy" },
-                                    { name: "Source Methodology", href: "/source-methodology" },
-                                    { name: "Ownership & Funding", href: "/ownership-funding" },
-                                    { name: "Advertising Policy", href: "/advertising-policy" },
-                                    { name: "Right of Reply", href: "/right-of-reply" },
-                                    { name: "Legal", href: "/legal" }
-                                ].map((item, index, array) => (
-                                    <React.Fragment key={item.name}>
-                                        <Link href={item.href} className="hover:text-red-500 transition-colors">
-                                            {item.name}
-                                        </Link>
-                                        {index < array.length - 1 && (
-                                            <span className="text-white/20 font-normal">|</span>
-                                        )}
-                                    </React.Fragment>
-                                ))}
+                                {footerData.column2Links && footerData.column2Links.length > 0 ? (
+                                    footerData.column2Links.map((link: any, index: number) => (
+                                        <React.Fragment key={index}>
+                                            <Link href={link.externalUrl} className="hover:text-red-500 transition-colors">
+                                                {link.title}
+                                            </Link>
+                                            {index < footerData.column2Links.length - 1 && (
+                                                <span className="text-white/20 font-normal">|</span>
+                                            )}
+                                        </React.Fragment>
+                                    ))
+                                ) : (
+                                    [
+                                        { name: "About Us", href: "/about-us" },
+                                        { name: "Authors", href: "/authors" },
+                                        { name: "Privacy Policy", href: "/privacy-policy" },
+                                        { name: "Terms & Conditions", href: "/terms-and-conditions" },
+                                        { name: "Contact Us", href: "/contact-us" },
+                                        { name: "Legal", href: "/legal" },
+                                        { name: "Right of Reply", href: "/right-of-reply" },
+                                        { name: "Sourcing & Methodology", href: "/source-methodology" },
+                                        { name: "Ownership & Funding", href: "/ownership-funding" },
+                                        { name: "Editorial Policy", href: "/editorial-policy" },
+                                        { name: "Corrections Policy", href: "/corrections-policy" },
+                                        { name: "Advertising Policy", href: "/advertising-policy" }
+                                    ].map((item, index, array) => (
+                                        <React.Fragment key={item.name}>
+                                            <Link href={item.href} className="hover:text-red-500 transition-colors">
+                                                {item.name}
+                                            </Link>
+                                            {index < array.length - 1 && (
+                                                <span className="text-white/20 font-normal">|</span>
+                                            )}
+                                        </React.Fragment>
+                                    ))
+                                )}
                             </div>
                         </div>
                     </div>
@@ -109,7 +151,7 @@ export default function Footer() {
                 {/* Bottom Bar */}
                 <div className="pt-8 flex flex-col md:flex-row justify-center items-center relative gap-6">
                     <p className="text-[10px] text-white/40 font-bold tracking-wider text-center">
-                        © Quimera News Network. All Rights Reserved.
+                        {footerData.copyrightText || '© Quimera News Network. All Rights Reserved.'}
                     </p>
 
                     {/* Scroll to top */}

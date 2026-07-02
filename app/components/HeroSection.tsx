@@ -30,7 +30,7 @@ export default function HeroSection({ mainArticle, sideArticles }: HeroSectionPr
                             className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8 md:p-12">
-                            <span className="inline-block px-3 py-1 bg-primary text-white text-xs font-bold uppercase tracking-widest mb-4 w-fit rounded">
+                            <span className="inline-block px-3 py-1 bg-primary text-primary-foreground text-xs font-bold uppercase tracking-widest mb-4 w-fit rounded">
                                 Featured
                             </span>
                             <h2 className="font-serif text-3xl md:text-5xl font-bold text-white leading-tight max-w-3xl group-hover:underline decoration-primary underline-offset-8">

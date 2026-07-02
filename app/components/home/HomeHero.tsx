@@ -3,9 +3,10 @@ import StandardCard from '../cards/StandardCard';
 import FeatureMainCard from '../cards/FeatureMainCard';
 import HorizontalCard from '../cards/HorizontalCard';
 import MostReadWidget from '../sidebar/MostReadWidget';
-import allArticles from '@/public/data/all-articles-index.json';
 
-export default function HomeHero() {
+export default async function HomeHero() {
+    const res = await fetch("http://127.0.0.1:5000/api/public/articles", { cache: "no-store" });
+    const allArticles = await res.json();
     const featuredArticle = allArticles[0];
     const sideArticles = allArticles.slice(1, 4);
     const bottomArticles = allArticles.slice(4, 6);
@@ -27,7 +28,7 @@ export default function HomeHero() {
 
                     {/* Left Column (1/4) - Standard Cards */}
                     <div className="col-span-1 flex flex-col gap-8 pr-0 lg:pr-6">
-                        {sideArticles.map((article, idx) => (
+                        {sideArticles.map((article: any, idx: number) => (
                             <StandardCard key={idx} {...article} />
                         ))}
                     </div>
@@ -40,7 +41,7 @@ export default function HomeHero() {
                         
 
                         <div className="flex flex-col gap-4">
-                            {bottomArticles.map((article, idx) => (
+                            {bottomArticles.map((article: any, idx: number) => (
                                 <div key={idx} className="border-t border-gray-100 pt-8 first:border-0 first:pt-0">
                                     <HorizontalCard article={article} />
                                 </div>
@@ -49,7 +50,7 @@ export default function HomeHero() {
                     </div>
 
                     {/* Right Column (1/4) - Most Read */}
-                    <div className="col-span-1">
+                    <div className="col-span-1" suppressHydrationWarning>
                         <MostReadWidget items={mostRead} />
                     </div>
 

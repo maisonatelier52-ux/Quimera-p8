@@ -15,29 +15,41 @@ interface HorizontalCardProps {
 
 export default function HorizontalCard({ article }: HorizontalCardProps) {
 
+    const getCatDetails = (cat: any) => {
+        if (!cat) return { name: '', slug: '' };
+        if (Array.isArray(cat)) cat = cat[0];
+        if (typeof cat === 'object') {
+            return {
+                name: cat.name || '',
+                slug: cat.slug || (cat.name || '').toLowerCase().replace(/\s+/g, '-')
+            };
+        }
+        return {
+            name: String(cat),
+            slug: String(cat).toLowerCase().replace(/\s+/g, '-')
+        };
+    };
+
+    const categoryData = getCatDetails(article.category);
+
     return (
-        <div className="flex gap-6 group">
-            {/* Image */}
-            <Link
-                href={`/articles/${article.slug}`}
-                className="block relative overflow-hidden  w-[200px] aspect-[16/10] flex-shrink-0 bg-gray-100"
-            >
+        <div className="flex gap-4 group cursor-pointer items-start">
+            <Link href={`/articles/${article.slug}`} className="w-24 h-24 md:w-32 md:h-32 shrink-0 relative overflow-hidden bg-gray-100">
                 <img
-                    src={article.image}
+                    src={article.image || '/fallback-image.jpg'}
                     alt={article.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
             </Link>
 
-            {/* Content */}
-            <div className="flex flex-col flex-1 gap-2 pt-1">
-                {/* Meta */}
-                <div className="flex items-center gap-2 text-[10px] md:text-xs font-bold uppercase tracking-wider">
-                    <Link href={`/category/${article.category.toLowerCase()}`} className="text-[#E12A32] hover:text-gray-900 transition-colors">
-                        {article.category}
-                    </Link>
-                    <span className="text-gray-300">|</span>
-                    <span className="text-gray-500 text-[10px] normal-case">
+            <div className="flex flex-col justify-between py-1">
+                <div className="flex items-center gap-3 font-bold text-xs uppercase tracking-wider mb-2">
+                    {categoryData.name && (
+                        <Link href={`/category/${categoryData.slug}`} className="text-[#E12A32] hover:text-gray-900 transition-colors">
+                            {categoryData.name}
+                        </Link>
+                    )}
+                    <span className="text-gray-400 text-[10px] normal-case">
                         {article.date}
                     </span>
                     <button className="text-gray-400 hover:text-[#E12A32] transition-colors ml-auto">

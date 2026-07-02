@@ -27,7 +27,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-  --background: #ffffff;
+    --background: #ffffff;
     --foreground: #f8fafc;
     --muted: #94a3b8;
     --border: #1e293b;
@@ -36,7 +36,8 @@
 }
 
 html {
-  font-size: 15px; /* Reduces base rem size globally by ~6% */
+  font-size: 15px;
+  /* Reduces base rem size globally by ~6% */
 }
 
 body {
@@ -92,8 +93,13 @@ h4,
 }
 
 @keyframes marquee {
-  0% { transform: translateX(100vw); }
-  100% { transform: translateX(-100%); }
+  0% {
+    transform: translateX(100vw);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .animate-marquee {
