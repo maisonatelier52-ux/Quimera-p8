@@ -4,7 +4,11 @@ import { useRouter } from "next/navigation";
 
 export default function ArticleSettingsPage() {
   const [formData, setFormData] = useState<any>({
-    articleLayout: ['ArticleHeader', 'ArticleContent', 'RelatedArticles', 'Comments']
+    headerColor: '#09365E',
+    paragraphColor: '#374151',
+    textColor: '#000000',
+    fontFamily: 'serif',
+    sidebarPosition: 'right'
   });
   const [loading, setLoading] = useState(true);
   const [deviceView, setDeviceView] = useState<'desktop' | 'tablet' | 'mobile'>('desktop');
@@ -25,7 +29,11 @@ export default function ArticleSettingsPage() {
       .then(data => {
         if (data) {
           setFormData({
-            articleLayout: data.articleLayout || ['ArticleHeader', 'ArticleContent', 'RelatedArticles', 'Comments']
+            headerColor: data.headerColor || '#09365E',
+            paragraphColor: data.paragraphColor || '#374151',
+            textColor: data.textColor || '#000000',
+            fontFamily: data.fontFamily || 'serif',
+            sidebarPosition: data.sidebarPosition || 'right'
           });
         }
         setLoading(false);
@@ -64,59 +72,114 @@ export default function ArticleSettingsPage() {
     }
   };
 
-  const [draggedIndex, setDraggedIndex] = useState<number | null>(null);
-  const [dragOverIndex, setDragOverIndex] = useState<number | null>(null);
-
-  const handleDragStart = (e: React.DragEvent, index: number) => {
-    setDraggedIndex(index);
-    setTimeout(() => {
-      if (e.target instanceof HTMLElement) e.target.classList.add('opacity-50');
-    }, 0);
-  };
-
-  const handleDragEnter = (e: React.DragEvent, index: number) => {
-    setDragOverIndex(index);
-  };
-
-  const handleDragEnd = (e: React.DragEvent) => {
-    if (e.target instanceof HTMLElement) e.target.classList.remove('opacity-50');
-    if (draggedIndex !== null && dragOverIndex !== null && draggedIndex !== dragOverIndex) {
-      const newArray = [...formData.articleLayout];
-      const draggedItem = newArray[draggedIndex];
-      newArray.splice(draggedIndex, 1);
-      newArray.splice(dragOverIndex, 0, draggedItem);
-
-      setFormData({ ...formData, articleLayout: newArray });
-    }
-    setDraggedIndex(null);
-    setDragOverIndex(null);
-  };
-
   if (loading) return <div className="p-8">Loading settings...</div>;
 
   return (
-    <div className="space-y-6">
-      <h2 className="text-2xl font-bold text-gray-900">Article Settings</h2>
-      <div className="flex flex-col lg:flex-row gap-8">
-        <form onSubmit={handleSubmit} className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex-1 space-y-6">
+    <div className="p-6">
+      <div className="mb-6">
+        <h1 className="text-2xl font-bold text-gray-900">Article Settings</h1>
+        <p className="text-gray-500 mt-1">Configure the look and feel of the article pages.</p>
+      </div>
+
+      <div className="flex flex-col lg:flex-row gap-8 items-start">
+        <form onSubmit={handleSubmit} className="w-full lg:w-1/2 xl:w-1/3 bg-white p-6 rounded-xl shadow-sm border border-gray-100 space-y-8">
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-4 pb-2 border-b">Article Styling</h3>
+            <p className="text-sm text-gray-500 mb-6">Customize the colors and typography for all detailed article pages.</p>
+            
+            <div className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Header Color</label>
+                  <p className="text-xs text-gray-500 mb-2">Used for article titles and major headings.</p>
+                  <div className="flex items-center gap-3">
+                    <input
+                      type="color"
+                      value={formData.headerColor}
+                      onChange={(e) => setFormData({ ...formData, headerColor: e.target.value })}
+                      className="w-10 h-10 rounded cursor-pointer border-0 p-0"
+                    />
+                    <input
+                      type="text"
+                      value={formData.headerColor}
+                      onChange={(e) => setFormData({ ...formData, headerColor: e.target.value })}
+                      className="flex-1 min-w-0 border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 text-sm p-2 border"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Paragraph Color</label>
+                  <p className="text-xs text-gray-500 mb-2">Used for the main article content (paragraphs).</p>
+                  <div className="flex items-center gap-3">
+                    <input
+                      type="color"
+                      value={formData.paragraphColor}
+                      onChange={(e) => setFormData({ ...formData, paragraphColor: e.target.value })}
+                      className="w-10 h-10 rounded cursor-pointer border-0 p-0"
+                    />
+                    <input
+                      type="text"
+                      value={formData.paragraphColor}
+                      onChange={(e) => setFormData({ ...formData, paragraphColor: e.target.value })}
+                      className="flex-1 min-w-0 border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 text-sm p-2 border"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">General Text Color</label>
+                  <p className="text-xs text-gray-500 mb-2">Used for miscellaneous text, dates, and meta info.</p>
+                  <div className="flex items-center gap-3">
+                    <input
+                      type="color"
+                      value={formData.textColor}
+                      onChange={(e) => setFormData({ ...formData, textColor: e.target.value })}
+                      className="w-10 h-10 rounded cursor-pointer border-0 p-0"
+                    />
+                    <input
+                      type="text"
+                      value={formData.textColor}
+                      onChange={(e) => setFormData({ ...formData, textColor: e.target.value })}
+                      className="flex-1 min-w-0 border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 text-sm p-2 border"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Font Family</label>
+                  <p className="text-xs text-gray-500 mb-2">The primary font used for the article text.</p>
+                  <select
+                    value={formData.fontFamily}
+                    onChange={(e) => setFormData({ ...formData, fontFamily: e.target.value })}
+                    className="w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 text-sm p-2.5 border"
+                  >
+                    <option value="serif">Serif (Elegant, Traditional)</option>
+                    <option value="sans-serif">Sans-Serif (Modern, Clean)</option>
+                    <option value="monospace">Monospace (Technical, Typewriter)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-4 pb-2 border-b">Article Page Layout</h3>
-            <p className="text-sm text-gray-500 mb-4">Drag and drop to rearrange the order of components on the detailed article page.</p>
-            <div className="space-y-3 bg-gray-50 p-4 rounded-xl border border-gray-200">
-              {formData.articleLayout.map((componentName: string, index: number) => (
-                <div
-                  key={`article-${componentName}-${index}`}
-                  draggable
-                  onDragStart={(e) => handleDragStart(e, index)}
-                  onDragEnter={(e) => handleDragEnter(e, index)}
-                  onDragEnd={handleDragEnd}
-                  onDragOver={(e) => e.preventDefault()}
-                  className={`flex items-center p-4 bg-white border-2 border-dashed ${dragOverIndex === index ? 'border-blue-500 bg-blue-50' : 'border-gray-300'} rounded-lg cursor-move shadow-sm hover:border-gray-400 transition-colors`}
+            <h3 className="text-lg font-semibold text-gray-900 mb-4 pb-2 border-b">Layout Settings</h3>
+            <p className="text-sm text-gray-500 mb-6">Configure the structural layout of the article page.</p>
+
+            <div className="space-y-6">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Sidebar Position</label>
+                <p className="text-xs text-gray-500 mb-2">Choose whether the sidebar appears on the right or the left side of the content.</p>
+                <select
+                  value={formData.sidebarPosition}
+                  onChange={(e) => setFormData({ ...formData, sidebarPosition: e.target.value })}
+                  className="w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 text-sm p-2.5 border"
                 >
-                  <span className="font-semibold text-gray-700 pointer-events-none">{componentName}</span>
-                </div>
-              ))}
+                  <option value="right">Right Sidebar (Default)</option>
+                  <option value="left">Left Sidebar</option>
+                </select>
+              </div>
             </div>
           </div>
 
@@ -169,7 +232,7 @@ export default function ArticleSettingsPage() {
               }}
             >
               <iframe
-                src={previewSlug ? `/articles/${previewSlug}?layout=${formData.articleLayout.join(',')}` : `/?layout=${formData.articleLayout.join(',')}`}
+                src={previewSlug ? `/articles/${previewSlug}?headerColor=${encodeURIComponent(formData.headerColor)}&paragraphColor=${encodeURIComponent(formData.paragraphColor)}&textColor=${encodeURIComponent(formData.textColor)}&fontFamily=${encodeURIComponent(formData.fontFamily)}&sidebarPosition=${encodeURIComponent(formData.sidebarPosition)}` : `/?headerColor=${encodeURIComponent(formData.headerColor)}&paragraphColor=${encodeURIComponent(formData.paragraphColor)}&textColor=${encodeURIComponent(formData.textColor)}&fontFamily=${encodeURIComponent(formData.fontFamily)}`}
                 className="w-full h-full border-none"
                 title="Article Live Preview"
               />

@@ -10,13 +10,15 @@ export default function EditArticlePage({ params }: { params: Promise<{ id: stri
   const id = unwrappedParams.id;
 
   const [loading, setLoading] = useState(false);
-  const [categories, setCategories] = useState([]);
+  const [categories, setCategories] = useState<any[]>([]);
+  const [authors, setAuthors] = useState<any[]>([]);
   const [imageLoading, setImageLoading] = useState(false);
   const [formData, setFormData] = useState({
     title: "",
     slug: "",
     excerpt: "",
     category: "",
+    author: "",
     image: "",
     isPublished: true,
     content: [] as any[],
@@ -33,6 +35,18 @@ export default function EditArticlePage({ params }: { params: Promise<{ id: stri
       })
       .catch(console.error);
 
+    // Fetch authors
+    fetch("http://localhost:5000/api/authors", {
+      headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (Array.isArray(data)) setAuthors(data);
+        else if (data && Array.isArray(data.authors)) setAuthors(data.authors);
+        else setAuthors([]);
+      })
+      .catch(console.error);
+
     // Fetch article details
     fetch(`http://localhost:5000/api/articles/${id}`, {
       headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }
@@ -45,6 +59,7 @@ export default function EditArticlePage({ params }: { params: Promise<{ id: stri
             slug: data.slug || "",
             excerpt: data.excerpt || "",
             category: data.category?._id || data.category || "",
+            author: data.author?._id || data.author || "",
             image: data.image || "",
             isPublished: data.isPublished !== false,
             content: data.content || [],
@@ -121,6 +136,11 @@ export default function EditArticlePage({ params }: { params: Promise<{ id: stri
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+
+    // Find the full author object based on the selected ID
+    const selectedAuthor = authors.find(a => a._id === formData.author) || formData.author;
+    const payload = { ...formData, author: selectedAuthor };
+
     try {
       const res = await fetch(`http://localhost:5000/api/articles/${id}`, {
         method: "PUT",
@@ -128,7 +148,7 @@ export default function EditArticlePage({ params }: { params: Promise<{ id: stri
           "Content-Type": "application/json",
           Authorization: `Bearer ${localStorage.getItem("token")}`
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(payload),
       });
 
       if (!res.ok) throw new Error("Failed to update article");
@@ -312,6 +332,27 @@ export default function EditArticlePage({ params }: { params: Promise<{ id: stri
                 </select>
                 {categories.length === 0 && (
                   <p className="text-xs text-red-500 mt-1">Please create a category first.</p>
+                )}
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Author</label>
+                <select
+                  name="author"
+                  required
+                  value={formData.author}
+                  onChange={handleChange}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-shadow bg-white"
+                >
+                  <option value="" disabled>Select an author</option>
+                  {authors.map((auth: any) => (
+                    <option key={auth._id} value={auth._id}>
+                      {auth.name}
+                    </option>
+                  ))}
+                </select>
+                {authors.length === 0 && (
+                  <p className="text-xs text-red-500 mt-1">Please create an author first.</p>
                 )}
               </div>
 

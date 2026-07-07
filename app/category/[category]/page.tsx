@@ -5,8 +5,6 @@ import CategoryInfo from '@/app/components/category/CategoryInfo';
 import CategoryFeed from '@/app/components/category/CategoryFeed';
 import CategoryAd from '@/app/components/ads/CategoryAd';
 import { Metadata } from 'next';
-import fs from 'fs/promises';
-import path from 'path';
 
 interface CategoryPageProps {
     params: Promise<{
@@ -14,12 +12,24 @@ interface CategoryPageProps {
     }>;
 }
 
-async function getCategoryData(category: string) {
-    if (!category) return null;
+async function getCategoryData(categorySlug: string) {
+    if (!categorySlug) return null;
     try {
-        const filePath = path.join(process.cwd(), 'public', 'data', 'categoryNews', `${category.toLowerCase()}.json`);
-        const content = await fs.readFile(filePath, 'utf-8');
-        return JSON.parse(content);
+        const baseUrl = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:5000";
+        const categoriesRes = await fetch(`${baseUrl}/api/public/categories`, { cache: 'no-store' });
+        const categories = await categoriesRes.json();
+        const categoryData = categories.find((c: any) => c.slug === categorySlug);
+        
+        if (!categoryData) return null;
+
+        const articlesRes = await fetch(`${baseUrl}/api/public/articles?category=${categorySlug}`, { cache: 'no-store' });
+        const articles = await articlesRes.json();
+        
+        return {
+            title: categoryData.name,
+            description: categoryData.description || `Latest news and updates in ${categoryData.name}.`,
+            articles: articles
+        };
     } catch (err) {
         return null;
     }

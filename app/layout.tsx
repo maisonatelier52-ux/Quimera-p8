@@ -29,16 +29,19 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  let appearance = {
+  let appearance: any = {
     headerBgColor: "#09365E",
     footerBgColor: "#09365E",
-    primaryAccentColor: "#E12A32"
+    primaryAccentColor: "#E12A32",
+    globalTextColor: "#333333",
+    globalFontFamily: "sans-serif"
   };
 
   try {
     const res = await fetch("http://127.0.0.1:5000/api/public/appearance", { cache: 'no-store' });
     if (res.ok) {
-      appearance = await res.json();
+      const data = await res.json();
+      appearance = { ...appearance, ...data };
     }
   } catch (error) {
     console.error("Failed to fetch appearance settings:", error);
@@ -53,10 +56,16 @@ export default async function RootLayout({
             --header-bg: ${appearance.headerBgColor};
             --footer-bg: ${appearance.footerBgColor};
             --primary-accent: ${appearance.primaryAccentColor};
+            --global-text-color: ${appearance.globalTextColor};
+            --global-font-family: ${appearance.globalFontFamily};
+          }
+          body {
+            color: var(--global-text-color);
+            font-family: var(--global-font-family);
           }
         `}} />
       </head>
-      <body className="antialiased font-serif">
+      <body className="antialiased">
         {children}
       </body>
     </html>

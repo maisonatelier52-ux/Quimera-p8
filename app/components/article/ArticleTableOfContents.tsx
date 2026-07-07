@@ -12,10 +12,10 @@ export default function ArticleTableOfContents() {
                 onClick={() => setIsOpen(!isOpen)}
                 className="w-full flex items-center justify-between p-4 bg-gray-50/50 hover:bg-gray-50 transition-colors"
             >
-                <div className="flex items-center gap-3">
+                <span className="flex items-center gap-3">
                     <BookOpen size={20} className="text-red-600" />
                     <span className="font-extrabold text-[#09365E]">Contents</span>
-                </div>
+                </span>
                 <ChevronDown
                     size={20}
                     className={`text-gray-400 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}

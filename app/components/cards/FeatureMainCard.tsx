@@ -76,7 +76,7 @@ export default function FeatureMainCard({ article }: FeatureMainCardProps) {
 
             {/* Title */}
             <Link href={`/articles/${article.slug}`}>
-                <h1 className="text-2xl text-[#09365E] md:text-3xl font-extrabold leading-tight hover:underline transition-colors">
+                <h1 className="text-2xl text-[#09365E] md:text-3xl font-extrabold leading-tight hover:underline transition-colors break-words break-all md:break-words">
                     {article.title}
                 </h1>
             </Link>

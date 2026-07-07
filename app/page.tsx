@@ -46,8 +46,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function Home({ searchParams }: { searchParams: Promise<{ layout?: string }> }) {
-  const { layout } = await searchParams;
+export default async function Home({ searchParams }: { searchParams: Promise<{ layout?: string, previewHeaderOnly?: string }> }) {
+  const { layout, previewHeaderOnly } = await searchParams;
+
+  if (previewHeaderOnly === 'true') {
+    return (
+      <main className="flex flex-col" suppressHydrationWarning>
+        <Header />
+      </main>
+    );
+  }
   let homeLayout = [
     'HomeHero', 'JustIn', 'FeaturedStories', 'NewsStrip', 'QuickLinks',
     'BusinessSection', 'AdvertisementSection', 'WhatToRead', 'TheLatest',

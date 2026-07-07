@@ -41,7 +41,7 @@ export default async function HomeHero() {
                     </div>
 
                     {/* Middle Column (2/4) - Featured & Horizontal */}
-                    <div className="col-span-1 lg:col-span-2 pr-0 lg:pr-6 lg:pl-4">
+                    <div className="col-span-1 lg:col-span-2 pr-0 lg:pr-6 lg:pl-4 min-w-0">
                         <FeatureMainCard article={featuredArticle} />
 
                         {/* Divider */}

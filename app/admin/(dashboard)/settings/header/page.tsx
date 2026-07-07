@@ -11,8 +11,11 @@ export default function HeaderSettingsPage() {
     layoutOrder: ["date", "logo", "search"],
     verticalOrder: ["topBar", "navbar", "ticker"],
     topBarBgColor: "#09365E",
+    topBarTextColor: "#FFFFFF",
     navbarBgColor: "#000000",
-    tickerBgColor: "#09365E"
+    navbarTextColor: "#FFFFFF",
+    tickerBgColor: "#09365E",
+    tickerTextColor: "#FFFFFF"
   });
   const [deviceView, setDeviceView] = useState<'desktop' | 'tablet' | 'mobile'>('desktop');
   const [loading, setLoading] = useState(true);
@@ -49,8 +52,11 @@ export default function HeaderSettingsPage() {
             layoutOrder: data.layoutOrder && data.layoutOrder.length === 3 ? data.layoutOrder : ["date", "logo", "search"],
             verticalOrder: data.verticalOrder && data.verticalOrder.length === 3 ? data.verticalOrder : ["topBar", "navbar", "ticker"],
             topBarBgColor: data.topBarBgColor || "#09365E",
+            topBarTextColor: data.topBarTextColor || "#FFFFFF",
             navbarBgColor: data.navbarBgColor || "#000000",
-            tickerBgColor: data.tickerBgColor || "#09365E"
+            navbarTextColor: data.navbarTextColor || "#FFFFFF",
+            tickerBgColor: data.tickerBgColor || "#09365E",
+            tickerTextColor: data.tickerTextColor || "#FFFFFF"
           });
         }
         setLoading(false);
@@ -208,7 +214,7 @@ export default function HeaderSettingsPage() {
       <h2 className="text-2xl font-bold text-gray-900">Header Settings</h2>
 
       {/* Live Preview */}
-      <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden flex flex-col h-[600px]">
+      <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden flex flex-col h-[250px]">
         <div className="px-6 py-4 border-b border-gray-100 bg-gray-50 flex items-center justify-between">
           <h3 className="font-semibold text-gray-800">Live Preview</h3>
           <div className="flex bg-gray-200 p-1 rounded-lg">
@@ -240,14 +246,14 @@ export default function HeaderSettingsPage() {
           <div
             className="origin-top bg-white transition-all duration-300 shadow-xl overflow-hidden shrink-0"
             style={{
-              width: deviceView === 'desktop' ? '1440px' : deviceView === 'tablet' ? '768px' : '375px',
+              width: deviceView === 'desktop' ? '1640px' : deviceView === 'tablet' ? '768px' : '375px',
               height: deviceView === 'desktop' ? '222.22%' : deviceView === 'tablet' ? '133.33%' : '100%',
               transform: deviceView === 'desktop' ? 'scale(0.45)' : deviceView === 'tablet' ? 'scale(0.75)' : 'scale(1)'
             }}
           >
             <iframe
               ref={iframeRef}
-              src="/"
+              src="/?previewHeaderOnly=true"
               className="w-full h-full border-none"
               title="Header Live Preview"
               onLoad={() => {
@@ -324,55 +330,114 @@ export default function HeaderSettingsPage() {
         <div>
           <h3 className="text-lg font-semibold text-gray-900 mb-4 pb-2 border-b">Theme Settings</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Main Header Color</label>
-              <div className="flex items-center space-x-2">
-                <input
-                  type="color"
-                  value={formData.topBarBgColor}
-                  onChange={(e) => setFormData({ ...formData, topBarBgColor: e.target.value })}
-                  className="w-10 h-10 p-0 border-0 rounded cursor-pointer"
-                />
-                <input
-                  type="text"
-                  value={formData.topBarBgColor}
-                  onChange={(e) => setFormData({ ...formData, topBarBgColor: e.target.value })}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm"
-                />
+            <div className="space-y-4">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Main Header Background</label>
+                <div className="flex items-center space-x-2">
+                  <input
+                    type="color"
+                    value={formData.topBarBgColor}
+                    onChange={(e) => setFormData({ ...formData, topBarBgColor: e.target.value })}
+                    className="w-10 h-10 p-0 border-0 rounded cursor-pointer"
+                  />
+                  <input
+                    type="text"
+                    value={formData.topBarBgColor}
+                    onChange={(e) => setFormData({ ...formData, topBarBgColor: e.target.value })}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm"
+                  />
+                </div>
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Main Header Text</label>
+                <div className="flex items-center space-x-2">
+                  <input
+                    type="color"
+                    value={formData.topBarTextColor}
+                    onChange={(e) => setFormData({ ...formData, topBarTextColor: e.target.value })}
+                    className="w-10 h-10 p-0 border-0 rounded cursor-pointer"
+                  />
+                  <input
+                    type="text"
+                    value={formData.topBarTextColor}
+                    onChange={(e) => setFormData({ ...formData, topBarTextColor: e.target.value })}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm"
+                  />
+                </div>
               </div>
             </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Navigation Bar Color</label>
-              <div className="flex items-center space-x-2">
-                <input
-                  type="color"
-                  value={formData.navbarBgColor}
-                  onChange={(e) => setFormData({ ...formData, navbarBgColor: e.target.value })}
-                  className="w-10 h-10 p-0 border-0 rounded cursor-pointer"
-                />
-                <input
-                  type="text"
-                  value={formData.navbarBgColor}
-                  onChange={(e) => setFormData({ ...formData, navbarBgColor: e.target.value })}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm"
-                />
+
+            <div className="space-y-4">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Navigation Background</label>
+                <div className="flex items-center space-x-2">
+                  <input
+                    type="color"
+                    value={formData.navbarBgColor}
+                    onChange={(e) => setFormData({ ...formData, navbarBgColor: e.target.value })}
+                    className="w-10 h-10 p-0 border-0 rounded cursor-pointer"
+                  />
+                  <input
+                    type="text"
+                    value={formData.navbarBgColor}
+                    onChange={(e) => setFormData({ ...formData, navbarBgColor: e.target.value })}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm"
+                  />
+                </div>
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Navigation Text</label>
+                <div className="flex items-center space-x-2">
+                  <input
+                    type="color"
+                    value={formData.navbarTextColor}
+                    onChange={(e) => setFormData({ ...formData, navbarTextColor: e.target.value })}
+                    className="w-10 h-10 p-0 border-0 rounded cursor-pointer"
+                  />
+                  <input
+                    type="text"
+                    value={formData.navbarTextColor}
+                    onChange={(e) => setFormData({ ...formData, navbarTextColor: e.target.value })}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm"
+                  />
+                </div>
               </div>
             </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Running News Color</label>
-              <div className="flex items-center space-x-2">
-                <input
-                  type="color"
-                  value={formData.tickerBgColor}
-                  onChange={(e) => setFormData({ ...formData, tickerBgColor: e.target.value })}
-                  className="w-10 h-10 p-0 border-0 rounded cursor-pointer"
-                />
-                <input
-                  type="text"
-                  value={formData.tickerBgColor}
-                  onChange={(e) => setFormData({ ...formData, tickerBgColor: e.target.value })}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm"
-                />
+
+            <div className="space-y-4">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Running News Background</label>
+                <div className="flex items-center space-x-2">
+                  <input
+                    type="color"
+                    value={formData.tickerBgColor}
+                    onChange={(e) => setFormData({ ...formData, tickerBgColor: e.target.value })}
+                    className="w-10 h-10 p-0 border-0 rounded cursor-pointer"
+                  />
+                  <input
+                    type="text"
+                    value={formData.tickerBgColor}
+                    onChange={(e) => setFormData({ ...formData, tickerBgColor: e.target.value })}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm"
+                  />
+                </div>
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Running News Text</label>
+                <div className="flex items-center space-x-2">
+                  <input
+                    type="color"
+                    value={formData.tickerTextColor}
+                    onChange={(e) => setFormData({ ...formData, tickerTextColor: e.target.value })}
+                    className="w-10 h-10 p-0 border-0 rounded cursor-pointer"
+                  />
+                  <input
+                    type="text"
+                    value={formData.tickerTextColor}
+                    onChange={(e) => setFormData({ ...formData, tickerTextColor: e.target.value })}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm"
+                  />
+                </div>
               </div>
             </div>
           </div>

@@ -31,8 +31,11 @@ export default function Header() {
         layoutOrder: ['date', 'logo', 'search'],
         verticalOrder: ['topBar', 'navbar', 'ticker'],
         topBarBgColor: '#09365E',
+        topBarTextColor: '#FFFFFF',
         navbarBgColor: '#000000',
-        tickerBgColor: '#09365E'
+        navbarTextColor: '#FFFFFF',
+        tickerBgColor: '#09365E',
+        tickerTextColor: '#FFFFFF'
     });
 
     useEffect(() => {
@@ -60,8 +63,11 @@ export default function Header() {
                         layoutOrder: data.layoutOrder && data.layoutOrder.length === 3 ? data.layoutOrder : ['date', 'logo', 'search'],
                         verticalOrder: data.verticalOrder && data.verticalOrder.length === 3 ? data.verticalOrder : ['topBar', 'navbar', 'ticker'],
                         topBarBgColor: data.topBarBgColor || '#09365E',
+                        topBarTextColor: data.topBarTextColor || '#FFFFFF',
                         navbarBgColor: data.navbarBgColor || '#000000',
-                        tickerBgColor: data.tickerBgColor || '#09365E'
+                        navbarTextColor: data.navbarTextColor || '#FFFFFF',
+                        tickerBgColor: data.tickerBgColor || '#09365E',
+                        tickerTextColor: data.tickerTextColor || '#FFFFFF'
                     });
                 }
             })
@@ -102,7 +108,7 @@ export default function Header() {
     const renderHeaderElement = (type: string) => {
         if (type === 'date') {
             return (
-                <div className="text-[10px] text-black font-medium tracking-wide min-w-[160px]" suppressHydrationWarning>
+                <div className="text-[10px] font-medium tracking-wide min-w-[160px]" suppressHydrationWarning>
                     <span suppressHydrationWarning>{mounted ? currentDateTime : ''}</span>
                 </div>
             );
@@ -117,7 +123,7 @@ export default function Header() {
                                 <span className="w-1.5 h-full bg-yellow-400 block"></span>
                                 <span className="w-1.5 h-full bg-cyan-400 block"></span>
                             </span>
-                            <span className="text-5xl font-black text-black italic tracking-tighter ml-1">
+                            <span className="text-5xl font-black italic tracking-tighter ml-1">
                                 {headerSettings?.logoText || 'QUIMERA'}
                             </span>
                         </>
@@ -133,7 +139,7 @@ export default function Header() {
                     className="p-2 hover:bg-black/10 rounded-full transition-colors"
                     onClick={() => setIsSearchOpen(true)}
                 >
-                    <Search size={20} className='text-black' />
+                    <Search size={20} className='text-current' />
                 </button>
             );
         }
@@ -146,7 +152,7 @@ export default function Header() {
     const renderVerticalElement = (type: string) => {
         if (type === 'topBar') {
             return (
-                <div key="topBar" className="text-white" style={{ backgroundColor: headerSettings?.topBarBgColor || '#09365E' }}>
+                <div key="topBar" style={{ backgroundColor: headerSettings?.topBarBgColor || '#09365E', color: headerSettings?.topBarTextColor || '#FFFFFF' }}>
                     <div className="max-w-[1330px] mx-auto px-4 h-25 grid grid-cols-3 items-center">
                         <div className="flex justify-start">
                             {renderHeaderElement(layoutOrder[0])}
@@ -163,7 +169,7 @@ export default function Header() {
         }
         if (type === 'navbar') {
             return (
-                <div key="navbar" className="text-black overflow-hidden border-1" style={{ backgroundColor: headerSettings?.navbarBgColor || '#000000' }}>
+                <div key="navbar" className="overflow-hidden border-1" style={{ backgroundColor: headerSettings?.navbarBgColor || '#000000', color: headerSettings?.navbarTextColor || '#FFFFFF' }}>
                     <div className="max-w-[1330px] mx-auto px-4 h-10 flex items-center justify-between">
                         <div className="flex items-center gap-4 overflow-x-auto no-scrollbar whitespace-nowrap ">
                             <div className="flex-shrink-0">
@@ -171,18 +177,13 @@ export default function Header() {
                             </div>
                             <div className="flex items-center text-[10px] font-bold tracking-wide gap-3">
                                 <Link href="/" className={"hover:underline"}>Home</Link>
-                                <span className="text-white/50"></span>
-                                <Link href="/category/politics" className="hover:underline">Politics</Link>
-                                <span className="text-white/50"></span>
-                                <Link href="/category/market" className="hover:underline">Market</Link>
-                                <span className="text-white/50"></span>
-                                <Link href="/category/finance" className="hover:underline">Finance</Link>
-                                <span className="text-white/50"></span>
-                                <Link href="/category/tech" className="hover:underline">Tech</Link>
-                                <span className="text-white/50"></span>
-                                <Link href="/category/business" className="hover:underline">Business</Link>
-                                <span className="text-white/50"></span>
-                                <Link href="/category/sports" className="hover:underline">Sports</Link>
+                                {categories.length > 0 && <span className="text-white/50"></span>}
+                                {categories.map((cat: any, i: number) => (
+                                    <React.Fragment key={cat._id || i}>
+                                        <Link href={`/category/${cat.slug}`} className="hover:underline">{cat.name}</Link>
+                                        {i < categories.length - 1 && <span className="text-white/50"></span>}
+                                    </React.Fragment>
+                                ))}
                             </div>
                         </div>
                         <div className="hidden md:flex items-center gap-4 pl-4 relative z-10">
@@ -202,7 +203,7 @@ export default function Header() {
         }
         if (type === 'ticker') {
             return (
-                <div key="ticker" className="text-gray-300 py-1.5 overflow-hidden shadow-md" style={{ backgroundColor: headerSettings?.tickerBgColor || '#09365E' }}>
+                <div key="ticker" className="py-1.5 overflow-hidden shadow-md" style={{ backgroundColor: headerSettings?.tickerBgColor || '#09365E', color: headerSettings?.tickerTextColor || '#FFFFFF' }}>
                     <div className="max-w-[1330px] mx-auto px-4 flex items-center">
                         <div className="bg-white/50 text-black font-black px-2 py-1 text-[8px] uppercase tracking-widest z-10 flex-shrink-0 shadow-sm rounded-sm mr-4">
                             LATEST HEADLINES
