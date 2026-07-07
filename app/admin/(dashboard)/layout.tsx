@@ -26,7 +26,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             <div className="w-5 h-5 bg-neutral-900 rounded-[4px] flex items-center justify-center">
               <span className="text-white text-[10px] font-bold">F</span>
             </div>
-            Foxiz CMS
+            Quimera CMS
           </div>
         </div>
         

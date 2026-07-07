@@ -43,7 +43,7 @@ export default function AdminLoginPage() {
             <div className="max-w-md w-full bg-white p-8 rounded-2xl shadow-sm border border-neutral-200">
                 <div className="text-center mb-8">
                     <div className="w-12 h-12 bg-neutral-900 rounded-lg mx-auto flex items-center justify-center mb-4">
-                        <span className="text-white text-xl font-bold">F</span>
+                        <span className="text-white text-xl font-bold">Q</span>
                     </div>
                     <h2 className="text-2xl font-bold text-neutral-900">Admin Login</h2>
                     <p className="text-sm text-neutral-500 mt-2">Sign in to manage Quimera News</p>
