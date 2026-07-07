@@ -62,61 +62,61 @@ export default function AdminArticlesList() {
   if (loading) return <div className="p-8 text-gray-500">Loading articles...</div>;
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 max-w-7xl pb-10">
       <div className="flex justify-between items-center">
         <div>
-          <h2 className="text-2xl font-bold text-gray-900">Articles</h2>
-          <p className="text-sm text-gray-500 mt-1">Manage your news articles and posts.</p>
+          <h2 className="text-[20px] font-bold text-neutral-900 tracking-tight">Articles</h2>
+          <p className="text-[13px] text-neutral-500 mt-0.5">Manage your news articles and posts.</p>
         </div>
         <Link
           href="/admin/articles/create"
-          className="flex items-center space-x-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+          className="flex items-center space-x-2 px-3 py-1.5 bg-zinc-900 text-white text-[13px] font-medium rounded-md hover:bg-zinc-800 transition-colors shadow-sm"
         >
-          <Plus className="w-5 h-5" />
-          <span>Add Article</span>
+          <Plus className="w-4 h-4" />
+          <span>New Article</span>
         </Link>
       </div>
 
-      <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+      <div className="bg-white rounded-xl shadow-sm border border-neutral-200 overflow-hidden flex flex-col">
         <div className="overflow-x-auto">
-          <table className="min-w-full divide-y divide-gray-200">
-            <thead className="bg-gray-50">
+          <table className="min-w-full divide-y divide-neutral-200 text-[13px]">
+            <thead className="bg-neutral-50">
               <tr>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Title</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Category</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Author</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                <th className="px-5 py-3 text-left font-semibold text-neutral-500 w-1/3">Title</th>
+                <th className="px-5 py-3 text-left font-semibold text-neutral-500">Category</th>
+                <th className="px-5 py-3 text-left font-semibold text-neutral-500">Author</th>
+                <th className="px-5 py-3 text-left font-semibold text-neutral-500">Status</th>
+                <th className="px-5 py-3 text-right font-semibold text-neutral-500">Actions</th>
               </tr>
             </thead>
-            <tbody className="bg-white divide-y divide-gray-200">
+            <tbody className="bg-white divide-y divide-neutral-100">
               {articles.length === 0 ? (
                 <tr>
-                  <td colSpan={5} className="px-6 py-8 text-center text-gray-500">
+                  <td colSpan={5} className="px-5 py-8 text-center text-neutral-500">
                     No articles found. Create your first article!
                   </td>
                 </tr>
               ) : (
                 articles.map((article: any) => (
-                  <tr key={article._id} className="hover:bg-gray-50 transition-colors">
-                    <td className="px-6 py-4 text-sm font-medium text-gray-900 max-w-xs truncate" title={article.title}>{article.title}</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  <tr key={article._id} className="hover:bg-neutral-50/80 transition-colors group">
+                    <td className="px-5 py-2.5 font-medium text-neutral-900 truncate max-w-[300px]" title={article.title}>{article.title}</td>
+                    <td className="px-5 py-2.5 whitespace-nowrap text-neutral-500">
                         {article.category?.name || "Uncategorized"}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    <td className="px-5 py-2.5 whitespace-nowrap text-neutral-500">
                         {article.author?.name || "Unknown"}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap">
-                      <span className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${article.isPublished ? "bg-green-100 text-green-800" : "bg-yellow-100 text-yellow-800"}`}>
+                    <td className="px-5 py-2.5 whitespace-nowrap">
+                      <span className={`px-2 py-0.5 inline-flex text-[11px] font-medium rounded-full border ${article.isPublished ? "bg-emerald-50 text-emerald-700 border-emerald-200" : "bg-neutral-100 text-neutral-600 border-neutral-200"}`}>
                         {article.isPublished ? "Published" : "Draft"}
                       </span>
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium space-x-3">
-                      <Link href={`/admin/articles/edit/${article._id}`} className="text-blue-600 hover:text-blue-900 inline-flex items-center transition-colors">
-                        <Edit className="w-4 h-4 mr-1" /> Edit
+                    <td className="px-5 py-2.5 whitespace-nowrap text-right space-x-2">
+                      <Link href={`/admin/articles/edit/${article._id}`} className="px-2.5 py-1 text-[12px] font-medium text-neutral-600 bg-white border border-neutral-200 rounded-md hover:bg-neutral-50 hover:text-neutral-900 transition-colors shadow-sm inline-flex items-center">
+                        <Edit className="w-3.5 h-3.5 mr-1.5" /> Edit
                       </Link>
-                      <button onClick={() => handleDelete(article._id)} className="text-red-600 hover:text-red-900 inline-flex items-center transition-colors">
-                        <Trash2 className="w-4 h-4 mr-1" /> Delete
+                      <button onClick={() => handleDelete(article._id)} className="px-2.5 py-1 text-[12px] font-medium text-rose-600 bg-white border border-rose-200 rounded-md hover:bg-rose-50 hover:text-rose-700 transition-colors shadow-sm inline-flex items-center opacity-0 group-hover:opacity-100 focus:opacity-100">
+                        <Trash2 className="w-3.5 h-3.5 mr-1.5" /> Delete
                       </button>
                     </td>
                   </tr>

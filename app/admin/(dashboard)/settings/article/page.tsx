@@ -75,106 +75,98 @@ export default function ArticleSettingsPage() {
   if (loading) return <div className="p-8">Loading settings...</div>;
 
   return (
-    <div className="p-6">
-      <div className="mb-6">
-        <h1 className="text-2xl font-bold text-gray-900">Article Settings</h1>
-        <p className="text-gray-500 mt-1">Configure the look and feel of the article pages.</p>
+    <div className="p-6 max-w-7xl mx-auto">
+      <div className="mb-6 flex justify-between items-end">
+        <div>
+          <h1 className="text-[20px] font-bold text-neutral-900 tracking-tight">Article Settings</h1>
+          <p className="text-[13px] text-neutral-500 mt-0.5">Configure the look and feel of the article pages.</p>
+        </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-8 items-start">
-        <form onSubmit={handleSubmit} className="w-full lg:w-1/2 xl:w-1/3 bg-white p-6 rounded-xl shadow-sm border border-gray-100 space-y-8">
+      <div className="flex flex-col lg:flex-row gap-6 items-start">
+        <form onSubmit={handleSubmit} className="w-full lg:w-[360px] xl:w-[400px] shrink-0 bg-white p-5 rounded-lg shadow-sm border border-neutral-200 space-y-6">
           <div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-4 pb-2 border-b">Article Styling</h3>
-            <p className="text-sm text-gray-500 mb-6">Customize the colors and typography for all detailed article pages.</p>
+            <h3 className="text-[14px] font-semibold text-neutral-900 mb-3 pb-2 border-b border-neutral-100">Typography & Colors</h3>
             
-            <div className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Header Color</label>
-                  <p className="text-xs text-gray-500 mb-2">Used for article titles and major headings.</p>
-                  <div className="flex items-center gap-3">
-                    <input
-                      type="color"
-                      value={formData.headerColor}
-                      onChange={(e) => setFormData({ ...formData, headerColor: e.target.value })}
-                      className="w-10 h-10 rounded cursor-pointer border-0 p-0"
-                    />
-                    <input
-                      type="text"
-                      value={formData.headerColor}
-                      onChange={(e) => setFormData({ ...formData, headerColor: e.target.value })}
-                      className="flex-1 min-w-0 border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 text-sm p-2 border"
-                    />
-                  </div>
+            <div className="space-y-4">
+              <div>
+                <label className="block text-[13px] font-medium text-neutral-700 mb-1">Header Color</label>
+                <div className="flex items-center gap-2">
+                  <input
+                    type="color"
+                    value={formData.headerColor}
+                    onChange={(e) => setFormData({ ...formData, headerColor: e.target.value })}
+                    className="w-8 h-8 rounded-md cursor-pointer border-0 p-0 shadow-sm"
+                  />
+                  <input
+                    type="text"
+                    value={formData.headerColor}
+                    onChange={(e) => setFormData({ ...formData, headerColor: e.target.value })}
+                    className="flex-1 h-9 px-3 border border-neutral-200 rounded-md shadow-sm focus:ring-1 focus:ring-zinc-900 focus:border-zinc-900 text-[13px] outline-none"
+                  />
                 </div>
+              </div>
 
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Paragraph Color</label>
-                  <p className="text-xs text-gray-500 mb-2">Used for the main article content (paragraphs).</p>
-                  <div className="flex items-center gap-3">
-                    <input
-                      type="color"
-                      value={formData.paragraphColor}
-                      onChange={(e) => setFormData({ ...formData, paragraphColor: e.target.value })}
-                      className="w-10 h-10 rounded cursor-pointer border-0 p-0"
-                    />
-                    <input
-                      type="text"
-                      value={formData.paragraphColor}
-                      onChange={(e) => setFormData({ ...formData, paragraphColor: e.target.value })}
-                      className="flex-1 min-w-0 border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 text-sm p-2 border"
-                    />
-                  </div>
+              <div>
+                <label className="block text-[13px] font-medium text-neutral-700 mb-1">Paragraph Color</label>
+                <div className="flex items-center gap-2">
+                  <input
+                    type="color"
+                    value={formData.paragraphColor}
+                    onChange={(e) => setFormData({ ...formData, paragraphColor: e.target.value })}
+                    className="w-8 h-8 rounded-md cursor-pointer border-0 p-0 shadow-sm"
+                  />
+                  <input
+                    type="text"
+                    value={formData.paragraphColor}
+                    onChange={(e) => setFormData({ ...formData, paragraphColor: e.target.value })}
+                    className="flex-1 h-9 px-3 border border-neutral-200 rounded-md shadow-sm focus:ring-1 focus:ring-zinc-900 focus:border-zinc-900 text-[13px] outline-none"
+                  />
                 </div>
+              </div>
 
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">General Text Color</label>
-                  <p className="text-xs text-gray-500 mb-2">Used for miscellaneous text, dates, and meta info.</p>
-                  <div className="flex items-center gap-3">
-                    <input
-                      type="color"
-                      value={formData.textColor}
-                      onChange={(e) => setFormData({ ...formData, textColor: e.target.value })}
-                      className="w-10 h-10 rounded cursor-pointer border-0 p-0"
-                    />
-                    <input
-                      type="text"
-                      value={formData.textColor}
-                      onChange={(e) => setFormData({ ...formData, textColor: e.target.value })}
-                      className="flex-1 min-w-0 border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 text-sm p-2 border"
-                    />
-                  </div>
+              <div>
+                <label className="block text-[13px] font-medium text-neutral-700 mb-1">General Text Color</label>
+                <div className="flex items-center gap-2">
+                  <input
+                    type="color"
+                    value={formData.textColor}
+                    onChange={(e) => setFormData({ ...formData, textColor: e.target.value })}
+                    className="w-8 h-8 rounded-md cursor-pointer border-0 p-0 shadow-sm"
+                  />
+                  <input
+                    type="text"
+                    value={formData.textColor}
+                    onChange={(e) => setFormData({ ...formData, textColor: e.target.value })}
+                    className="flex-1 h-9 px-3 border border-neutral-200 rounded-md shadow-sm focus:ring-1 focus:ring-zinc-900 focus:border-zinc-900 text-[13px] outline-none"
+                  />
                 </div>
+              </div>
 
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Font Family</label>
-                  <p className="text-xs text-gray-500 mb-2">The primary font used for the article text.</p>
-                  <select
-                    value={formData.fontFamily}
-                    onChange={(e) => setFormData({ ...formData, fontFamily: e.target.value })}
-                    className="w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 text-sm p-2.5 border"
-                  >
-                    <option value="serif">Serif (Elegant, Traditional)</option>
-                    <option value="sans-serif">Sans-Serif (Modern, Clean)</option>
-                    <option value="monospace">Monospace (Technical, Typewriter)</option>
-                  </select>
-                </div>
+              <div>
+                <label className="block text-[13px] font-medium text-neutral-700 mb-1">Font Family</label>
+                <select
+                  value={formData.fontFamily}
+                  onChange={(e) => setFormData({ ...formData, fontFamily: e.target.value })}
+                  className="w-full h-9 px-3 border border-neutral-200 rounded-md shadow-sm focus:ring-1 focus:ring-zinc-900 focus:border-zinc-900 text-[13px] outline-none bg-white"
+                >
+                  <option value="serif">Serif (Elegant)</option>
+                  <option value="sans-serif">Sans-Serif (Modern)</option>
+                  <option value="monospace">Monospace (Technical)</option>
+                </select>
               </div>
             </div>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-4 pb-2 border-b">Layout Settings</h3>
-            <p className="text-sm text-gray-500 mb-6">Configure the structural layout of the article page.</p>
-
-            <div className="space-y-6">
+            <h3 className="text-[14px] font-semibold text-neutral-900 mb-3 pb-2 border-b border-neutral-100">Layout</h3>
+            <div className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Sidebar Position</label>
-                <p className="text-xs text-gray-500 mb-2">Choose whether the sidebar appears on the right or the left side of the content.</p>
+                <label className="block text-[13px] font-medium text-neutral-700 mb-1">Sidebar Position</label>
                 <select
                   value={formData.sidebarPosition}
                   onChange={(e) => setFormData({ ...formData, sidebarPosition: e.target.value })}
-                  className="w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 text-sm p-2.5 border"
+                  className="w-full h-9 px-3 border border-neutral-200 rounded-md shadow-sm focus:ring-1 focus:ring-zinc-900 focus:border-zinc-900 text-[13px] outline-none bg-white"
                 >
                   <option value="right">Right Sidebar (Default)</option>
                   <option value="left">Left Sidebar</option>
@@ -183,48 +175,48 @@ export default function ArticleSettingsPage() {
             </div>
           </div>
 
-          <div className="pt-6 border-t border-gray-200">
+          <div className="pt-4 border-t border-neutral-100 mt-6">
             <button
               type="submit"
-              className="w-full md:w-auto px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
+              className="w-full h-9 bg-zinc-900 text-white text-[13px] font-medium rounded-md hover:bg-zinc-800 transition-colors shadow-sm"
             >
-              Save Article Settings
+              Save Settings
             </button>
           </div>
         </form>
 
         {/* Live Preview */}
-        <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 w-full lg:w-1/2 xl:w-2/3 h-[calc(100vh-8rem)] sticky top-6 hidden lg:flex flex-col">
-          <div className="flex justify-between items-center mb-4 pb-2 border-b">
-            <h3 className="text-lg font-semibold text-gray-900">Live Preview</h3>
-            <div className="flex space-x-2 bg-gray-100 p-1 rounded-lg">
+        <div className="bg-white p-5 rounded-lg shadow-sm border border-neutral-200 h-[calc(100vh-8rem)] sticky top-6 hidden lg:flex flex-col w-[688px] shrink-0">
+          <div className="flex justify-between items-center mb-4">
+            <h3 className="text-[14px] font-semibold text-neutral-900">Live Preview</h3>
+            <div className="flex space-x-1 bg-neutral-100 p-1 rounded-md border border-neutral-200">
               <button
                 type="button"
                 onClick={() => setDeviceView('mobile')}
-                className={`px-3 py-1 text-xs font-medium rounded-md transition-colors ${deviceView === 'mobile' ? 'bg-white shadow text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}
+                className={`px-3 py-1 text-[12px] font-medium rounded transition-colors ${deviceView === 'mobile' ? 'bg-white shadow-sm text-neutral-900' : 'text-neutral-500 hover:text-neutral-700'}`}
               >
                 Mobile
               </button>
               <button
                 type="button"
                 onClick={() => setDeviceView('tablet')}
-                className={`px-3 py-1 text-xs font-medium rounded-md transition-colors ${deviceView === 'tablet' ? 'bg-white shadow text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}
+                className={`px-3 py-1 text-[12px] font-medium rounded transition-colors ${deviceView === 'tablet' ? 'bg-white shadow-sm text-neutral-900' : 'text-neutral-500 hover:text-neutral-700'}`}
               >
                 Tablet
               </button>
               <button
                 type="button"
                 onClick={() => setDeviceView('desktop')}
-                className={`px-3 py-1 text-xs font-medium rounded-md transition-colors ${deviceView === 'desktop' ? 'bg-white shadow text-blue-600' : 'text-gray-600 hover:text-gray-900'}`}
+                className={`px-3 py-1 text-[12px] font-medium rounded transition-colors ${deviceView === 'desktop' ? 'bg-white shadow-sm text-neutral-900' : 'text-neutral-500 hover:text-neutral-700'}`}
               >
                 Desktop
               </button>
             </div>
           </div>
 
-          <div className="flex-1 bg-gray-200 rounded-xl overflow-hidden flex justify-center items-start pt-4 relative">
+          <div className="flex-1 bg-neutral-100 rounded-md overflow-hidden flex justify-center items-start pt-4 relative border border-neutral-200 shadow-inner">
             <div
-              className="origin-top bg-white transition-all duration-300 shadow-xl overflow-hidden rounded-t-xl shrink-0"
+              className="origin-top bg-white transition-all duration-300 shadow-md overflow-hidden rounded-t-md shrink-0 border border-neutral-200"
               style={{
                 width: deviceView === 'desktop' ? '1440px' : deviceView === 'tablet' ? '768px' : '375px',
                 height: deviceView === 'desktop' ? '222.22%' : deviceView === 'tablet' ? '133.33%' : '100%',
@@ -239,7 +231,6 @@ export default function ArticleSettingsPage() {
             </div>
           </div>
         </div>
-
       </div>
     </div>
   );

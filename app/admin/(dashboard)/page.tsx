@@ -48,76 +48,74 @@ export default function AdminDashboardPage() {
     const recentActivity = stats?.recentActivity || [];
 
     const cards = [
-        { name: "Total Articles", count: metrics.totalArticles, icon: FileText, href: "/admin/articles", color: "bg-blue-50 text-blue-600" },
-        { name: "Total Views", count: metrics.totalViews, icon: Eye, href: "/admin/articles", color: "bg-purple-50 text-purple-600" },
-        { name: "Categories", count: metrics.totalCategories, icon: Folder, href: "/admin/categories", color: "bg-green-50 text-green-600" },
-        { name: "Authors", count: metrics.totalAuthors, icon: Users, href: "/admin/authors", color: "bg-orange-50 text-orange-600" },
-        { name: "Pages", count: metrics.totalPages, icon: LayoutTemplate, href: "/admin/pages", color: "bg-teal-50 text-teal-600" }
+        { name: "Total Articles", count: metrics.totalArticles, icon: FileText, href: "/admin/articles", color: "bg-neutral-100 text-neutral-700" },
+        { name: "Total Views", count: metrics.totalViews, icon: Eye, href: "/admin/articles", color: "bg-neutral-100 text-neutral-700" },
+        { name: "Categories", count: metrics.totalCategories, icon: Folder, href: "/admin/categories", color: "bg-neutral-100 text-neutral-700" },
+        { name: "Authors", count: metrics.totalAuthors, icon: Users, href: "/admin/authors", color: "bg-neutral-100 text-neutral-700" },
+        { name: "Pages", count: metrics.totalPages, icon: LayoutTemplate, href: "/admin/pages", color: "bg-neutral-100 text-neutral-700" }
     ];
 
     return (
-        <div className="space-y-8 max-w-6xl">
-            <div>
-                <h2 className="text-2xl font-bold text-gray-900">Dashboard Overview</h2>
-                <p className="text-gray-500 mt-1">Welcome to Quimera Admin. Here is a summary of your site's content.</p>
+        <div className="space-y-6 max-w-7xl">
+            <div className="flex items-center justify-between">
+                <div>
+                    <h2 className="text-[20px] font-bold text-neutral-900 tracking-tight">Overview</h2>
+                    <p className="text-[13px] text-neutral-500 mt-0.5">Summary of your content and site metrics.</p>
+                </div>
             </div>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
                 {cards.map((card, idx) => (
-                    <Link key={idx} href={card.href} className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-gray-200 transition-all group flex flex-col relative overflow-hidden">
-                        <div className="flex justify-between items-start mb-4">
-                            <div className={`p-3 rounded-lg ${card.color} group-hover:scale-110 transition-transform`}>
-                                <card.icon size={24} />
-                            </div>
+                    <Link key={idx} href={card.href} className="bg-white p-4 rounded-xl border border-neutral-200 shadow-sm hover:border-neutral-300 transition-colors group flex flex-col">
+                        <div className="flex justify-between items-center mb-3">
+                            <h3 className="text-[13px] font-medium text-neutral-600">{card.name}</h3>
+                            <card.icon className="w-4 h-4 text-neutral-400" />
                         </div>
-                        <h3 className="text-3xl font-bold text-gray-900 mb-1">{card.count}</h3>
-                        <p className="text-sm font-medium text-gray-500">{card.name}</p>
+                        <div className="text-2xl font-bold text-neutral-900 tracking-tight">{card.count.toLocaleString()}</div>
                     </Link>
                 ))}
             </div>
             
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <div className="lg:col-span-2 bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
-                    <div className="px-6 py-5 border-b border-gray-100 flex justify-between items-center bg-gray-50/50">
-                        <h3 className="text-lg font-bold text-gray-900 flex items-center">
-                            <Activity className="w-5 h-5 mr-2 text-blue-500" /> Recent Articles
-                        </h3>
-                        <Link href="/admin/articles" className="text-sm font-medium text-blue-600 hover:text-blue-700">View All</Link>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div className="lg:col-span-2 bg-white rounded-xl border border-neutral-200 shadow-sm flex flex-col">
+                    <div className="px-5 py-3.5 border-b border-neutral-200 flex justify-between items-center">
+                        <h3 className="text-[14px] font-semibold text-neutral-900">Recent Content</h3>
+                        <Link href="/admin/articles" className="text-[13px] font-medium text-neutral-500 hover:text-neutral-900 transition-colors">View All</Link>
                     </div>
-                    <div className="divide-y divide-gray-100">
+                    <div className="flex-1 divide-y divide-neutral-100">
                         {recentActivity.length > 0 ? recentActivity.map((article: any) => (
-                            <div key={article._id} className="p-6 hover:bg-gray-50 transition-colors flex items-center justify-between">
-                                <div>
-                                    <h4 className="text-sm font-bold text-gray-900 mb-1">{article.title}</h4>
-                                    <div className="flex items-center text-xs text-gray-500 space-x-3">
-                                        <span>{article.category?.name || "Uncategorized"}</span>
+                            <div key={article._id} className="px-5 py-3 hover:bg-neutral-50/50 transition-colors flex items-center justify-between group">
+                                <div className="min-w-0 pr-4">
+                                    <h4 className="text-[14px] font-medium text-neutral-900 truncate">{article.title}</h4>
+                                    <div className="flex items-center text-[12px] text-neutral-500 space-x-2 mt-0.5">
+                                        <span className="bg-neutral-100 px-1.5 py-0.5 rounded text-neutral-600 font-medium">{article.category?.name || "Uncategorized"}</span>
                                         <span>•</span>
                                         <span>{new Date(article.date).toLocaleDateString()}</span>
                                     </div>
                                 </div>
-                                <Link href={`/admin/articles/edit/${article._id}`} className="px-3 py-1.5 text-xs font-medium text-gray-600 bg-white border border-gray-200 rounded-md hover:bg-gray-50 hover:text-blue-600 transition-colors">
+                                <Link href={`/admin/articles/edit/${article._id}`} className="px-2.5 py-1 text-[12px] font-medium text-neutral-600 bg-white border border-neutral-200 rounded-md hover:bg-neutral-50 hover:text-neutral-900 opacity-0 group-hover:opacity-100 transition-all shrink-0 shadow-sm">
                                     Edit
                                 </Link>
                             </div>
                         )) : (
-                            <div className="p-8 text-center text-gray-500">No recent articles found.</div>
+                            <div className="p-8 text-center text-[13px] text-neutral-500">No recent articles found.</div>
                         )}
                     </div>
                 </div>
 
-                <div className="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden flex flex-col">
-                    <div className="px-6 py-5 border-b border-gray-100 bg-gray-50/50">
-                        <h3 className="text-lg font-bold text-gray-900">Quick Actions</h3>
+                <div className="bg-white rounded-xl border border-neutral-200 shadow-sm flex flex-col">
+                    <div className="px-5 py-3.5 border-b border-neutral-200">
+                        <h3 className="text-[14px] font-semibold text-neutral-900">Quick Actions</h3>
                     </div>
-                    <div className="p-6 flex-1 flex flex-col justify-center space-y-3">
-                        <Link href="/admin/articles/create" className="w-full flex items-center justify-center px-4 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors">
-                            <FileText className="w-5 h-5 mr-2" /> Write New Article
+                    <div className="p-5 flex-1 flex flex-col gap-2.5">
+                        <Link href="/admin/articles/create" className="w-full flex items-center justify-center px-4 py-2 bg-zinc-900 text-white text-[13px] font-medium rounded-lg hover:bg-zinc-800 transition-colors shadow-sm">
+                            <FileText className="w-4 h-4 mr-2" /> Write Article
                         </Link>
-                        <Link href="/admin/settings/homepage" className="w-full flex items-center justify-center px-4 py-3 bg-gray-100 text-gray-700 font-medium rounded-lg hover:bg-gray-200 transition-colors">
-                            <LayoutTemplate className="w-5 h-5 mr-2" /> Edit Homepage Layout
+                        <Link href="/admin/settings/homepage" className="w-full flex items-center justify-center px-4 py-2 bg-white border border-neutral-200 text-neutral-700 text-[13px] font-medium rounded-lg hover:bg-neutral-50 transition-colors shadow-sm">
+                            <LayoutTemplate className="w-4 h-4 mr-2" /> Layout Settings
                         </Link>
-                        <Link href="/admin/authors/create" className="w-full flex items-center justify-center px-4 py-3 bg-gray-100 text-gray-700 font-medium rounded-lg hover:bg-gray-200 transition-colors">
-                            <Users className="w-5 h-5 mr-2" /> Add New Author
+                        <Link href="/admin/authors/create" className="w-full flex items-center justify-center px-4 py-2 bg-white border border-neutral-200 text-neutral-700 text-[13px] font-medium rounded-lg hover:bg-neutral-50 transition-colors shadow-sm">
+                            <Users className="w-4 h-4 mr-2" /> Add Author
                         </Link>
                     </div>
                 </div>

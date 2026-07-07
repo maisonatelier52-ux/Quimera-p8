@@ -137,228 +137,217 @@ export default function CreateArticlePage() {
   };
 
   return (
-    <div className="space-y-6 max-w-4xl">
-      <div className="flex items-center space-x-4">
-        <Link href="/admin/articles" className="text-gray-500 hover:text-blue-600 transition-colors">
-          <ArrowLeft className="w-6 h-6" />
+    <div className="space-y-6 max-w-[1200px] mx-auto pb-10">
+      <div className="flex items-center space-x-3">
+        <Link href="/admin/articles" className="text-neutral-400 hover:text-neutral-900 transition-colors">
+          <ArrowLeft className="w-5 h-5" />
         </Link>
-        <h2 className="text-2xl font-bold text-gray-900">Create Article</h2>
+        <h2 className="text-[20px] font-bold text-neutral-900 tracking-tight">Create Article</h2>
       </div>
 
-      <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
-        <form onSubmit={handleSubmit} className="space-y-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="md:col-span-2 space-y-6">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Title</label>
-                <input
-                  type="text"
-                  name="title"
-                  required
-                  value={formData.title}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-shadow text-lg"
-                  placeholder="Article Headline..."
-                />
-              </div>
+      <div className="bg-white rounded-xl shadow-sm border border-neutral-200 p-0 flex flex-col">
+        <form onSubmit={handleSubmit} className="flex flex-col md:flex-row">
+          
+          {/* Main Editor Content */}
+          <div className="flex-1 p-6 md:p-8 space-y-6 border-b md:border-b-0 md:border-r border-neutral-200">
+            <div>
+              <input
+                type="text"
+                name="title"
+                required
+                value={formData.title}
+                onChange={handleChange}
+                className="w-full text-3xl font-bold text-neutral-900 placeholder:text-neutral-300 border-none outline-none focus:ring-0 p-0"
+                placeholder="Article Title"
+              />
+            </div>
 
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Excerpt</label>
-                <textarea
-                  name="excerpt"
-                  rows={3}
-                  value={formData.excerpt}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-shadow"
-                  placeholder="A short summary of the article..."
-                />
-              </div>
+            <div>
+              <textarea
+                name="excerpt"
+                rows={2}
+                value={formData.excerpt}
+                onChange={handleChange}
+                className="w-full text-[14px] text-neutral-600 placeholder:text-neutral-400 border-none outline-none focus:ring-0 p-0 resize-none"
+                placeholder="Add a short excerpt or description..."
+              />
+            </div>
 
-              {/* Block Editor */}
-              <div className="pt-6 border-t border-gray-100">
-                <div className="flex justify-between items-center mb-4">
-                  <h3 className="text-lg font-normal font-sans text-gray-900">Article Content</h3>
-                  <div className="flex space-x-2">
-                    <button type="button" onClick={() => addContentBlock("paragraph")} className="flex items-center space-x-1 text-xs px-2 py-1 bg-gray-100 text-gray-700 hover:bg-gray-200 rounded">
-                      <Plus className="w-3 h-3" /> <span>Paragraph</span>
-                    </button>
-                    <button type="button" onClick={() => addContentBlock("heading")} className="flex items-center space-x-1 text-xs px-2 py-1 bg-gray-100 text-gray-700 hover:bg-gray-200 rounded">
-                      <Plus className="w-3 h-3" /> <span>Heading</span>
-                    </button>
-                    <button type="button" onClick={() => addContentBlock("quote")} className="flex items-center space-x-1 text-xs px-2 py-1 bg-gray-100 text-gray-700 hover:bg-gray-200 rounded">
-                      <Plus className="w-3 h-3" /> <span>Quote</span>
-                    </button>
-                    <button type="button" onClick={() => addContentBlock("intro")} className="flex items-center space-x-1 text-xs px-2 py-1 bg-gray-100 text-gray-700 hover:bg-gray-200 rounded">
-                      <Plus className="w-3 h-3" /> <span>Intro</span>
-                    </button>
-                  </div>
+            {/* Block Editor */}
+            <div className="pt-6 border-t border-neutral-100">
+              <div className="flex justify-between items-center mb-4">
+                <h3 className="text-[13px] font-semibold text-neutral-900 uppercase tracking-wide">Content Blocks</h3>
+                <div className="flex space-x-1.5">
+                  <button type="button" onClick={() => addContentBlock("paragraph")} className="flex items-center space-x-1 text-[12px] font-medium px-2 py-1 bg-neutral-100 text-neutral-600 hover:bg-neutral-200 rounded-md transition-colors">
+                    <Plus className="w-3 h-3" /> <span>Text</span>
+                  </button>
+                  <button type="button" onClick={() => addContentBlock("heading")} className="flex items-center space-x-1 text-[12px] font-medium px-2 py-1 bg-neutral-100 text-neutral-600 hover:bg-neutral-200 rounded-md transition-colors">
+                    <Plus className="w-3 h-3" /> <span>Heading</span>
+                  </button>
+                  <button type="button" onClick={() => addContentBlock("quote")} className="flex items-center space-x-1 text-[12px] font-medium px-2 py-1 bg-neutral-100 text-neutral-600 hover:bg-neutral-200 rounded-md transition-colors">
+                    <Plus className="w-3 h-3" /> <span>Quote</span>
+                  </button>
                 </div>
+              </div>
 
-                <div className="space-y-4">
-                  {formData.content.map((block, index) => (
-                    <div key={index} className="p-4 border border-gray-200 rounded-lg bg-gray-50 flex items-start gap-4">
-                      <div className="flex-1 space-y-3">
-                        <div className="flex justify-between items-center">
-                          <span className="text-xs font-bold uppercase tracking-wider text-gray-500">{block.type}</span>
-                        </div>
-                        {block.type === 'quote' ? (
-                          <>
-                            <textarea
-                              value={block.text}
-                              onChange={(e) => updateContentBlock(index, 'text', e.target.value)}
-                              placeholder="Quote text..."
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-md"
-                              rows={2}
-                            />
-                            <input
-                              type="text"
-                              value={block.author || ''}
-                              onChange={(e) => updateContentBlock(index, 'author', e.target.value)}
-                              placeholder="Quote Author"
-                              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-md"
-                            />
-                          </>
-                        ) : block.type === 'heading' ? (
-                          <input
-                            type="text"
-                            value={block.text}
-                            onChange={(e) => updateContentBlock(index, 'text', e.target.value)}
-                            placeholder="Heading text..."
-                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-md font-bold"
-                          />
-                        ) : (
+              <div className="space-y-4">
+                {formData.content.map((block, index) => (
+                  <div key={index} className="group relative border border-transparent hover:border-neutral-200 rounded-lg p-2 -mx-2 flex gap-3 transition-colors">
+                    <div className="opacity-0 group-hover:opacity-100 mt-2 cursor-move text-neutral-300">
+                      <div className="w-4 h-4 flex flex-col justify-center items-center gap-[2px]">
+                        <div className="w-3 h-[2px] bg-neutral-300 rounded-full"></div>
+                        <div className="w-3 h-[2px] bg-neutral-300 rounded-full"></div>
+                        <div className="w-3 h-[2px] bg-neutral-300 rounded-full"></div>
+                      </div>
+                    </div>
+                    <div className="flex-1 space-y-2">
+                      {block.type === 'quote' ? (
+                        <>
                           <textarea
                             value={block.text}
                             onChange={(e) => updateContentBlock(index, 'text', e.target.value)}
-                            placeholder={`${block.type} text...`}
-                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-md"
-                            rows={4}
+                            placeholder="Quote text..."
+                            className="w-full px-3 py-2 text-[14px] border-l-2 border-neutral-300 bg-neutral-50 focus:bg-white outline-none focus:border-neutral-400 transition-colors rounded-r-md"
+                            rows={2}
                           />
-                        )}
-                      </div>
-                      <button
-                        type="button"
-                        onClick={() => removeContentBlock(index)}
-                        className="p-2 text-red-500 hover:bg-red-50 rounded-md mt-6"
-                      >
-                        <Trash2 className="w-4 h-4" />
-                      </button>
+                          <input
+                            type="text"
+                            value={block.author || ''}
+                            onChange={(e) => updateContentBlock(index, 'author', e.target.value)}
+                            placeholder="Quote Author"
+                            className="w-full px-3 py-1.5 text-[13px] text-neutral-500 border-none outline-none focus:ring-0"
+                          />
+                        </>
+                      ) : block.type === 'heading' ? (
+                        <input
+                          type="text"
+                          value={block.text}
+                          onChange={(e) => updateContentBlock(index, 'text', e.target.value)}
+                          placeholder="Heading..."
+                          className="w-full px-0 py-1 text-xl font-bold border-none outline-none focus:ring-0 text-neutral-900 placeholder:text-neutral-300"
+                        />
+                      ) : (
+                        <textarea
+                          value={block.text}
+                          onChange={(e) => updateContentBlock(index, 'text', e.target.value)}
+                          placeholder="Start typing..."
+                          className="w-full px-0 py-1 text-[15px] leading-relaxed border-none outline-none focus:ring-0 text-neutral-700 resize-none"
+                          rows={3}
+                        />
+                      )}
                     </div>
-                  ))}
-                  {formData.content.length === 0 && (
-                    <p className="text-sm text-gray-500 text-center py-8 border-2 border-dashed border-gray-200 rounded-lg">
-                      No content blocks yet. Add a paragraph to get started.
-                    </p>
-                  )}
-                </div>
-              </div>
-            </div>
-
-            <div className="space-y-6 bg-gray-50 p-5 rounded-lg border border-gray-200">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Cover Image</label>
-                <input
-                  type="file"
-                  accept="image/*"
-                  onChange={handleImageUpload}
-                  disabled={imageLoading}
-                  className="w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
-                />
-                {imageLoading && <p className="text-xs text-blue-500 mt-2">Uploading...</p>}
-                {formData.image && (
-                  <div className="mt-3 relative w-full h-32 rounded-lg overflow-hidden border border-gray-200">
-                    <img src={formData.image} alt="Preview" className="object-cover w-full h-full" />
+                    <button
+                      type="button"
+                      onClick={() => removeContentBlock(index)}
+                      className="opacity-0 group-hover:opacity-100 p-1.5 text-neutral-400 hover:text-rose-500 hover:bg-rose-50 rounded-md mt-1 transition-all shrink-0 self-start"
+                    >
+                      <Trash2 className="w-3.5 h-3.5" />
+                    </button>
+                  </div>
+                ))}
+                {formData.content.length === 0 && (
+                  <div className="text-[13px] text-neutral-400 py-10 text-center border border-dashed border-neutral-200 rounded-lg">
+                    Click a block type above to start writing.
                   </div>
                 )}
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Status</label>
-                <div className="flex items-center space-x-2 mt-2">
-                  <input
-                    type="checkbox"
-                    id="isPublished"
-                    name="isPublished"
-                    checked={formData.isPublished}
-                    onChange={handleChange}
-                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
-                  />
-                  <label htmlFor="isPublished" className="text-sm font-medium text-gray-900">
-                    Publish Immediately
-                  </label>
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Category</label>
-                <select
-                  name="category"
-                  required
-                  value={formData.category}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-shadow bg-white"
-                >
-                  <option value="" disabled>Select a category</option>
-                  {categories.map((cat: any) => (
-                    <option key={cat._id} value={cat._id}>
-                      {cat.name}
-                    </option>
-                  ))}
-                </select>
-                {categories.length === 0 && (
-                  <p className="text-xs text-red-500 mt-1">Please create a category first.</p>
-                )}
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Author</label>
-                <select
-                  name="author"
-                  required
-                  value={formData.author}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-shadow bg-white"
-                >
-                  <option value="" disabled>Select an author</option>
-                  {authors.map((auth: any) => (
-                    <option key={auth._id} value={auth._id}>
-                      {auth.name}
-                    </option>
-                  ))}
-                </select>
-                {authors.length === 0 && (
-                  <p className="text-xs text-red-500 mt-1">Please create an author first.</p>
-                )}
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Slug</label>
-                <input
-                  type="text"
-                  name="slug"
-                  required
-                  value={formData.slug}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-shadow text-sm"
-                />
               </div>
             </div>
           </div>
 
-          <div className="flex justify-end pt-4 border-t border-gray-100">
-            <Link
-              href="/admin/articles"
-              className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 mr-3"
-            >
-              Cancel
-            </Link>
-            <button
-              type="submit"
-              disabled={loading || categories.length === 0}
-              className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 disabled:opacity-70 transition-colors"
-            >
-              {loading ? "Creating..." : "Create Article"}
-            </button>
+          {/* Right Sidebar Settings */}
+          <div className="w-full md:w-[320px] bg-neutral-50/50 p-6 flex flex-col space-y-6 shrink-0">
+            
+            <div>
+              <label className="block text-[12px] font-semibold text-neutral-600 mb-1.5 uppercase tracking-wider">Status</label>
+              <label className="flex items-center space-x-2 cursor-pointer bg-white border border-neutral-200 px-3 py-2 rounded-md shadow-sm hover:bg-neutral-50 transition-colors">
+                <input
+                  type="checkbox"
+                  name="isPublished"
+                  checked={formData.isPublished}
+                  onChange={handleChange}
+                  className="w-4 h-4 text-zinc-900 border-neutral-300 rounded focus:ring-zinc-900"
+                />
+                <span className="text-[13px] font-medium text-neutral-900">Publish immediately</span>
+              </label>
+            </div>
+
+            <div>
+              <label className="block text-[12px] font-semibold text-neutral-600 mb-1.5 uppercase tracking-wider">Cover Image</label>
+              <input
+                type="file"
+                accept="image/*"
+                onChange={handleImageUpload}
+                disabled={imageLoading}
+                className="w-full text-[12px] text-neutral-500 file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border file:border-neutral-200 file:text-[12px] file:font-medium file:bg-white file:text-neutral-700 hover:file:bg-neutral-50 cursor-pointer"
+              />
+              {imageLoading && <p className="text-[11px] text-neutral-500 mt-1.5">Uploading...</p>}
+              {formData.image && (
+                <div className="mt-2.5 relative w-full h-32 rounded-md overflow-hidden border border-neutral-200 shadow-sm">
+                  <img src={formData.image} alt="Preview" className="object-cover w-full h-full" />
+                </div>
+              )}
+            </div>
+
+            <div>
+              <label className="block text-[12px] font-semibold text-neutral-600 mb-1.5 uppercase tracking-wider">Category</label>
+              <select
+                name="category"
+                required
+                value={formData.category}
+                onChange={handleChange}
+                className="w-full h-9 px-3 text-[13px] border border-neutral-200 rounded-md focus:ring-1 focus:ring-zinc-900 focus:border-zinc-900 outline-none bg-white shadow-sm"
+              >
+                <option value="" disabled>Select category...</option>
+                {categories.map((cat: any) => (
+                  <option key={cat._id} value={cat._id}>{cat.name}</option>
+                ))}
+              </select>
+            </div>
+
+            <div>
+              <label className="block text-[12px] font-semibold text-neutral-600 mb-1.5 uppercase tracking-wider">Author</label>
+              <select
+                name="author"
+                required
+                value={formData.author}
+                onChange={handleChange}
+                className="w-full h-9 px-3 text-[13px] border border-neutral-200 rounded-md focus:ring-1 focus:ring-zinc-900 focus:border-zinc-900 outline-none bg-white shadow-sm"
+              >
+                <option value="" disabled>Select author...</option>
+                {authors.map((auth: any) => (
+                  <option key={auth._id} value={auth._id}>{auth.name}</option>
+                ))}
+              </select>
+            </div>
+
+            <div>
+              <label className="block text-[12px] font-semibold text-neutral-600 mb-1.5 uppercase tracking-wider">Slug</label>
+              <input
+                type="text"
+                name="slug"
+                required
+                value={formData.slug}
+                onChange={handleChange}
+                className="w-full h-9 px-3 text-[13px] border border-neutral-200 rounded-md focus:ring-1 focus:ring-zinc-900 focus:border-zinc-900 outline-none bg-white shadow-sm font-mono text-neutral-600"
+              />
+            </div>
+
+            <div className="pt-6 border-t border-neutral-200 mt-auto flex flex-col gap-2">
+              <button
+                type="submit"
+                disabled={loading || categories.length === 0}
+                className="w-full py-2 text-[13px] font-medium text-white bg-zinc-900 rounded-md hover:bg-zinc-800 shadow-sm disabled:opacity-50 transition-colors"
+              >
+                {loading ? "Saving..." : "Save Article"}
+              </button>
+              <Link
+                href="/admin/articles"
+                className="w-full py-2 text-[13px] font-medium text-neutral-600 bg-white border border-neutral-200 rounded-md hover:bg-neutral-50 shadow-sm text-center transition-colors"
+              >
+                Cancel
+              </Link>
+            </div>
+
           </div>
         </form>
       </div>
