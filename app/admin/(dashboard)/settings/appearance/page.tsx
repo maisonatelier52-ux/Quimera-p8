@@ -10,10 +10,43 @@ export default function AppearanceSettingsPage() {
     globalTextColor: "#333333",
     globalFontFamily: "sans-serif",
     homeLayout: [],
-    articleLayout: []
+    articleLayout: [],
+    homeAdImage: "/images/adv2.png",
+    homeAdLink: "#",
+    categoryAdImage: "/images/adv.png",
+    categoryAdLink: "#"
   });
   const [loading, setLoading] = useState(true);
+  const [homeAdLoading, setHomeAdLoading] = useState(false);
+  const [categoryAdLoading, setCategoryAdLoading] = useState(false);
   const router = useRouter();
+
+  const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>, field: 'homeAdImage' | 'categoryAdImage') => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    const data = new FormData();
+    data.append("file", file);
+
+    const setLoadingState = field === 'homeAdImage' ? setHomeAdLoading : setCategoryAdLoading;
+    setLoadingState(true);
+
+    try {
+      const res = await fetch("http://localhost:5000/api/upload", {
+        method: "POST",
+        body: data,
+        headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
+      });
+      if (!res.ok) throw new Error("Upload failed");
+      const result = await res.json();
+      setFormData((prev: any) => ({ ...prev, [field]: result.url }));
+    } catch (error) {
+      console.error(error);
+      alert("Error uploading image");
+    } finally {
+      setLoadingState(false);
+    }
+  };
 
   useEffect(() => {
     fetch("http://localhost:5000/api/appearance", {
@@ -35,7 +68,11 @@ export default function AppearanceSettingsPage() {
             globalTextColor: data.globalTextColor || "#333333",
             globalFontFamily: data.globalFontFamily || "sans-serif",
             homeLayout: data.homeLayout || [],
-            articleLayout: data.articleLayout || []
+            articleLayout: data.articleLayout || [],
+            homeAdImage: data.homeAdImage || "/images/adv2.png",
+            homeAdLink: data.homeAdLink || "#",
+            categoryAdImage: data.categoryAdImage || "/images/adv.png",
+            categoryAdLink: data.categoryAdLink || "#"
           });
         }
         setLoading(false);
@@ -162,6 +199,86 @@ export default function AppearanceSettingsPage() {
                 <option value="monospace">Monospace (Technical)</option>
                 <option value="var(--font-inter)">Inter (Branded Default)</option>
               </select>
+            </div>
+          </div>
+        </div>
+
+        {/* Advertisements */}
+        <div>
+          <h3 className="text-lg font-bold text-gray-900 mb-4 border-b pb-2">Advertisements</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="space-y-4">
+              <h4 className="font-semibold text-gray-800">Home Page Advertisement</h4>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Image</label>
+                <input
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => handleImageUpload(e, 'homeAdImage')}
+                  disabled={homeAdLoading}
+                  className="w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 mb-2"
+                />
+                <input 
+                  type="text"
+                  placeholder="Or enter image URL... (e.g. /images/adv2.png)"
+                  value={formData.homeAdImage}
+                  onChange={(e) => setFormData({ ...formData, homeAdImage: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md text-sm mt-1"
+                />
+                {homeAdLoading && <p className="text-xs text-blue-500 mt-2">Uploading...</p>}
+                {formData.homeAdImage && (
+                  <div className="mt-3 relative w-full h-24 rounded-lg overflow-hidden border border-gray-200">
+                    <img src={formData.homeAdImage} alt="Home Ad Preview" className="object-contain w-full h-full bg-gray-50" />
+                  </div>
+                )}
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Destination Link</label>
+                <input 
+                  type="text"
+                  placeholder="https://..."
+                  value={formData.homeAdLink}
+                  onChange={(e) => setFormData({ ...formData, homeAdLink: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md text-sm"
+                />
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <h4 className="font-semibold text-gray-800">Category Page Advertisement</h4>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Image</label>
+                <input
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => handleImageUpload(e, 'categoryAdImage')}
+                  disabled={categoryAdLoading}
+                  className="w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 mb-2"
+                />
+                <input 
+                  type="text"
+                  placeholder="Or enter image URL... (e.g. /images/adv.png)"
+                  value={formData.categoryAdImage}
+                  onChange={(e) => setFormData({ ...formData, categoryAdImage: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md text-sm mt-1"
+                />
+                {categoryAdLoading && <p className="text-xs text-blue-500 mt-2">Uploading...</p>}
+                {formData.categoryAdImage && (
+                  <div className="mt-3 relative w-full h-48 rounded-lg overflow-hidden border border-gray-200">
+                    <img src={formData.categoryAdImage} alt="Category Ad Preview" className="object-contain w-full h-full bg-gray-50" />
+                  </div>
+                )}
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Destination Link</label>
+                <input 
+                  type="text"
+                  placeholder="https://..."
+                  value={formData.categoryAdLink}
+                  onChange={(e) => setFormData({ ...formData, categoryAdLink: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md text-sm"
+                />
+              </div>
             </div>
           </div>
         </div>
