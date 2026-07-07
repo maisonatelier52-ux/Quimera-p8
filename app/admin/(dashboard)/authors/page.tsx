@@ -14,7 +14,7 @@ export default function AdminAuthorsList() {
 
   const fetchAuthors = () => {
     const token = localStorage.getItem("token");
-    fetch("${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/authors", {
+    fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/authors`, {
       headers: {
         Authorization: `Bearer ${token}`
       }

@@ -14,7 +14,7 @@ export default function AdminCategoriesList() {
 
   const fetchCategories = () => {
     const token = localStorage.getItem("token");
-    fetch("${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/categories", {
+    fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/categories`, {
       headers: {
         Authorization: `Bearer ${token}`
       }

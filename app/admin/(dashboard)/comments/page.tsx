@@ -11,7 +11,7 @@ export default function CommentsAdminPage() {
   const fetchComments = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch("${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/admin/comments", {
+      const res = await fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/admin/comments`, {
         headers: {
           Authorization: `Bearer ${token}`
         }

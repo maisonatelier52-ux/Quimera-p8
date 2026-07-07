@@ -77,7 +77,7 @@ export default async function ArticlePage({ params, searchParams }: { params: Pr
 
     let moreNewsArticles = [];
     try {
-        const res = await fetch(process.env.NEXT_PUBLIC_API_URL ? `${process.env.NEXT_PUBLIC_API_URL}/api/public/articles` : "${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/public/articles", { cache: "no-store" });
+        const res = await fetch(process.env.NEXT_PUBLIC_API_URL ? `${process.env.NEXT_PUBLIC_API_URL}/api/public/articles` : `${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/public/articles`, { cache: "no-store" });
         const allArticles = await res.json();
         const filteredMoreNews = allArticles.filter((a: any) => a.slug !== slug);
         moreNewsArticles = [...filteredMoreNews].sort(() => 0.5 - Math.random()).slice(0, 4);
@@ -126,7 +126,7 @@ export default async function ArticlePage({ params, searchParams }: { params: Pr
         };
     } else {
         try {
-            const res = await fetch(process.env.NEXT_PUBLIC_API_URL ? `${process.env.NEXT_PUBLIC_API_URL}/api/public/article-settings` : "${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/public/article-settings", { cache: 'no-store' });
+            const res = await fetch(process.env.NEXT_PUBLIC_API_URL ? `${process.env.NEXT_PUBLIC_API_URL}/api/public/article-settings` : `${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/public/article-settings`, { cache: 'no-store' });
             if (res.ok) {
                 const settings = await res.json();
                 if (settings) {

@@ -26,7 +26,7 @@ export default function EditArticlePage({ params }: { params: Promise<{ id: stri
 
   useEffect(() => {
     // Fetch categories
-    fetch("${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/categories", {
+    fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/categories`, {
       headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }
     })
       .then((res) => res.json())
@@ -36,7 +36,7 @@ export default function EditArticlePage({ params }: { params: Promise<{ id: stri
       .catch(console.error);
 
     // Fetch authors
-    fetch("${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/authors", {
+    fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/authors`, {
       headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }
     })
       .then((res) => res.json())
@@ -117,7 +117,7 @@ export default function EditArticlePage({ params }: { params: Promise<{ id: stri
 
     setImageLoading(true);
     try {
-      const res = await fetch("${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/upload", {
+      const res = await fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/upload`, {
         method: "POST",
         body: data,
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },

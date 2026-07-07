@@ -14,7 +14,7 @@ export default function AdminPagesList() {
 
   const fetchPages = () => {
     const token = localStorage.getItem("token");
-    fetch("${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/pages", {
+    fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/pages`, {
       headers: {
         Authorization: `Bearer ${token}`
       }
