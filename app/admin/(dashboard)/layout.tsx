@@ -24,7 +24,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         <div className="h-12 flex items-center px-4 border-b border-neutral-200">
           <div className="flex items-center gap-2 text-neutral-900 font-semibold tracking-tight text-sm">
             <div className="w-5 h-5 bg-neutral-900 rounded-[4px] flex items-center justify-center">
-              <span className="text-white text-[10px] font-bold">F</span>
+              <span className="text-white text-[10px] font-bold">Q</span>
             </div>
             Quimera CMS
           </div>
