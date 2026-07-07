@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, LayoutDashboard, FileText, Folder, Users, Layers, LogOut, Settings, BarChart2, Search, Bell, Command, ChevronRight } from 'lucide-react';
+import { Home, LayoutDashboard, FileText, Folder, Users, Layers, LogOut, Settings, BarChart2, Search, Bell, Command, ChevronRight, MessageSquare } from 'lucide-react';
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -53,6 +53,9 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             </Link>
             <Link href="/admin/pages" className={`flex items-center px-2 py-1.5 text-[13px] font-medium rounded-md transition-colors ${pathname?.includes('/admin/pages') ? 'bg-neutral-200/60 text-neutral-900' : 'text-neutral-600 hover:bg-neutral-200/50 hover:text-neutral-900'}`}>
               <Layers className={`w-4 h-4 mr-2.5 ${pathname?.includes('/admin/pages') ? 'text-neutral-900' : 'text-neutral-400'}`} /> Pages
+            </Link>
+            <Link href="/admin/comments" className={`flex items-center px-2 py-1.5 text-[13px] font-medium rounded-md transition-colors ${pathname?.includes('/admin/comments') ? 'bg-neutral-200/60 text-neutral-900' : 'text-neutral-600 hover:bg-neutral-200/50 hover:text-neutral-900'}`}>
+              <MessageSquare className={`w-4 h-4 mr-2.5 ${pathname?.includes('/admin/comments') ? 'text-neutral-900' : 'text-neutral-400'}`} /> Comments
             </Link>
           </div>
 

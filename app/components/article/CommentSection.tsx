@@ -350,7 +350,7 @@ export default function CommentSection({ articleSlug }: { articleSlug: string })
 
             {submitted && (
               <p className="text-[12px] text-green-600 font-medium">
-                ✓ Your comment has been posted successfully!
+                ✓ Your comment has been submitted and is waiting for moderator approval.
               </p>
             )}
 
