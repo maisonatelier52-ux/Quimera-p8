@@ -66,7 +66,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ l
     homeLayout = layout.split(',');
   } else {
     try {
-      const res = await fetch("http://127.0.0.1:5000/api/public/homepage", { cache: 'no-store' });
+      const res = await fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://127.0.0.1:5000'}/api/public/homepage`, { cache: 'no-store' });
       if (res.ok) {
         const homepage = await res.json();
         if (homepage && homepage.homeLayout && homepage.homeLayout.length > 0) {

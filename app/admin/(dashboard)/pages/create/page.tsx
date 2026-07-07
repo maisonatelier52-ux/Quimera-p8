@@ -52,7 +52,7 @@ export default function CreatePage() {
 
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch("http://127.0.0.1:5000/api/pages", {
+      const res = await fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://127.0.0.1:5000'}/api/pages`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

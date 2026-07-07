@@ -33,7 +33,7 @@ export default function HeaderSettingsPage() {
   }, [formData]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/api/header", {
+    fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://127.0.0.1:5000'}/api/header`, {
       headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }
     })
       .then(res => {
@@ -67,7 +67,7 @@ export default function HeaderSettingsPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://127.0.0.1:5000/api/header", {
+      const res = await fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://127.0.0.1:5000'}/api/header`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -153,7 +153,7 @@ export default function HeaderSettingsPage() {
 
     setImageLoading(true);
     try {
-      const res = await fetch("http://127.0.0.1:5000/api/upload", {
+      const res = await fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://127.0.0.1:5000'}/api/upload`, {
         method: "POST",
         body: data,
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },

@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 export default async function QuickLinks() {
-    const res = await fetch("http://127.0.0.1:5000/api/public/categories", { cache: "no-store" });
+    const res = await fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://127.0.0.1:5000'}/api/public/categories`, { cache: "no-store" });
     const categories = await res.json();
 
     return (

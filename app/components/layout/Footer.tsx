@@ -17,12 +17,12 @@ export default function Footer() {
     const { subscriber, logout, setShowSubscribeModal } = useSubscriber();
 
     useEffect(() => {
-        fetch("http://127.0.0.1:5000/api/public/footer")
+        fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://127.0.0.1:5000'}/api/public/footer`)
             .then(res => res.json())
             .then(data => setFooterData(data))
             .catch(console.error);
 
-        fetch("http://127.0.0.1:5000/api/public/categories")
+        fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://127.0.0.1:5000'}/api/public/categories`)
             .then(res => res.json())
             .then(data => setCategories(data))
             .catch(console.error);

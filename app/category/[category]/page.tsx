@@ -15,7 +15,7 @@ interface CategoryPageProps {
 async function getCategoryData(categorySlug: string) {
     if (!categorySlug) return null;
     try {
-        const baseUrl = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:5000";
+        const baseUrl = (process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://127.0.0.1:5000');
         const categoriesRes = await fetch(`${baseUrl}/api/public/categories`, { cache: 'no-store' });
         const categories = await categoriesRes.json();
         const categoryData = categories.find((c: any) => c.slug === categorySlug);

@@ -5,7 +5,7 @@ export default async function AdvertisementSection() {
     let adLink = "#";
 
     try {
-        const res = await fetch(process.env.NEXT_PUBLIC_API_URL ? `${process.env.NEXT_PUBLIC_API_URL}/api/appearance` : "http://127.0.0.1:5000/api/appearance", { cache: 'no-store' });
+        const res = await fetch(process.env.NEXT_PUBLIC_API_URL ? `${process.env.NEXT_PUBLIC_API_URL}/api/appearance` : `${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://127.0.0.1:5000'}/api/appearance`, { cache: 'no-store' });
         if (res.ok) {
             const appearance = await res.json();
             if (appearance) {

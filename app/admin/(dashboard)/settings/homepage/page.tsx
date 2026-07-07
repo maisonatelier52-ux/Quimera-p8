@@ -17,7 +17,7 @@ export default function HomepageSettingsPage() {
 
   useEffect(() => {
     // Fetch all homepages and edit the active one, or the first one
-    fetch("http://127.0.0.1:5000/api/homepage", {
+    fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://127.0.0.1:5000'}/api/homepage`, {
       headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }
     })
       .then(res => {

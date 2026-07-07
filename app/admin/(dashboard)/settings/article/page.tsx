@@ -16,7 +16,7 @@ export default function ArticleSettingsPage() {
   const router = useRouter();
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/api/article-settings", {
+    fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://127.0.0.1:5000'}/api/article-settings`, {
       headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }
     })
       .then(res => {
@@ -40,7 +40,7 @@ export default function ArticleSettingsPage() {
       })
       .catch(console.error);
 
-    fetch("http://127.0.0.1:5000/api/public/articles")
+    fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://127.0.0.1:5000'}/api/public/articles`)
       .then(res => res.json())
       .then(data => {
         if (data && data.length > 0) {
@@ -53,7 +53,7 @@ export default function ArticleSettingsPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://127.0.0.1:5000/api/article-settings", {
+      const res = await fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://127.0.0.1:5000'}/api/article-settings`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

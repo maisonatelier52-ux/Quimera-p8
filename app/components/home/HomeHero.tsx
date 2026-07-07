@@ -7,7 +7,7 @@ import MostReadWidget from '../sidebar/MostReadWidget';
 export default async function HomeHero() {
     let allArticles = [];
     try {
-        const res = await fetch(process.env.NEXT_PUBLIC_API_URL ? `${process.env.NEXT_PUBLIC_API_URL}/api/public/articles` : "http://127.0.0.1:5000/api/public/articles", { cache: "no-store" });
+        const res = await fetch(process.env.NEXT_PUBLIC_API_URL ? `${process.env.NEXT_PUBLIC_API_URL}/api/public/articles` : `${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://127.0.0.1:5000'}/api/public/articles`, { cache: "no-store" });
         if (res.ok) {
             allArticles = await res.json();
         }

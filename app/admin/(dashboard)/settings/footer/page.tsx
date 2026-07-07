@@ -19,7 +19,7 @@ export default function FooterSettingsPage() {
   const router = useRouter();
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/api/footer", {
+    fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://127.0.0.1:5000'}/api/footer`, {
       headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }
     })
       .then(res => {
@@ -69,7 +69,7 @@ export default function FooterSettingsPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://127.0.0.1:5000/api/footer", {
+      const res = await fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://127.0.0.1:5000'}/api/footer`, {
         method: "POST", // The backend uses POST for updateFooter based on the controller
         headers: {
           "Content-Type": "application/json",

@@ -59,7 +59,7 @@ export default function Header() {
         updateDateTime();
         const intervalId = setInterval(updateDateTime, 1000);
 
-        fetch("http://127.0.0.1:5000/api/header")
+        fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://127.0.0.1:5000'}/api/header`)
             .then(res => res.json())
             .then(data => {
                 if (data && Object.keys(data).length > 0) {
@@ -78,12 +78,12 @@ export default function Header() {
             })
             .catch(console.error);
 
-        fetch("http://127.0.0.1:5000/api/public/categories")
+        fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://127.0.0.1:5000'}/api/public/categories`)
             .then(res => res.json())
             .then(data => setCategories(data))
             .catch(console.error);
 
-        fetch("http://127.0.0.1:5000/api/public/articles")
+        fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://127.0.0.1:5000'}/api/public/articles`)
             .then(res => res.json())
             .then(data => setLatestArticles(data.slice(0, 10)))
             .catch(console.error);
