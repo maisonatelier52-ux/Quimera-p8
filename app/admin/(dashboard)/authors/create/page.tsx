@@ -32,7 +32,7 @@ export default function CreateAuthorPage() {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/authors`, {
+      const res = await fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/authors`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

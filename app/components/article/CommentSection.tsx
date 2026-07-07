@@ -86,7 +86,7 @@ function SingleComment({
 
     setSubmittingReply(true);
     try {
-      await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/public/articles/${articleSlug}/comments`, {
+      await fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/public/articles/${articleSlug}/comments`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -210,7 +210,7 @@ export default function CommentSection({ articleSlug }: { articleSlug: string })
   const fetchComments = async () => {
     try {
       const res = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/public/articles/${articleSlug}/comments`,
+        `${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/public/articles/${articleSlug}/comments`,
         { cache: "no-store" }
       );
       if (res.ok) {
@@ -232,7 +232,7 @@ export default function CommentSection({ articleSlug }: { articleSlug: string })
     setSubmitting(true);
     try {
       const res = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/public/articles/${articleSlug}/comments`,
+        `${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/public/articles/${articleSlug}/comments`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -281,7 +281,7 @@ export default function CommentSection({ articleSlug }: { articleSlug: string })
     setSubscribing(true);
 
     try {
-      const res = await fetch("${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/public/subscribe", {
+      const res = await fetch("${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/public/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name: subName, email: subEmail }),

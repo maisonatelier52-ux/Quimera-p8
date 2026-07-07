@@ -53,7 +53,7 @@ export function SubscriberProvider({ children }: { children: React.ReactNode }) 
     setSubscribing(true);
 
     try {
-      const res = await fetch("${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/public/subscribe", {
+      const res = await fetch("${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/public/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name: subName, email: subEmail }),

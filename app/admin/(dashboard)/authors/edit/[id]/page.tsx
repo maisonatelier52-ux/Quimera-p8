@@ -21,7 +21,7 @@ export default function EditAuthorPage({ params }: { params: Promise<{ id: strin
   });
 
   useEffect(() => {
-    fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/authors/${id}`, {
+    fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/authors/${id}`, {
       headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }
     })
       .then(res => {
@@ -57,7 +57,7 @@ export default function EditAuthorPage({ params }: { params: Promise<{ id: strin
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/authors/${id}`, {
+      const res = await fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/authors/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

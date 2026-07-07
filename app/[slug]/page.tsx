@@ -10,7 +10,7 @@ export default async function DynamicPage({ params }: { params: Promise<{ slug: 
     let page = null;
     let isNotFound = false;
     try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/public/pages/${slug}`, {
+        const res = await fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/public/pages/${slug}`, {
             next: { revalidate: 60 } // Revalidate every 60 seconds
         });
         

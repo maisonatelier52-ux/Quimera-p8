@@ -14,7 +14,7 @@ export default function AdminCategoriesList() {
 
   const fetchCategories = () => {
     const token = localStorage.getItem("token");
-    fetch("${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/categories", {
+    fetch("${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/categories", {
       headers: {
         Authorization: `Bearer ${token}`
       }
@@ -41,7 +41,7 @@ export default function AdminCategoriesList() {
 
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/categories/${id}`, {
+      const res = await fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/categories/${id}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${token}`

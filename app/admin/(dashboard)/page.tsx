@@ -17,7 +17,7 @@ export default function AdminDashboardPage() {
             return;
         }
         
-        fetch("${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/dashboard/stats", {
+        fetch("${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/dashboard/stats", {
             headers: {
                 Authorization: `Bearer ${token}`
             }
