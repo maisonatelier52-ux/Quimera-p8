@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Home, LayoutDashboard, FileText, Folder, Users, Layers, LogOut, Settings } from 'lucide-react';
+import { Home, LayoutDashboard, FileText, Folder, Users, Layers, LogOut, Settings, BarChart2 } from 'lucide-react';
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -11,6 +11,9 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         <nav className="flex-1 overflow-y-auto py-4 px-3 space-y-1">
           <Link href="/admin" className="flex items-center px-3 py-2.5 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100 hover:text-blue-600 transition-colors">
             <LayoutDashboard className="w-5 h-5 mr-3 text-gray-500" /> Dashboard
+          </Link>
+          <Link href="/admin/analytics" className="flex items-center px-3 py-2.5 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100 hover:text-blue-600 transition-colors">
+            <BarChart2 className="w-5 h-5 mr-3 text-gray-500" /> Analytics
           </Link>
           <Link href="/admin/articles" className="flex items-center px-3 py-2.5 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100 hover:text-blue-600 transition-colors">
             <FileText className="w-5 h-5 mr-3 text-gray-500" /> Articles
