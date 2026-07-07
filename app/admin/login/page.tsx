@@ -24,9 +24,9 @@ export default function AdminLoginPage() {
 
             const data = await res.json();
 
-            if (res.ok && data.access_token) {
+            if (res.ok && data.token) {
                 // Save token and redirect to dashboard
-                localStorage.setItem("token", data.access_token);
+                localStorage.setItem("token", data.token);
                 router.push("/admin");
             } else {
                 setError(data.message || "Invalid credentials. Please try again.");
