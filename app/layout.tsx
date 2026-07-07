@@ -24,6 +24,8 @@ export const metadata: Metadata = {
   keywords: ['news', 'finance', 'tech', 'lifestyle', 'premium insights'],
 };
 
+import { SubscriberProvider } from './components/SubscriberContext';
+
 export default async function RootLayout({
   children,
 }: {
@@ -66,7 +68,9 @@ export default async function RootLayout({
         `}} />
       </head>
       <body className="antialiased">
-        {children}
+        <SubscriberProvider>
+          {children}
+        </SubscriberProvider>
       </body>
     </html>
   );

@@ -4,12 +4,17 @@ import Link from 'next/link';
 import {
     Youtube,
     Instagram,
-    ChevronUp
+    ChevronUp,
+    LogOut,
+    CheckCircle
 } from 'lucide-react';
+import { useSubscriber } from '../SubscriberContext';
 
 export default function Footer() {
     const [footerData, setFooterData] = useState<any>(null);
     const [categories, setCategories] = useState<any>([]);
+    
+    const { subscriber, logout, setShowSubscribeModal } = useSubscriber();
 
     useEffect(() => {
         fetch("http://127.0.0.1:5000/api/public/footer")
@@ -52,9 +57,40 @@ export default function Footer() {
                 <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-24">
                     {/* Left Column: Brand & Subscribe */}
                     <div className="max-w-xl">
-                        <p className="text-xs leading-relaxed mb-4 font-medium opacity-90">
+                        <p className="text-xs leading-relaxed mb-6 font-medium opacity-90">
                             {footerData.siteDescription || "Information You Can Trust: Stay instantly connected with breaking stories and live updates."}
                         </p>
+
+                        {!subscriber ? (
+                            <form className="flex flex-col sm:flex-row gap-2 max-w-sm mb-6">
+                                <input
+                                    type="email"
+                                    placeholder="Your email address"
+                                    className="flex-1 bg-white/10 text-white px-4 py-2.5 rounded-md text-sm border border-white/20 focus:outline-none focus:border-white/50 transition-colors placeholder:text-white/50"
+                                />
+                                <button
+                                    type="button"
+                                    onClick={() => setShowSubscribeModal(true)}
+                                    className="bg-red-600 text-white font-bold px-6 py-2.5 rounded-md text-sm hover:bg-red-700 transition-colors tracking-wide uppercase whitespace-nowrap"
+                                >
+                                    Subscribe
+                                </button>
+                            </form>
+                        ) : (
+                            <div className="flex items-center gap-4 mb-6 bg-white/10 p-3 rounded-lg max-w-sm">
+                                <div className="flex items-center gap-2 flex-1">
+                                    <CheckCircle size={18} className="text-green-400" />
+                                    <span className="text-sm font-semibold truncate">Welcome, {subscriber.name}!</span>
+                                </div>
+                                <button 
+                                    onClick={logout}
+                                    className="flex items-center gap-1.5 text-xs font-bold text-red-400 hover:text-red-300 transition-colors uppercase tracking-wider"
+                                >
+                                    <LogOut size={14} />
+                                    Logout
+                                </button>
+                            </div>
+                        )}
 
                         <div className="flex items-center gap-5 mt-6">
                             {footerData.socialLinks?.instagram && (

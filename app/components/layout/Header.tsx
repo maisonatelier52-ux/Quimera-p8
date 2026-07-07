@@ -10,17 +10,22 @@ import {
     Rss,
     Menu,
     ChevronDown,
-    FileText
+    FileText,
+    LogOut,
+    User
 } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import SearchModal from '../SearchModal';
+import { useSubscriber } from '../SubscriberContext';
 
 export default function Header() {
     const pathname = usePathname();
     const [currentDateTime, setCurrentDateTime] = useState('');
     const [isSearchOpen, setIsSearchOpen] = useState(false);
     const [mounted, setMounted] = useState(false);
+    
+    const { subscriber, logout, setShowSubscribeModal } = useSubscriber();
 
     const [categories, setCategories] = useState([]);
     const [latestArticles, setLatestArticles] = useState([]);
@@ -135,12 +140,42 @@ export default function Header() {
         }
         if (type === 'search') {
             return (
-                <button
-                    className="p-2 hover:bg-black/10 rounded-full transition-colors"
-                    onClick={() => setIsSearchOpen(true)}
-                >
-                    <Search size={20} className='text-current' />
-                </button>
+                <div className="flex items-center gap-3">
+                    <button
+                        className="p-2 hover:bg-black/10 rounded-full transition-colors"
+                        onClick={() => setIsSearchOpen(true)}
+                    >
+                        <Search size={20} className='text-current' />
+                    </button>
+                    {!subscriber ? (
+                        <button 
+                            onClick={() => setShowSubscribeModal(true)}
+                            className="bg-red-600 text-white font-bold px-5 py-2 rounded-md text-xs hover:bg-red-700 transition-colors tracking-wide uppercase"
+                        >
+                            Subscribe
+                        </button>
+                    ) : (
+                        <div className="group relative">
+                            <button className="flex items-center gap-2 bg-gray-100 text-[#09365E] font-bold px-4 py-1.5 rounded-full text-xs hover:bg-gray-200 transition-colors border border-gray-200">
+                                <User size={14} />
+                                <span className="max-w-[100px] truncate">{subscriber.name}</span>
+                            </button>
+                            <div className="absolute right-0 top-full mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all flex flex-col overflow-hidden">
+                                <div className="px-4 py-3 border-b border-gray-100">
+                                    <p className="text-sm font-bold text-gray-900 truncate">{subscriber.name}</p>
+                                    <p className="text-xs text-gray-500 truncate">{subscriber.email}</p>
+                                </div>
+                                <button 
+                                    onClick={logout}
+                                    className="flex items-center gap-2 px-4 py-2.5 text-sm text-red-600 hover:bg-gray-50 text-left font-medium transition-colors"
+                                >
+                                    <LogOut size={16} />
+                                    Logout
+                                </button>
+                            </div>
+                        </div>
+                    )}
+                </div>
             );
         }
         return null;
