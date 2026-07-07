@@ -6,7 +6,7 @@ import CircleHorizontalCard from '../cards/CircleHorizontalCard';
 export default async function BusinessSection() {
     let allArticles = [];
     try {
-        const res = await fetch(process.env.NEXT_PUBLIC_API_URL ? `${process.env.NEXT_PUBLIC_API_URL}/api/public/articles` : "http://localhost:5000/api/public/articles", { cache: "no-store" });
+        const res = await fetch(process.env.NEXT_PUBLIC_API_URL ? `${process.env.NEXT_PUBLIC_API_URL}/api/public/articles` : "${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/public/articles", { cache: "no-store" });
         if (res.ok) {
             allArticles = await res.json();
         }

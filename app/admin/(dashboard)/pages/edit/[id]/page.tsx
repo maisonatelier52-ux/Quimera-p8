@@ -24,7 +24,7 @@ export default function EditPage({ params }: { params: Promise<{ id: string }> }
 
   useEffect(() => {
     const token = localStorage.getItem("token");
-    fetch(`http://localhost:5000/api/pages/${id}`, {
+    fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/pages/${id}`, {
       headers: {
         Authorization: `Bearer ${token}`
       }
@@ -85,7 +85,7 @@ export default function EditPage({ params }: { params: Promise<{ id: string }> }
 
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch(`http://localhost:5000/api/pages/${id}`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/pages/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

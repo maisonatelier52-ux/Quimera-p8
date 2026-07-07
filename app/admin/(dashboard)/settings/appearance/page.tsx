@@ -32,7 +32,7 @@ export default function AppearanceSettingsPage() {
     setLoadingState(true);
 
     try {
-      const res = await fetch("http://localhost:5000/api/upload", {
+      const res = await fetch("${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/upload", {
         method: "POST",
         body: data,
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
@@ -49,7 +49,7 @@ export default function AppearanceSettingsPage() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/appearance", {
+    fetch("${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/appearance", {
       headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }
     })
       .then(res => {
@@ -83,7 +83,7 @@ export default function AppearanceSettingsPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:5000/api/appearance", {
+      const res = await fetch("${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/appearance", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

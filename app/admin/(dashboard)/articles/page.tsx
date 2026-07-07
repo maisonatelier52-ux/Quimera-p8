@@ -14,7 +14,7 @@ export default function AdminArticlesList() {
 
   const fetchArticles = () => {
     const token = localStorage.getItem("token");
-    fetch("http://localhost:5000/api/articles", {
+    fetch("${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/articles", {
       headers: {
         Authorization: `Bearer ${token}`
       }
@@ -42,7 +42,7 @@ export default function AdminArticlesList() {
 
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch(`http://localhost:5000/api/articles/${id}`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/articles/${id}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${token}`

@@ -18,7 +18,7 @@ export default function MoreNews() {
     const [showAll, setShowAll] = useState(false);
 
     useEffect(() => {
-        fetch("http://localhost:5000/api/public/articles")
+        fetch("${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/public/articles")
             .then(res => res.json())
             .then(data => setAllArticles(data))
             .catch(console.error);

@@ -14,7 +14,7 @@ export default function AdminPagesList() {
 
   const fetchPages = () => {
     const token = localStorage.getItem("token");
-    fetch("http://localhost:5000/api/pages", {
+    fetch("${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/pages", {
       headers: {
         Authorization: `Bearer ${token}`
       }
@@ -35,7 +35,7 @@ export default function AdminPagesList() {
 
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch(`http://localhost:5000/api/pages/${id}`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/pages/${id}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${token}`

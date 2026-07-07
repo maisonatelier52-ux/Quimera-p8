@@ -11,7 +11,7 @@ export default function CommentsAdminPage() {
   const fetchComments = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch("http://localhost:5000/api/admin/comments", {
+      const res = await fetch("${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/admin/comments", {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -34,7 +34,7 @@ export default function CommentsAdminPage() {
   const updateStatus = async (id: string, status: string) => {
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch(`http://localhost:5000/api/admin/comments/${id}/status`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/admin/comments/${id}/status`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -54,7 +54,7 @@ export default function CommentsAdminPage() {
     if (!confirm("Are you sure you want to delete this comment?")) return;
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch(`http://localhost:5000/api/admin/comments/${id}`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/admin/comments/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`

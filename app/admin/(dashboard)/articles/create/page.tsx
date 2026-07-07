@@ -24,7 +24,7 @@ export default function CreateArticlePage() {
 
   useEffect(() => {
     // Fetch categories
-    fetch("http://localhost:5000/api/categories", {
+    fetch("${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/categories", {
       headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }
     })
       .then((res) => res.json())
@@ -32,7 +32,7 @@ export default function CreateArticlePage() {
       .catch(console.error);
 
     // Fetch authors
-    fetch("http://localhost:5000/api/authors", {
+    fetch("${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/authors", {
       headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }
     })
       .then((res) => res.json())
@@ -92,7 +92,7 @@ export default function CreateArticlePage() {
 
     setImageLoading(true);
     try {
-      const res = await fetch("http://localhost:5000/api/upload", {
+      const res = await fetch("${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/upload", {
         method: "POST",
         body: data,
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
@@ -117,7 +117,7 @@ export default function CreateArticlePage() {
     const payload = { ...formData, author: selectedAuthor };
 
     try {
-      const res = await fetch(`http://localhost:5000/api/articles`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/articles`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
