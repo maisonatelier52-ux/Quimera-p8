@@ -11,6 +11,7 @@ import ArticlePullQuote from '../../components/article/ArticlePullQuote';
 import MostReadWidget from '../../components/article/MostReadWidget';
 import NewsletterSidebar from '../../components/article/NewsletterSidebar';
 import CommentSection from '../../components/article/CommentSection';
+import ArticleViewTracker from '../../components/article/ArticleViewTracker';
 import fs from 'fs/promises';
 import path from 'path';
 import { Metadata } from 'next';
@@ -363,6 +364,8 @@ export default async function ArticlePage({ params, searchParams }: { params: Pr
                 `
             }} />
             <Header />
+
+            <ArticleViewTracker slug={slug} />
 
             {renderArticleContent()}
             {renderRelatedArticles()}
