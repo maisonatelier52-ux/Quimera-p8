@@ -92,7 +92,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         {/* Top Header */}
         <header className="h-12 border-b border-neutral-200 flex items-center justify-between px-6 shrink-0 bg-white">
           <div className="flex items-center text-[13px] text-neutral-500 font-medium">
-            <Link href="/admin" className="hover:text-neutral-900 transition-colors">Foxiz</Link>
+            <Link href="/admin" className="hover:text-neutral-900 transition-colors">Quimera</Link>
             <ChevronRight className="w-3.5 h-3.5 mx-1 text-neutral-300" />
             <span className="text-neutral-900">{getBreadcrumb()}</span>
           </div>
