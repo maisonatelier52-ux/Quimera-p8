@@ -245,7 +245,7 @@ export default function Header() {
                         </div>
                         <div className="flex-1 overflow-hidden relative flex items-center group">
                             {[...Array(2)].map((_, idx) => (
-                                <div key={idx} aria-hidden={idx === 1} className="animate-marquee text-[10px] font-normal flex items-center gap-16 pr-16 shrink-0 group-hover:[animation-play-state:paused]">
+                                <div key={idx} aria-hidden={idx === 1} className="animate-marquee text-[12px] font-normal flex items-center gap-16 pr-16 shrink-0 group-hover:[animation-play-state:paused]">
                                     {latestArticles.length > 0 ? latestArticles.map((art: any) => (
                                         <React.Fragment key={art._id}>
                                             <Link href={`/articles/${art.slug}`} className="hover:underline whitespace-nowrap">
