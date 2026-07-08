@@ -238,24 +238,26 @@ export default function Header() {
         }
         if (type === 'ticker') {
             return (
-                <div key="ticker" className="py-1.5 overflow-hidden shadow-md" style={{ backgroundColor: headerSettings?.tickerBgColor || '#09365E', color: headerSettings?.tickerTextColor || '#FFFFFF' }}>
+                <div key="ticker" className="py-2 overflow-hidden shadow-md" style={{ backgroundColor: headerSettings?.tickerBgColor || '#09365E', color: headerSettings?.tickerTextColor || '#FFFFFF' }}>
                     <div className="max-w-[1330px] mx-auto px-4 flex items-center">
                         <div className="bg-white/50 text-black font-black px-2 py-1 text-[8px] uppercase tracking-widest z-10 flex-shrink-0 shadow-sm rounded-sm mr-4">
                             LATEST HEADLINES
                         </div>
-                        <div className="flex-1 overflow-hidden relative flex items-center">
-                            <div className="animate-marquee text-[10px] font-normal flex items-center gap-16">
-                                {latestArticles.length > 0 ? latestArticles.map((art: any, i) => (
-                                    <React.Fragment key={art._id}>
-                                        <Link href={`/articles/${art.slug}`} className="hover:underline">
-                                            <span>{art.title}</span>
-                                        </Link>
-                                        {i < latestArticles.length - 1 && <span className="text-blue-300 text-xs">  ●  </span>}
-                                    </React.Fragment>
-                                )) : (
-                                    <span>No recent news</span>
-                                )}
-                            </div>
+                        <div className="flex-1 overflow-hidden relative flex items-center group">
+                            {[...Array(2)].map((_, idx) => (
+                                <div key={idx} aria-hidden={idx === 1} className="animate-marquee text-[10px] font-normal flex items-center gap-16 pr-16 shrink-0 group-hover:[animation-play-state:paused]">
+                                    {latestArticles.length > 0 ? latestArticles.map((art: any) => (
+                                        <React.Fragment key={art._id}>
+                                            <Link href={`/articles/${art.slug}`} className="hover:underline whitespace-nowrap">
+                                                <span>{art.title}</span>
+                                            </Link>
+                                            <span className="text-blue-300 text-xs">  ●  </span>
+                                        </React.Fragment>
+                                    )) : (
+                                        <span>No recent news</span>
+                                    )}
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>

@@ -94,7 +94,7 @@ h4,
 
 @keyframes marquee {
   0% {
-    transform: translateX(100vw);
+    transform: translateX(0);
   }
 
   100% {
@@ -103,9 +103,9 @@ h4,
 }
 
 .animate-marquee {
-  display: inline-block;
+  display: flex;
   white-space: nowrap;
-  animation: marquee 25s linear infinite;
+  animation: marquee 45s linear infinite;
   will-change: transform;
 }
 
