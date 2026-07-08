@@ -247,6 +247,10 @@ export default async function ArticlePage({ params, searchParams }: { params: Pr
                                 <p className="italic text-gray-400">No content available for this article.</p>
                             )}
                         </div>
+                        
+                        <div className="mt-12 border-t border-gray-100 pt-8">
+                            <CommentSection articleSlug={slug} />
+                        </div>
                     </div>
 
                     {/* Sidebar Column */}
@@ -361,7 +365,6 @@ export default async function ArticlePage({ params, searchParams }: { params: Pr
             <Header />
 
             {renderArticleContent()}
-            <CommentSection articleSlug={slug} />
             {renderRelatedArticles()}
 
             <Footer />
