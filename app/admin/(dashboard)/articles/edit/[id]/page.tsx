@@ -22,6 +22,9 @@ export default function EditArticlePage({ params }: { params: Promise<{ id: stri
     image: "",
     isPublished: true,
     content: [] as any[],
+    seoTitle: "",
+    seoDescription: "",
+    keywords: "",
   });
 
   useEffect(() => {
@@ -63,6 +66,9 @@ export default function EditArticlePage({ params }: { params: Promise<{ id: stri
             image: data.image || "",
             isPublished: data.isPublished !== false,
             content: data.content || [],
+            seoTitle: data.seoTitle || "",
+            seoDescription: data.seoDescription || "",
+            keywords: data.keywords || "",
           });
         }
       })
@@ -366,6 +372,48 @@ export default function EditArticlePage({ params }: { params: Promise<{ id: stri
                   onChange={handleChange}
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-shadow text-sm"
                 />
+              </div>
+
+              <div className="pt-6 mt-6 border-t border-gray-200">
+                <label className="block text-sm font-bold text-gray-900 mb-4 uppercase tracking-wider">SEO & Metadata</label>
+                
+                <div className="space-y-4">
+                  <div>
+                    <label className="block text-xs font-medium text-gray-700 mb-1">SEO Title</label>
+                    <input
+                      type="text"
+                      name="seoTitle"
+                      value={formData.seoTitle}
+                      onChange={handleChange}
+                      className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+                      placeholder="Defaults to article title..."
+                    />
+                  </div>
+                  
+                  <div>
+                    <label className="block text-xs font-medium text-gray-700 mb-1">Meta Description</label>
+                    <textarea
+                      name="seoDescription"
+                      value={formData.seoDescription}
+                      onChange={handleChange}
+                      rows={2}
+                      className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none resize-none"
+                      placeholder="Brief description for search engines..."
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-xs font-medium text-gray-700 mb-1">Keywords</label>
+                    <input
+                      type="text"
+                      name="keywords"
+                      value={formData.keywords}
+                      onChange={handleChange}
+                      className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+                      placeholder="news, breaking, etc."
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>

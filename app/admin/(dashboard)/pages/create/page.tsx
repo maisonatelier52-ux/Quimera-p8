@@ -14,10 +14,13 @@ export default function CreatePage() {
     template: "custom",
     heroTitle: "",
     heroSubtitle: "",
-    blocks: [] as any[]
+    blocks: [] as any[],
+    seoTitle: "",
+    seoDescription: "",
+    keywords: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
@@ -197,6 +200,48 @@ export default function CreatePage() {
               </div>
             </div>
           )}
+
+          <div className="pt-6 border-t border-gray-100">
+            <h3 className="text-md font-medium text-gray-900 mb-4">SEO & Metadata</h3>
+            
+            <div className="grid grid-cols-1 gap-6">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">SEO Title</label>
+                <input
+                  type="text"
+                  name="seoTitle"
+                  value={formData.seoTitle}
+                  onChange={handleChange}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-sm"
+                  placeholder="Defaults to page title..."
+                />
+              </div>
+              
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Meta Description</label>
+                <textarea
+                  name="seoDescription"
+                  value={formData.seoDescription}
+                  onChange={handleChange}
+                  rows={2}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none resize-none text-sm"
+                  placeholder="Brief description for search engines..."
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Keywords</label>
+                <input
+                  type="text"
+                  name="keywords"
+                  value={formData.keywords}
+                  onChange={handleChange}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-sm"
+                  placeholder="about us, news, contact, etc."
+                />
+              </div>
+            </div>
+          </div>
 
           <div className="pt-6 border-t border-gray-100 flex justify-end">
             <button

@@ -20,6 +20,9 @@ export default function CreateArticlePage() {
     image: "",
     isPublished: true,
     content: [] as any[],
+    seoTitle: "",
+    seoDescription: "",
+    keywords: "",
   });
 
   useEffect(() => {
@@ -330,6 +333,48 @@ export default function CreateArticlePage() {
                 onChange={handleChange}
                 className="w-full h-9 px-3 text-[13px] border border-neutral-200 rounded-md focus:ring-1 focus:ring-zinc-900 focus:border-zinc-900 outline-none bg-white shadow-sm font-mono text-neutral-600"
               />
+            </div>
+
+            <div className="pt-4 border-t border-neutral-200 mt-4">
+              <label className="block text-[12px] font-semibold text-neutral-600 mb-2 uppercase tracking-wider">SEO & Metadata</label>
+              
+              <div className="space-y-3">
+                <div>
+                  <label className="block text-[11px] font-medium text-neutral-500 mb-1">SEO Title</label>
+                  <input
+                    type="text"
+                    name="seoTitle"
+                    value={formData.seoTitle}
+                    onChange={handleChange}
+                    className="w-full h-8 px-2 text-[12px] border border-neutral-200 rounded-md focus:ring-1 focus:ring-zinc-900 focus:border-zinc-900 outline-none bg-white shadow-sm"
+                    placeholder="Defaults to title..."
+                  />
+                </div>
+                
+                <div>
+                  <label className="block text-[11px] font-medium text-neutral-500 mb-1">Meta Description</label>
+                  <textarea
+                    name="seoDescription"
+                    value={formData.seoDescription}
+                    onChange={handleChange}
+                    rows={2}
+                    className="w-full p-2 text-[12px] border border-neutral-200 rounded-md focus:ring-1 focus:ring-zinc-900 focus:border-zinc-900 outline-none bg-white shadow-sm resize-none"
+                    placeholder="Search engine description..."
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-[11px] font-medium text-neutral-500 mb-1">Keywords</label>
+                  <input
+                    type="text"
+                    name="keywords"
+                    value={formData.keywords}
+                    onChange={handleChange}
+                    className="w-full h-8 px-2 text-[12px] border border-neutral-200 rounded-md focus:ring-1 focus:ring-zinc-900 focus:border-zinc-900 outline-none bg-white shadow-sm"
+                    placeholder="news, politics, etc."
+                  />
+                </div>
+              </div>
             </div>
 
             <div className="pt-6 border-t border-neutral-200 mt-auto flex flex-col gap-2">
