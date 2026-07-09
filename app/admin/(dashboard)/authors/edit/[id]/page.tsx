@@ -10,6 +10,7 @@ export default function EditAuthorPage({ params }: { params: Promise<{ id: strin
   const id = unwrappedParams.id;
   const [loading, setLoading] = useState(false);
   const [fetching, setFetching] = useState(true);
+  const [imageLoading, setImageLoading] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -51,6 +52,32 @@ export default function EditAuthorPage({ params }: { params: Promise<{ id: strin
         slug: value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, ""),
       }),
     }));
+  };
+
+  const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    const data = new FormData();
+    data.append("file", file);
+
+    setImageLoading(true);
+
+    try {
+      const res = await fetch(`${process.env.NODE_ENV === 'production' ? 'https://quimera-backend-one.vercel.app' : 'http://localhost:5000'}/api/upload`, {
+        method: "POST",
+        body: data,
+        headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
+      });
+      if (!res.ok) throw new Error("Upload failed");
+      const result = await res.json();
+      setFormData((prev) => ({ ...prev, avatar: result.url }));
+    } catch (error) {
+      console.error(error);
+      alert("Error uploading image");
+    } finally {
+      setImageLoading(false);
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -153,15 +180,28 @@ export default function EditAuthorPage({ params }: { params: Promise<{ id: strin
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Avatar URL (Optional)</label>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Avatar (Optional)</label>
+            <input
+              type="file"
+              accept="image/*"
+              onChange={handleImageUpload}
+              disabled={imageLoading}
+              className="w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 mb-2"
+            />
             <input
               type="text"
               name="avatar"
               value={formData.avatar}
               onChange={handleChange}
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-shadow"
-              placeholder="https://..."
+              placeholder="Or enter image URL... (https://...)"
             />
+            {imageLoading && <p className="text-xs text-blue-500 mt-2">Uploading...</p>}
+            {formData.avatar && (
+              <div className="mt-3 relative w-32 h-32 rounded-full overflow-hidden border border-gray-200">
+                <img src={formData.avatar} alt="Avatar Preview" className="object-cover w-full h-full bg-gray-50" />
+              </div>
+            )}
           </div>
 
           <div className="flex justify-end pt-4 border-t border-gray-100">
